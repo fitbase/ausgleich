@@ -1,0 +1,29 @@
+{
+  "name": "fitcor-landing",
+  "version": "1.0.0",
+  "description": "\"# FitcorLanding\"",
+  "main": "src/sass/mystyles.scss",   
+  "dependencies": {},
+  "devDependencies": {
+    "bulma": "^0.9.1",
+    "gulp": "^4.0.2",
+    "gulp-debug": "^4.0.0",
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fitbase/FitcorLanding.git"
+  },
+  "author": "Alexandra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fitbase/FitcorLanding/issues"
+  },
+  "homepage": "https://github.com/fitbase/FitcorLanding#readme"
+}

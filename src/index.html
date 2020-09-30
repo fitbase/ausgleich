@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <title>Fitcor</title>
+  <!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">  -->
+    <link rel="stylesheet" href="sass/mystyles.css"> 
   <!--  <link rel="stylesheet" href="debug.css">   -->
   </head>
   <body>
@@ -45,7 +46,7 @@
         <div class="container">
             <div class="columns is-vcentered">
                 <div class="column">
-                    <h1 class="title is-3">DiCiS — Digital Coaching<br> 
+                    <h1 class="title is-4 is-family-secondary">DiCiS — Digital Coaching<br> 
                         of individual stress management<br> 
                         skills for caregivers
                     </h1>
@@ -57,7 +58,7 @@
                         The fitcor system consists of an <strong>app</strong> and
                         a <strong>sensor</strong> that is worn on the body.            
                     </p>
-                    <button class="button is-link">Contact us</button>
+                    <button class="button is-primary">Contact us</button>
                 </div>
                 <div class="column">
                     <figure class="image is-5by3">
@@ -70,10 +71,10 @@
     </section>
     
     <!--Section work-->
-    <section class="hero is-light is-bold">
+    <section class="hero has-background-light is-bold">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1 class="title is-3">
+          <h1 class="title is-3 is-family-secondary">
               How does it work?
           </h1>
           <div class="columns has-text-left is-vcentered">
@@ -109,13 +110,14 @@
             </div>
           </div>  
       </div>
-      <div class="container has-text-centered notification is-info mt-6">
-          <h1 class="title is-4">
+      <!-- Example section -->
+      <div class="container has-custom-shadow has-text-centered notification is-white mt-6">
+          <h1 class="title is-4 is-family-secondary mt-3">
               The following examples are intended to explain<br>the application of the technology:
           </h1>
           <div class="columns">
               <div class="column has-text-centered">
-                  <div class="notification is-info">                        
+                  <div class="notification is-white has-border-primary">                        
                       <figure class="image is-128x128 is-inline-block">
                           <img src="img/sensor-icons-sleep-svg.svg">
                       </figure>
@@ -128,7 +130,7 @@
                   </div>
               </div>
               <div class="column has-text-centered">
-                  <div class="notification is-info">                        
+                  <div class="notification is-white has-border-primary">                        
                       <figure class="image is-128x128 is-inline-block">
                           <img src="img/sensor-icons-sleep-svg.svg">
                       </figure>
@@ -155,7 +157,7 @@
     <!--Phase section-->
     <div class="container mt-6 mb-6">
         <div class="has-text-centered">
-            <h1 class="title is-3 mb-5">
+            <h1 class="title is-3 is-family-secondary mb-5">
                 Running phases
             </h1>
         </div>        
@@ -166,13 +168,14 @@
                 of the intervention in an app-friendly and customizable manner, these phases consist of different modules, 
                 which in turn are composed of different elements. 
             </p>
+            <br>
             <p>
                 These elements can contain variable media, such as texts, videos or audios. The modular 
                 structure allows a high degree of flexibility from a technical and conceptual point of view.
             </p>
         </div>
         <div class="columns">
-            <div class="column  is-one-half">
+            <div class="column is-one-half">
                 <div class="box" style="height: 300px;">
                     <article class="media">
                       <div class="media-left">
@@ -274,22 +277,22 @@
     </div>
         
     <!--App section-->
-    <section class="hero is-light is-bold">      
+    <section class="hero has-background-light is-bold">      
         <div class="container mt-6">
             <div class="has-text-centered">
-                <h1 class="title is-3 mb-5">
+                <h1 class="title is-3 is-family-secondary mb-5">
                     Get personalized report in the app
                 </h1>
             </div>        
             <div class="has-text-centered mb-6">
                 <p>
-                    Keep track of your activity, do daily excersizes recommended by the app and get weekly report<br> 
+                    Keep track of your activity, do daily excersizes recommended by the app and get weekly report 
                     based on your measurements. Successfully finish the programm to get overall result of your stress menagement, risk factors and so on...
                 </p>            
             </div>
             <div class="columns is-vcentered">
                 <div class="column">
-                  <h1 class="title is-4">Functions of the app</h1>
+                  <h1 class="title is-4 is-family-secondary mb-2">Functions of the app</h1>
                   <p class="mb-4">
                     Cool screens and explanations.
                     <br>Here short explanation
@@ -308,7 +311,7 @@
                     <img src="img/app_section-tablet-shadow.png" height="450">                
                 </div>
                 <div class="column">
-                  <h1 class="title is-4">Final report</h1>
+                  <h1 class="title is-4 is-family-secondary mb-2">Final report</h1>
                   <p class="mb-4">
                     Cool screens and explanations.
                     <br>Here short explanation
@@ -318,12 +321,12 @@
                 </div>            
             </div>     
         </div>    
-    </div>  
+    </section>  
 
     <!--Form section-->
-      <div class="container mt-6 notification is-warning  mb-6">
+      <div class="container mt-6 notification has-background-grey-lighter mb-6">
         <div class="has-text-centered mt-3">
-          <h1 class="title is-4 mb-5">
+          <h1 class="title is-4 is-family-secondary mb-5">
             Short message why or how contact
           </h1>
         </div>
@@ -331,7 +334,7 @@
           <div class="columns mb-1">
             <div class="column">
               <div class="field">
-                <label class="label">Name</label>
+                <label class="label is-family-secondary">Name</label>
                 <div class="control has-icons-left">
                   <input class="input" type="text" placeholder="Text input">
                   <span class="icon is-small is-left">
@@ -342,7 +345,7 @@
             </div>
             <div class="column">
               <div class="field">
-                <label class="label">E-Mail-Adresse</label>
+                <label class="label is-family-secondary">E-Mail-Adresse</label>
                 <div class="control has-icons-left">
                   <input class="input" type="email" placeholder="Your Email">
                   <span class="icon is-small is-left">
@@ -354,14 +357,14 @@
             </div>
           </div>
           <div class="field">
-            <label class="label">Betreff</label>
+            <label class="label is-family-secondary">Betreff</label>
             <div class="control">
               <input class="input" type="text" placeholder="What is it about?">                    
             </div>
           <!--  <p class="help is-success">This username is available</p> -->
           </div>                    
           <div class="field">
-            <label class="label">Nachricht</label>
+            <label class="label is-family-secondary">Nachricht</label>
             <div class="control">
               <textarea class="textarea" placeholder="Leave your message here"></textarea>
             </div>
@@ -381,125 +384,191 @@
           </div>
           <div class="field">
             <div class="control has-text-centered">
-              <button class="button is-link">Senden</button>
+              <button class="button is-primary px-6">Senden</button>
             </div>              
           </div>
         </div>  
       </div>  
     
     <!--Team section-->
-    <section class="hero is-info is-bold">    
-      <div class="container mt-6">
-        <div class="has-text-centered">
-            <h1 class="title is-3 mb-5">
-              Team introduction
-            </h1>
-        </div>        
-        <div class="has-text-centered mb-6">
-            <p>
-              With or without description. Which is longer. And longer.<br>
-              Maybe two or three lines long.
-            </p>            
-        </div>
-        
-        <div class="columns">
-          <div class="column is-one-third">
-              <div class="box" style="height: 300px;">
+    <section class="hero is-dark is-bold">    
+      <div class="container mt-6 mb-6">
+          <div class="has-text-centered">
+              <h1 class="title is-3 is-family-secondary mb-5 has-text-black">
+                Team introduction
+              </h1>
+          </div>        
+          <div class="has-text-centered mb-6 has-text-black">
+              <p>
+                With or without description. Which is longer. And longer.<br>
+                Maybe two or three lines long.
+              </p>            
+          </div>
+          
+          <div class="columns">
+            <!--Person card-->
+            <div class="column is-one-third">
+              <div class="box" style="height: 300px; ">
                 <div class="columns is-vcentered">
-                  <div class="column is-one-third">
-                    <figure class="image is-squared">
+                  <div class="column is-one-quarter">
+                    <figure class="image is-64x64">
                       <img src="img/heering.png" alt="Image">
                     </figure>
                   </div>
-                  <div class="column">
+                  <div class="column is-family-secondary">
                       <p>
                         <strong>Johannes Heering</strong>
                         <br>The team role
                       </p>
                   </div>
                 </div>
+                <div class="columns px-4">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, 
+                    purus sit amet luctus venenatis, lectus magna 
+                    fringilla urna, porttitor
+                  </p>
+                </div>
               </div>
+            </div>
+
+            <!--Person card-->
+            <div class="column is-one-third">
+              <div class="box" style="height: 300px; ">
+                <div class="columns is-vcentered">
+                  <div class="column is-one-quarter">
+                    <figure class="image is-64x64">
+                      <img src="img/woroschilow.png" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="column is-family-secondary">
+                      <p>
+                        <strong>Alex  Woroschilow</strong>
+                        <br>The team role
+                      </p>
+                  </div>
+                </div>
+                <div class="columns px-4">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, 
+                    purus sit amet luctus venenatis, lectus magna 
+                    fringilla urna, porttitor
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--Person card-->
+            <div class="column is-one-third">
+              <div class="box" style="height: 300px; ">
+                <div class="columns is-vcentered">
+                  <div class="column is-one-quarter">
+                    <figure class="image is-64x64">
+                      <img src="img/kettouch.png" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="column is-family-secondary">
+                      <p>
+                        <strong>Mohamed Kettouch</strong>
+                        <br>The team role
+                      </p>
+                  </div>
+                </div>
+                <div class="columns px-4">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, 
+                    purus sit amet luctus venenatis, lectus magna 
+                    fringilla urna, porttitor
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="column is-one-half">
-              <div class="box" style="height: 300px;">
-                  <article class="media">
-                    <div class="media-left">
-                      <figure class="image is-64x64">
-                        <img src="img/phase-2.svg" alt="Image">
-                      </figure>
-                    </div>
-                    <div class="media-content">
-                      <div class="content">
-                        <p>
-                          <strong>Measurements (7 days)</strong>
-                          <br>
-                          - Data measurement <br>      
-                          - Daily breathing exercise (with biofeedback) <br>                                   
-                          - Diary and daily report<br>                                
-                          - Learning and experiencing the connections between stress and physique<br>                                
-                          - Individual reference: How do I experience stress? <br>What knowledge can I gain from observing physiological phenomena and experiences?
-                        </p>
-                      </div>                        
-                    </div>
-                  </article>
+
+          <div class="columns">
+            <!--Person card-->
+            <div class="column is-one-third">
+              <div class="box" style="height: 300px; ">
+                <div class="columns is-vcentered">
+                  <div class="column is-one-quarter">
+                    <figure class="image is-64x64">
+                      <img src="img/nina-wegener.png" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="column is-family-secondary">
+                      <p>
+                        <strong>Nina Wegener</strong>
+                        <br>The team role
+                      </p>
+                  </div>
+                </div>
+                <div class="columns px-4">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, 
+                    purus sit amet luctus venenatis, lectus magna 
+                    fringilla urna, porttitor
+                  </p>
+                </div>
               </div>
-          </div>           
-      </div>
-      <div class="columns">
-          <div class="column is-one-half">
-              <div class="box" style="height: 300px;">
-                  <article class="media">
-                    <div class="media-left">
-                      <figure class="image is-64x64">
-                        <img src="img/phase-3.svg" alt="Image">
-                      </figure>
-                    </div>
-                    <div class="media-content">
-                      <div class="content">
-                        <p>
-                          <strong>Coaching (approx. 6 weeks)</strong>
-                          <br>
-                          - Compulsory modules for different user groups<br>     
-                          - Modular structure with different topics for coping with stress<br>                                    
-                          - Use of different media (text, audio, video, exercises, instructions for reflection, etc.)<br>                                
-                          - Individualized extension modules<br>                               
-                          - Orientation towards needs + selection according to personal interests
-                        </p>
-                      </div>                        
-                    </div>
-                  </article>
-              </div>
+            </div>
+
+            <!--Person card-->
+            <div class="column is-one-third">
+              <div class="box" style="height: 300px; ">
+                <div class="columns is-vcentered">
+                  <div class="column is-one-quarter">
+                    <figure class="image is-64x64">
+                      <img src="img/nixon.png" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="column is-family-secondary">
+                      <p>
+                        <strong>Patricia Nixon</strong>
+                        <br>The team role
+                      </p>
+                  </div>
+                </div>
+                <div class="columns px-4">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, 
+                      purus sit amet luctus venenatis, lectus magna 
+                      fringilla urna, porttitor
+                    </p>
+                </div>    
+            </div>
           </div>
-          <div class="column is-one-half">
-              <div class="box" style="height: 300px;">
-                  <article class="media">
-                    <div class="media-left">
-                      <figure class="image is-64x64">
-                        <img src="img/phase-2.svg" alt="Image">
-                      </figure>
-                    </div>
-                    <div class="media-content">
-                      <div class="content">
-                        <p>
-                          <strong>Measurements (7 days)</strong>
-                          <br>
-                          - Data measurement <br>      
-                          - Daily breathing exercise (with biofeedback) <br>                                   
-                          - Diary and daily report<br>                                
-                          - Learning and experiencing the connections between stress and physique<br>                                
-                          - Individual reference: How do I experience stress? <br>What knowledge can I gain from observing physiological phenomena and experiences?
-                        </p>
-                      </div>                        
-                    </div>
-                  </article>
-              </div>
-          </div>           
-      </div>
-
-
-
       </div>         
     </section>
+
     <!--Footer section-->
+    <footer class="footer is-family-secondary">
+      <div class="content">
+        <div class="columns">
+          <div class="column has-text-left">
+            <h2 class="subtitle is-5 has-text-grey-light mb-3">Social</h2>
+            <a href="" class="has-text-grey-light">LinkedIn</a><br>
+            <a href="" class="has-text-grey-light">Xing</a>
+          </div>
+          <div class="column has-text-left">
+            <h2 class="subtitle is-5 has-text-grey-light  mb-3">Stay in touch</h2>
+            <a href="" class="has-text-grey-light">Newsletter</a>
+          </div>
+          <div class="column has-text-left">
+            <h2 class="subtitle is-5 has-text-grey-light mb-3">Legal</h2>
+            <a href="" class="has-text-grey-light">Datenschutz</a><br>
+            <a href="" class="has-text-grey-light">Impressum</a>
+          </div>
+          <div class="column has-text-left">
+            <h2 class="subtitle is-5 has-text-grey-light mb-3">Certified</h2>
+            <a href="" class="has-text-grey-light">
+              <img src="img/Zertifiziert-2020.png" height="120" width="90" class="mr-3">
+            </a>
+            <a href="" class="has-text-grey-light">
+              <img src="img/Forschung_und_Entwicklung_2020_web.png" height="120" width="90">
+            </a>
+          </div>
+        </div>        
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// COLORS
+$purple: #1eda2e;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+//text-colors
+$text-main: #2E2F34;
+$text-links: #3A6DF1;
+
+//buttons-colors
+$primary-clr: #677FFF;
+$primary-hover: #4b66ff;
+$secondary-clr: #EDC90E;
+$secondary-hover: #e4bf07;
+
+//bg-colors
+$primaryClr-bg: #A0AEFF;
+$secondaryClr-bg: #F6E486;
+$lightClr-bg: #F2F5F8;
+$primaryBg: #ffffff;
+$formBg: #E9E9EF;
+
+// FONTS
+$headlines: "Nunito", sans-serif;
+$content-text: "Roboto", sans-serif;
+
+// Update Bulma's global variables
+
+//text
+$family-primary: $content-text;
+$family-secondary: $headlines;
+$link: $text-links;
+$primary: $primary-clr;
+
+//colors
+$light: $lightClr-bg;
+$body-background-color: $primaryBg;
+$grey-lighter: $formBg;
+$dark: $primaryClr-bg;
+
+$grey-dark: $text-main;
+$grey-light: $beige-light;
+
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+
+//try custom
+.has-custom-shadow {
+    box-shadow: 0px 0px 5px 1px rgba(124, 129, 135, 0.25);
+}
+
+.has-border-primary {
+    border: 1px solid $primary-clr;
+    border-radius: 6px;
+}
+
+// Update some of Bulma's component variables
+
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+
+// Import only what you need from Bulma
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/form/_all.sass";
+@import "../../node_modules/bulma/sass/components/_all.sass";
+@import "../../node_modules/bulma/sass/elements/_all.sass";
+@import "../../node_modules/bulma/sass/grid/_all.sass";
+@import "../../node_modules/bulma/sass/helpers/_all.sass";
+@import "../../node_modules/bulma/sass/layout/_all.sass";
