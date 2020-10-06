@@ -10,11 +10,19 @@
 *.sublime-workspace
 
 # System Files
+### macOS ###
+# General
 .DS_Store
+.AppleDouble
+.LSOverride
+### Windows ###
+# Windows thumbnail cache files
 Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
 
 
 # Project Files
 dist/
-/games/
 node_modules/

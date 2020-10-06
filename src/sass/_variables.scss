@@ -1,0 +1,55 @@
+
+
+// COLORS
+$purple: #1eda2e;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+//text-colors
+$text-main: #2E2F34;
+$text-links: #3A6DF1;
+
+//buttons-colors
+$primary-clr: #677FFF;
+$primary-hover: #4b66ff;
+$secondary-clr: #EDC90E;
+$secondary-hover: #e4bf07;
+
+//bg-colors
+$primaryClr-bg: #A0AEFF;
+$secondaryClr-bg: #F6E486;
+$lightClr-bg: #F2F5F8;
+$primaryBg: #ffffff;
+$formBg: #E9E9EF;
+
+// FONTS
+$headlines: "Nunito", sans-serif;
+$content-text: "Roboto", sans-serif;
+
+// Update Bulma's global variables
+
+//text
+$family-primary: $content-text;
+$family-secondary: $headlines;
+$link: $text-links;
+$primary: $primary-clr;
+
+//colors
+$light: $lightClr-bg;
+$body-background-color: $primaryBg;
+$grey-lighter: $formBg;
+$dark: $primaryClr-bg;
+
+$grey-dark: $text-main;
+$grey-light: $beige-light;
+
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
