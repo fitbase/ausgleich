@@ -8,13 +8,14 @@ $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
 
 //text-colors
-$text-main: #2E2F34;
-$text-links: #3A6DF1;
+$title-color: #000315;
+$text-main:   #000315;
+$text-links:  #000315;
 
 //buttons-colors
-$primary-clr: #677FFF;
-$primary-hover: #4b66ff;
-$secondary-clr: #EDC90E;
+$primary-clr: #ff3d71;
+$primary-hover: #fc1754;
+$secondary-clr: #677FFF;
 $secondary-hover: #e4bf07;
 
 //bg-colors
@@ -27,6 +28,9 @@ $formBg: #E9E9EF;
 // FONTS
 $headlines: "Nunito", sans-serif;
 $content-text: "Roboto", sans-serif;
+
+//breaking points
+$breakpoint-tablet: 768px;
 
 // Update Bulma's global variables
 
@@ -53,3 +57,4 @@ $fullhd-enabled: false;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
+$input-focus-border-color: $primary-clr;
