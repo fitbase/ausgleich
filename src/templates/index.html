@@ -8,31 +8,48 @@
 
 	<div id="page-body" class="page-body mt-6">
 		<!--Home-->
-		<section id="home" class="section home__bg pb-0 pr-0">
+		<section id="home" class="section pb-0 pr-0">
 			<div class="hero mt-6">
-				<p class="is-size-4 has-text-centered mt-6">
-					<span class="text-light">Bei Pflegekräften laut statistischem Bundesamt vermehrt zu Krankschreibungen und Arbeitsunfähigkeit kommt,</span><br> 
-					<span class="text-colored">soll „AusGleich“ Betroffenen helfen, für mehr Balance im beruflichen und privaten Leben zu sorgen</span>
-				</p>
-				<div class="columns has-text-centered mt-6 mb-0 pt-6">
-					<div class="column has-text-centered text-light pt-6 pb-4">
-						<span class="has-text-centered has-text-weight-bold is-italic">Scroll for more</span><br>
-						<span>&#8595;</span>
+				<div class="video-container">
+					
+					<div class="bg-overlay"></div>
+					<div class="filter"></div>
+
+					
+					<video autoplay muted loop id="home-bg__video">
+						<source src="../img/20201201_170438.mp4" type="video/mp4">
+					</video>
+
+				</div>
+
+				<div class="info-overlay hero">
+					<p class="is-size-4 has-text-centered mt-6">
+						<span class="text-light">Bei Pflegekräften laut statistischem Bundesamt vermehrt zu Krankschreibungen und Arbeitsunfähigkeit kommt,</span><br> 
+						<span class="text-colored">soll „AusGleich“ Betroffenen helfen, für mehr Balance im beruflichen und privaten Leben zu sorgen</span>
+					</p>
+				
+				
+
+					<div class="columns has-text-centered mt-6 mb-0 pt-6">
+						<div class="column has-text-centered text-light pt-6 pb-4">
+							<span class="has-text-centered has-text-weight-bold is-italic">Scroll for more</span><br>
+							<span>&#8595;</span>
+						</div>
+						<div class="column is-one-quarter has-text-centered has-text-weight-semibold home__button-bg pt-6 pb-4">
+							<div class="is-italic has-text-weight-bold">
+								Contact us
+								<span>&#8594;</span>
+							</div>						
+						</div>
 					</div>
-					<div class="column is-one-quarter has-text-centered has-text-weight-semibold home__button-bg pt-6 pb-4">
-						<div class="is-italic has-text-weight-bold">
-							Contact us
-							<span>&#8594;</span>
-						</div>						
-					</div>
-				</div>	
+				</div>		
 			</div>
 		</section>
 		<div class="page__divider-home">
 		</div>
 
 		<!--About technology-->
-		<section id="intro" class="hero has-background-light is-bold mt-6">
+		<section id="intro" class="section has-background-light is-bold mt-6">
 			<div class=".container.is-max-desktop mx-6">
 				<div class="columns">
 					<div class="column">
@@ -94,8 +111,8 @@
 				</div>
 
 				<!--Quote-->
-				<div class=" mt-6 mb-6">
-					<h2 class="is-size-3 is-italic has-text-weight-bold mb-6 pt-6 pb-6">Herzstück bildet die von den Unternehmen fitbase und corvolution<br> gemeinsam entwickelte Biofeedback-Technologie fitcor. Hierbei wird eine<br> Biofeedback-Analyse mittels mesana-EKG-Sensor (corvolution) mit dem<br> Know-How über die Entwicklung digitaler Gesundheitsinterventionen<br> (fitbase) zielführend vereint.</h2>
+				<div class="my-6 py-6">
+					<h2 class="is-size-3 is-italic has-text-weight-bold my-6 py-6">Herzstück bildet die von den Unternehmen fitbase und corvolution<br> gemeinsam entwickelte Biofeedback-Technologie fitcor. Hierbei wird eine<br> Biofeedback-Analyse mittels mesana-EKG-Sensor (corvolution) mit dem<br> Know-How über die Entwicklung digitaler Gesundheitsinterventionen<br> (fitbase) zielführend vereint.</h2>
 				</div>
 
 				<!-- Process explained -->
@@ -120,56 +137,107 @@
 						<img src="../img/human.png">
 					</div>	
 				</div>
+			</div>	
 		</section>
-		<div class="page__divider-app"></div>			
-		<section>
-				<!-- App screens -->
-				<div>
-					<div>will be red bg</div>
-					<div class="app-galary">					
-						<img src="../img/app-screens-1.png">
-						<img src="../img/app-screens-2.png">
-						<img src="../img/app-screens-3.png">
-					</div>
-				</div>
+		<div class="page__divider-app"></div>
+		<div class="page__divider-app"></div>
 
-				<!-- Explaining advantages -->
-				<div>
-					<img src="../img/nurses-male-female.png">
-					<div>
-						<h3><span>AusGleich – </span> 
-							Deine digitale Begleitung durch den Pflegealltag</h3>
+		<section id="app-screens" class="section has-background-light is-bold mt-6">
+			<!-- App screens -->
+			<div class="has-text-centered">
+				<div class="app-galary">					
+					<img class="mx-3" width="25%" src="../img/app-screens-1.png">
+					<img class="mx-3" width="25%" src="../img/app-screens-2.png">
+					<img class="mx-3" width="25%" src="../img/app-screens-3.png">
+				</div>
+			</div>
+
+			<!-- Explaining advantages -->
+
+			<div class=".container.is-max-desktop py-6 m-6">
+				<div class="columns is-vcentered">
+					<div class="column is-half has-text-right">
+						<img src="../img/nurses-male-female.png">
+					</div>
+					<div class="column">
+						<h3 class="is-size-3 is-italic has-text-weight-bold mb-6 pt-2"><span>AusGleich – </span><br>Deine digitale Begleitung durch den Pflegealltag</h3>					
 						<p>
 							Mit fitcor wird es erstmalig möglich sein, den Effekt unterschiedlicher Situationen 
 							(z. B. Belastungen im Pflegealltag, Sport, Entspannungsübungen, Schlaf, Zeitdruck) auf den eigenen 
 							Körper zu sehen und zu verstehen. Pflegekräfte entwickeln so ein Bewusstsein dafür, wie wichtig und 
-							wirkungsvoll Methoden zur Entspannung und Regeneration sind. 
+							wirkungsvoll Methoden zur Entspannung und Regeneration sind.<br> 
 						</p>
-						<h3>Self-testing </h3>
+						<h3 class="is-size-3 is-italic has-text-weight-bold pt-4 mt-6 mb-6 pt-2">Self-testing</h3>					
 						<p>
-							Durch die Möglichkeit zum selbstwirksamen Handeln werden die Versicherten nachhaltig motiviert. 
-							Je nach Kooperationspartner und dessen Schwerpunkt kann die Technologie angewendet und weiterentwickelt 
-							werden. Grundsätzlich behandelt das Projekt AusGleich hierbei die nachhaltige Prävention von Stress und/oder 
-							Schlafstörungen.
-						</p>
-					</div>
-				</div>				
-			</div>
+							Durch die Möglichkeit zum selbstwirksamen Handeln werden die Versicherten nachhaltig motiviert. Je nach 
+							Kooperationspartner und dessen Schwerpunkt kann die Technologie angewendet und weiterentwickelt werden. 
+							Grundsätzlich behandelt das Projekt AusGleich hierbei die nachhaltige Prävention von Stress und/oder Schlafstörungen.<br> 
+						</p>	
+					</div>					
+				</div>	
+			</div>	
 		</section>
 
 		<!--Partners & Developers-->
-		<section class="section">
-			<div class="container">
-				<div class="background1">
-					<div>
-						<h3>Our participants</h3>
-						<p>imgs</p>
+		<div class="page__divider-home"></div>
+		<section class="hero home__button-bg">
+			<div class="container has-background-light p-6 mt-6">
+				<h3 class="is-size-3 is-italic has-text-centered has-text-weight-bold mb-6 pt-2">Our participants</h3>
+				<div class="columns px-6">
+					<div class="column">
+						<div class="row">
+							<img class="make-grey p-3" src="../img/Group 491.png">
+						</div>
+						<div class="row">
+							<img class="make-grey p-3" src="../img/Group 492.png">
+						</div>
+						<div class="row">
+							<img class="make-grey p-3" src="../img/Group 493.png">
+						</div>
+						<div class="row">
+							<img class="make-grey p-3" src="../img/Group 497.png">
+						</div>
+					</div>
+					<div class="column">
+						<div class="row">
+							<img class="make-grey p-3" src="../img/Group 498.png">
+						</div>
+						<div class="row">
+							<img class="make-grey p-3" src="../img/Group 499.png">
+						</div>
+						<div class="row">
+							<img class="make-grey p-3" src="../img/Group 500.png">
+						</div>
+						<div class="row">
+							<img class="make-grey p-3" src="../img/Group 501.png">
+						</div>
+					</div>
+					<div class="column">
+						<div class="row">
+							<img class="make-grey p-3" src="../img/Group 502.png">
+						</div>
+						<div class="row">
+							<img class="make-grey p-3" src="../img/Group 503.png">
+						</div>
+						<div class="row">
+							<img class="make-grey p-3" src="../img/Group 504.png">
+						</div>
 					</div>
 				</div>
-				<div class="background2">
-					<div>
-						<h3>Developers</h3>
-						<p>imgs</p>
+			</div>
+			<div class="hero page__divider-footer">
+				<div class="container has-background-light has-text-centered p-6 mb-6">
+					<h3 class="is-size-3 is-italic has-text-weight-bold mb-6 pt-2">Developers</h3>
+					<div class="columns px-6">
+						<div class="column">
+							<img class="make-grey p-3" src="../img/Group 494.png">
+						</div>
+						<div class="column">
+							<img class="make-grey p-3" src="../img/Group 495.png">
+						</div>
+						<div class="column">
+							<img class="make-grey p-3" src="../img/Group 496.png">
+						</div>
 					</div>
 				</div>
 			</div>

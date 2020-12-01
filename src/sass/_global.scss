@@ -10,6 +10,47 @@ html {
 }
 
 //home section
+
+#home-bg__video {
+    object-fit: cover;
+    width: 100vw;
+    height: 40vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;    
+}
+
+.video-container .filter {
+    z-index: -1;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.4);
+    width: 100%;
+}
+
+.bg-overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    width: 100%;
+    height: 39vw;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+
+.info-overlay {
+ //   position: relative;
+ //   background: rgba(black, 0.66);
+//    justify-content: center;
+//    top: 0;
+ //   left: 0;
+ //   object-fit: cover;
+    height: 27vw;
+ z-index: 1;
+}
+
+
 .home__bg {
     background-image: url('../img/home-bg.png');
     background-size: cover;
@@ -27,6 +68,8 @@ html {
     background: $brand-yellow;
 }
 
+// Page dividers
+
 .page__divider-home {
     background: $brand-yellow;
     padding-bottom: 5%;
@@ -36,6 +79,20 @@ html {
     background: $brand-red;
     padding-bottom: 5%;
 }
+
+.page__divider-footer {
+    background: $brand-blue;
+    padding-bottom: 5%;
+}
+
+// Buttons
+.primary--button {
+    background: #F8B130;
+    border-radius: 6px;
+    color: $brand-blue;
+    padding: 6% 20%;
+}
+
 
 .has-custom-shadow {
     box-shadow: 0px 0px 5px 1px rgba(124, 129, 135, 0.25);
@@ -84,6 +141,13 @@ html {
     filter: gray;
     -webkit-filter: grayscale(1);
   }
+
+  .make-grey:hover {
+    filter: none;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 25px -3px rgba(0, 0, 0, 0.25);
+}
 
   .img-links a:hover {
       filter: none;
