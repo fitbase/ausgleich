@@ -1,4 +1,4 @@
-"# FitcorLanding" 
+"# AusGleichLanding" 
 
 Development process
 Start the development by installing all npm dependencies
