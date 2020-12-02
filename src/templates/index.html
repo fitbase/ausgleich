@@ -8,29 +8,24 @@
 
 	<div id="page-body" class="page-body mt-6">
 		<!--Home-->
-		<section id="home" class="section pb-0 pr-0">
+		<section id="home" class="section pb-0 px-0">
 			<div class="hero mt-6">
-				<div class="video-container">
-					
+				<div class="video-container">					
 					<div class="bg-overlay"></div>
-					<div class="filter"></div>
-
-					
+					<div class="filter"></div>					
 					<video autoplay muted loop id="home-bg__video">
 						<source src="../img/20201201_170438.mp4" type="video/mp4">
 					</video>
-
 				</div>
 
-				<div class="info-overlay hero">
-					<p class="is-size-4 has-text-centered mt-6">
-						<span class="text-light">Bei Pflegekräften laut statistischem Bundesamt vermehrt zu Krankschreibungen und Arbeitsunfähigkeit kommt,</span><br> 
-						<span class="text-colored">soll „AusGleich“ Betroffenen helfen, für mehr Balance im beruflichen und privaten Leben zu sorgen</span>
+				<div class="hero text-overlay">
+					<p class="is-size-4 has-text-centered mt-6 pt-6">
+						<span class="text-light">Bei Pflegekräften laut statistischem Bundesamt vermehrt<br>zu Krankschreibungen und Arbeitsunfähigkeit kommt,</span><br> 
+						<span class="text-colored">soll „AusGleich“ Betroffenen helfen, für mehr Balance<br> im beruflichen und privaten Leben zu sorgen</span>
 					</p>
-				
-				
 
 					<div class="columns has-text-centered mt-6 mb-0 pt-6">
+						<div class="column is-one-quarter has-text-centered text-light pt-6 pb-4"></div>
 						<div class="column has-text-centered text-light pt-6 pb-4">
 							<span class="has-text-centered has-text-weight-bold is-italic">Scroll for more</span><br>
 							<span>&#8595;</span>
@@ -45,14 +40,14 @@
 				</div>		
 			</div>
 		</section>
-		<div class="page__divider-home">
-		</div>
+		<div class="page__divider-home"></div>
 
 		<!--About technology-->
-		<section id="intro" class="section has-background-light is-bold mt-6">
+		<section id="intro" class="section is-bold mt-6">
 			<div class=".container.is-max-desktop mx-6">
 				<div class="columns">
-					<div class="column">
+					<div class="column is-flex">
+					<div class="logo__circle mr-6"></div>						
 						<h1 class="is-size-1 is-italic has-text-weight-bold">Was ist<br> <span class="has-text-weight-light">AusGleich?</span></h1>
 					</div>
 
@@ -87,54 +82,70 @@
 					</div>
 				</div>	
 
-				<!--Phase analysis-->
-				<div class="mt-6">
-					<div class="columns is-vcentered">
-						<div class="column">
-							<h3 class="is-size-3 is-italic has-text-weight-bold mb-6 pt-2"><span>AusGleich – </span><br>Deine digitale Begleitung durch den Pflegealltag</h3>					
-							<div>
-								<p>
-									Das Projekt „AusGleich“ besteht aus verschiedenen Phasen. Um die Bedürfnisse 
-									von Pflegepersonal zu verstehen, wurde im ersten Schritt eine Bedarfsanalyse durchgeführt.<br> 
-								</p>
-								<p>
-									<br>Die dabei gewonnenen Informationen darüber, wie der ideale digitale Begleiter für den Pflegealltag 
-									aussieht, wurden in der Entwicklungsphase für das Konzept und die Technologie herangezogen. In der 
-									Pilotierungsphase soll „AusGleich“ schließlich erprobt und evaluiert werden. 
-								</p>
-							</div>
+				<!--Phase analysis-->				
+				<div class="columns is-vcentered mt-6">
+					<div class="column is-flex">
+						<div class="mr-6">
+							<img src="../img/logo__parts-red.svg">
 						</div>
-						<div class="column is-half has-text-right">
-							<img src="../img/abTechnology-nurse1.png">
+						<div>					
+							<h3 class="is-size-3 is-italic has-text-weight-bold mb-6 pt-2"><span>AusGleich – </span><br>Deine digitale Begleitung durch den Pflegealltag</h3>
+							<p>
+								Das Projekt „AusGleich“ besteht aus verschiedenen Phasen. Um die Bedürfnisse 
+								von Pflegepersonal zu verstehen, wurde im ersten Schritt eine Bedarfsanalyse durchgeführt.<br> 
+							</p>
+							<p>
+								<br>Die dabei gewonnenen Informationen darüber, wie der ideale digitale Begleiter für den Pflegealltag 
+								aussieht, wurden in der Entwicklungsphase für das Konzept und die Technologie herangezogen. In der 
+								Pilotierungsphase soll „AusGleich“ schließlich erprobt und evaluiert werden. 
+							</p>
 						</div>
-					</div>	
-				</div>
-
-				<!--Quote-->
-				<div class="my-6 py-6">
-					<h2 class="is-size-3 is-italic has-text-weight-bold my-6 py-6">Herzstück bildet die von den Unternehmen fitbase und corvolution<br> gemeinsam entwickelte Biofeedback-Technologie fitcor. Hierbei wird eine<br> Biofeedback-Analyse mittels mesana-EKG-Sensor (corvolution) mit dem<br> Know-How über die Entwicklung digitaler Gesundheitsinterventionen<br> (fitbase) zielführend vereint.</h2>
-				</div>
-
-				<!-- Process explained -->
-				<div class="columns is-vcentered">
-					<div class="column">
-						<h3 class="is-size-3 is-italic has-text-weight-bold mb-6 pt-2"><span>AusGleich – </span>Deine digitale Begleitung durch den Pflegealltag</h3>
-						<p>
-							Über den mesana Sensor werden kontinuierlich Vitalparameter aufgezeichnet und per App für den Nutzer 
-							verständlich aufbereitet. Die fitcor-Technologie bewertet, visualisiert und analysiert die gemessenen 
-							Daten.<br><br> 
-						</p>
-						<p>
-							Mithilfe eines Fragebogens können Inhalte der Stressbewältigungsintervention an den individuellen Bedürfnissen 
-							der Nutzer ausgerichtet werden. Je nach z.B. Motivations- oder Entspannungstyp werden angepasste Inhalte und 
-							Übungen zur Umsetzung empfohlen.<br><br> 
-						</p>
-						<p>
-							Die Versicherten sehen Auswirkungen der Interventionen auf deren Vitalwerte direkt per App.
-						</p>
 					</div>
 					<div class="column is-half has-text-right">
-						<img src="../img/human.png">
+						<img src="../img/abTechnology-nurse1.png">
+					</div>
+				</div>	
+			
+			</div>
+		</section>
+		
+		<!--Quote-->
+		<div class="is-flex ml-4 py-6 my-6">
+			<div class="pt-6 mt-6 ml-6">
+				<img src="../img/logo__parts-horizontal-blue.svg">
+			</div>
+			<div class="circle"></div>	
+			<h2 class="is-size-3 is-italic has-text-weight-bold mr-6 my-6 p-6">Herzstück bildet die von den Unternehmen fitbase und corvolution gemeinsam entwickelte Biofeedback-Technologie fitcor. Hierbei wird eine Biofeedback-Analyse mittels mesana-EKG-Sensor (corvolution) mit dem Know-How über die Entwicklung digitaler Gesundheitsinterventionen (fitbase) zielführend vereint.</h2>
+		</div>
+
+		<!-- Process explained -->
+		<section id="intro" class="section is-bold mt-6">
+			<div class=".container.is-max-desktop mx-6">				
+				<div class="columns is-vcentered">
+					<div class="column is-flex">
+						
+						<div class="mr-6 pr-6">
+							<img src="../img/logo__parts-vertical-blue.svg">
+						</div>
+						<div>
+							<h3 class="is-size-3 is-italic has-text-weight-bold mb-6 pt-2"><span>AusGleich – </span>Deine digitale Begleitung durch den Pflegealltag</h3>
+							<p>
+								Über den mesana Sensor werden kontinuierlich Vitalparameter aufgezeichnet und per App für den Nutzer 
+								verständlich aufbereitet. Die fitcor-Technologie bewertet, visualisiert und analysiert die gemessenen 
+								Daten.<br><br> 
+							</p>
+							<p>
+								Mithilfe eines Fragebogens können Inhalte der Stressbewältigungsintervention an den individuellen Bedürfnissen 
+								der Nutzer ausgerichtet werden. Je nach z.B. Motivations- oder Entspannungstyp werden angepasste Inhalte und 
+								Übungen zur Umsetzung empfohlen.<br><br> 
+							</p>
+							<p>
+								Die Versicherten sehen Auswirkungen der Interventionen auf deren Vitalwerte direkt per App.
+							</p>
+						</div>	
+					</div>
+					<div class="column is-half has-text-right">
+						<img src="../img/process-sensor.svg">
 					</div>	
 				</div>
 			</div>	
@@ -142,8 +153,87 @@
 		<div class="page__divider-app"></div>
 		<div class="page__divider-app"></div>
 
-		<section id="app-screens" class="section has-background-light is-bold mt-6">
+		<section id="app-screens" class="section has-background-light is-bold pt-6">
 			<!-- App screens -->
+			
+			<script>
+
+				window.addEventListener('load',function() {
+					figure = document.getElementById('multiSlide');
+					leftButton      = document.getElementById('left');
+					rightButton     = document.getElementById('right'); 
+					
+					new Box(-2,2,'https://www.linkpicture.com/q/page-1.png'); 
+					new Box(-1,2,'https://www.technotoday.com.tr/Post/PostDosyalar/image/Haber/2689.jpg');
+					new Box(0,2,'https://www.linkpicture.com/q/page-1.png');
+					new Box(1,2,'https://www.technotoday.com.tr/Post/PostDosyalar/image/Haber/2689.jpg');
+					new Box(2,2,'https://www.technotoday.com.tr/Post/PostDosyalar/image/Haber/2689.jpg');
+					new Box(3,2,'https://www.technotoday.com.tr/Post/PostDosyalar/image/Haber/2689.jpg');
+					new Box(4,2,'https://www.technotoday.com.tr/Post/PostDosyalar/image/Haber/2689.jpg');
+					new Box(5,2,'https://www.technotoday.com.tr/Post/PostDosyalar/image/Haber/2689.jpg');			
+					
+					leftButton.addEventListener('click', function(){
+						if(slidePosX>-3)
+							slide('X',-1);
+					});
+					rightButton.addEventListener('click', function(){
+						if(slidePosX<4)
+							slide('X',1);
+					});
+				});
+
+				var unit            = 300;
+				var registeredBoxes = [];
+				var slidePosX       = 0;
+				var Box = function(posX,posY,img){
+					this.pos    = {};
+					this.pos.X  = posX;
+					this.pos.Y  = posY;
+					this.img    = img;
+					this.init();
+				}
+				Box.prototype = {
+					init : function(){
+						this.DOMElement             = document.createElement('div');
+						this.DOMElement.className   = 'box';
+					  	this.DOMElement.style.left  = (this.pos.X*unit)-unit+'px';
+					 	this.DOMElement.style.top   = (this.pos.Y*unit / 2)-unit+'px';
+						this.DOMElement.setAttribute('data-pos',this.pos.X.toString()+this.pos.Y.toString());
+						
+						var img = document.createElement('img');
+						img.src = this.img;
+						
+						this.DOMElement.appendChild(img);
+						figure.appendChild(this.DOMElement);
+						registeredBoxes.push(this);
+					},
+					setPosition : function(axis,val){
+						this.pos[axis] = val;						
+						this.DOMElement.style.left  = (this.pos[axis]*unit)-unit+'px';						
+						this.DOMElement.setAttribute('data-pos',this.pos.X.toString()+this.pos.Y.toString());
+					}
+				}
+
+				function slide(axis,dir){
+					var len = registeredBoxes.length;				
+					for(var i=0; i<len; i++){
+						if(registeredBoxes[i].pos['Y']=='2'){
+							registeredBoxes[i].setPosition(axis,registeredBoxes[i].pos['X']+(1*dir));
+						}
+					}
+					slidePosX = slidePosX+dir;				
+				}
+
+			</script>
+
+			<div class="container">
+				<figure id="multiSlide" class="multiSlide"></figure>
+				<nav id="multiSlideNav" class="multiSlideNav">
+					<a href="#multiSlide" id="left" class="navButton"><</a>
+					<a href="#multiSlide" id="right" class="navButton">></a>
+				</nav>
+			</div>
+
 			<div class="has-text-centered">
 				<div class="app-galary">					
 					<img class="mx-3" width="25%" src="../img/app-screens-1.png">
