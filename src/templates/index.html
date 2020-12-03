@@ -163,14 +163,14 @@
 					leftButton      = document.getElementById('left');
 					rightButton     = document.getElementById('right'); 
 					
-					new Box(-2,2,'https://www.linkpicture.com/q/page-1.png'); 
-					new Box(-1,2,'https://www.technotoday.com.tr/Post/PostDosyalar/image/Haber/2689.jpg');
-					new Box(0,2,'https://www.linkpicture.com/q/page-1.png');
-					new Box(1,2,'https://www.technotoday.com.tr/Post/PostDosyalar/image/Haber/2689.jpg');
-					new Box(2,2,'https://www.technotoday.com.tr/Post/PostDosyalar/image/Haber/2689.jpg');
-					new Box(3,2,'https://www.technotoday.com.tr/Post/PostDosyalar/image/Haber/2689.jpg');
-					new Box(4,2,'https://www.technotoday.com.tr/Post/PostDosyalar/image/Haber/2689.jpg');
-					new Box(5,2,'https://www.technotoday.com.tr/Post/PostDosyalar/image/Haber/2689.jpg');			
+					new Box(-2,2, 'https://www.linkpicture.com/q/app-screens-1.png');  
+					new Box(-1,2,'https://www.linkpicture.com/q/app-screens-2.png'); 
+					new Box(0,2,'https://www.linkpicture.com/q/app-screens-3.png'); 
+					new Box(1,2,'https://www.linkpicture.com/q/app-screens-1.png');
+					new Box(2,2,'https://www.linkpicture.com/q/app-screens-2.png');
+					new Box(3,2,'https://www.linkpicture.com/q/app-screens-3.png');
+					new Box(4,2,'https://www.linkpicture.com/q/app-screens-1.png');
+					new Box(5,2,'https://www.linkpicture.com/q/app-screens-2.png');			
 					
 					leftButton.addEventListener('click', function(){
 						if(slidePosX>-3)
@@ -197,7 +197,7 @@
 						this.DOMElement             = document.createElement('div');
 						this.DOMElement.className   = 'box';
 					  	this.DOMElement.style.left  = (this.pos.X*unit)-unit+'px';
-					 	this.DOMElement.style.top   = (this.pos.Y*unit / 2)-unit+'px';
+					 	this.DOMElement.style.top   = (this.pos.Y*unit / 2)-unit+30+'px';
 						this.DOMElement.setAttribute('data-pos',this.pos.X.toString()+this.pos.Y.toString());
 						
 						var img = document.createElement('img');
@@ -229,19 +229,11 @@
 			<div class="container">
 				<figure id="multiSlide" class="multiSlide"></figure>
 				<nav id="multiSlideNav" class="multiSlideNav">
-					<a href="#multiSlide" id="left" class="navButton"><</a>
-					<a href="#multiSlide" id="right" class="navButton">></a>
+					<a href="#app-screens" id="left" class="navButton"><</a>
+					<a href="#app-screens" id="right" class="navButton">></a>
 				</nav>
 			</div>
-
-			<div class="has-text-centered">
-				<div class="app-galary">					
-					<img class="mx-3" width="25%" src="../img/app-screens-1.png">
-					<img class="mx-3" width="25%" src="../img/app-screens-2.png">
-					<img class="mx-3" width="25%" src="../img/app-screens-3.png">
-				</div>
-			</div>
-
+		
 			<!-- Explaining advantages -->
 
 			<div class=".container.is-max-desktop py-6 m-6">
@@ -271,7 +263,7 @@
 		<!--Partners & Developers-->
 		<div class="page__divider-home"></div>
 		<section class="hero home__button-bg">
-			<div class="container has-background-light p-6 mt-6">
+			<div class="container has-background-white p-6 mt-6">
 				<h3 class="is-size-3 is-italic has-text-centered has-text-weight-bold mb-6 pt-2">Our participants</h3>
 				<div class="columns px-6">
 					<div class="column">
@@ -316,7 +308,7 @@
 				</div>
 			</div>
 			<div class="hero page__divider-footer">
-				<div class="container has-background-light has-text-centered p-6 mb-6">
+				<div class="container has-background-white has-text-centered p-6 mb-6">
 					<h3 class="is-size-3 is-italic has-text-weight-bold mb-6 pt-2">Developers</h3>
 					<div class="columns px-6">
 						<div class="column">
