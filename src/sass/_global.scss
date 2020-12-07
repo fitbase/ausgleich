@@ -65,6 +65,54 @@ html {
     background: $brand-yellow;
 }
 
+// animated scroll section STARTS
+.sec {
+    height: 50vw;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cont {
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .transp_man_pic {
+    position: relative;
+  }
+  
+  .sensor_pic {
+    position: absolute;
+    top: 6rem;
+    right: 2rem;
+    width:50%;
+    max-width: 400px;
+    z-index: 1;
+  }
+  
+  .transp_man_pic {
+    position: absolute;
+    top: 6rem;
+    right: 2rem;
+    width: 60%;
+    max-width: 400px;
+    z-index: -1;
+  }
+  
+  .colored_man_pic {
+    position: absolute;
+    opacity: 0;
+    top: 6rem;
+    right: 2rem;
+    width: 60%;
+    max-width: 400px;
+    z-index: -1;
+  }
+//animated scroll section ENDS
+
 //app section strats
 
 .multiSlide {
@@ -87,7 +135,7 @@ html {
     width: 242px;
     height: 440px;
     box-shadow: 0px 4px 29px #BBC7D6;
-    border-radius: 22px;
+    border-radius: 20px;
  //   border-radius: 4px;
  //   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.5),inset 0 -1px 2px 0 rgba(0,0,0,0.3);
     -webkit-transition: all 500ms cubic-bezier(0.7,-0.9,0.3,1.4);
