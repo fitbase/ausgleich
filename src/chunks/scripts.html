@@ -5,16 +5,22 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
 
 <script>    
     var tl = gsap.timeline();
     var tl2 = gsap.timeline();
     var tl3 = gsap.timeline();
+    var tl4 = gsap.timeline();
 
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(MotionPathPlugin);
+    gsap.registerPlugin(CSSRulePlugin);
 
-    gsap.from(".sensor_pic", 5, {y: 20, ease: Elastic.easeOut.config(1, 0.3), y:-25});
+ //   gsap.from(".sensor_pic", 5, {y: 20, ease: Elastic.easeOut.config(1, 0.3), y:-25, delay: 20});
+    gsap.from(".home_text-light", 2, {opacity: 0, y:-25, delay: 3});
+    gsap.from(".home_text-colored", 2, {opacity: 0, y:-25, delay: 6});
+    gsap.from(".arrow_down", 5, {ease: Elastic.easeOut.config(2, 0.2), y:-5, duration: 30, delay: 10});
     
     tl.fromTo(".sensor_pic", {scale: 1}, {scale: 0.25, x: 65, y: 955, rotationY: 10, skewY: 2,duration: 30, delay: 10})
     .to(".sensor_pic", {opacity: 0});
@@ -38,7 +44,8 @@
         animation: tl,
         trigger: "#animated-section",
         start: "top center",
-        scrub: 0.3,
+        scrub: 0.5,
+        duration: 20
     // pin: true
     });
 
@@ -46,8 +53,46 @@
     animation: tl2,
     trigger: "#animated-section2",
     start: "top top",
-    scrub: 0.3,
+    markers: true,
+    scrub: 1,
     pin: true
     });
+
+    //animation of the progress bar
+    var rule = CSSRulePlugin.getRule(".progress_bar"); //get the rule
+    tl4.to(rule, {cssRule: {borderColor: "white"}}, 
+            ScrollTrigger.create({
+            animation: tl4,
+            trigger: "#home",
+            endTrigger: "#intro",
+            start: "top top",
+            markers: true,
+            scrub: 0.2
+            }))
+       .to(rule, {cssRule: {borderColor: "orange"}},
+            ScrollTrigger.create({
+            animation: tl4,
+            trigger: "#intro",
+            start: "top top",
+            markers: true,
+            scrub: 0.2
+            }))
+       .to(rule, {duration: 80, cssRule: {borderColor: "orange"}})
+       .to(rule, {duration: 60, cssRule: {borderColor: "red"}})
+       .to(rule, {duration: 40, cssRule: {borderColor: "blue"}})
+       .to(rule, {duration: 40, cssRule: {borderColor: "blue"}})
+       .to(rule, {duration: 40, cssRule: {borderColor: "blue"}})
+       .to(rule, {duration: 40, cssRule: {borderColor: "orange"}});
+
+       /*
+    ScrollTrigger.create({
+    animation: tl4,
+    trigger: "#home",
+    start: "top top",
+    markers: true,
+    scrub: 0.2,
+//    pin: true
+    });
+*/
 
 </script>

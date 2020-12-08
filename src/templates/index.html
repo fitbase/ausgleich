@@ -6,7 +6,7 @@
 <div id="page-wrapper" class="page-wrapper">
 	@@include('../chunks/header.html')
 
-	<div id="page-body" class="page-body mt-6">
+	<div id="page-body" class="page-body progress_bar">
 		<!--Home-->
 		<section id="home" class="section pb-0 px-0">
 			<div class="hero mt-6">
@@ -18,15 +18,19 @@
 					</video>
 				</div>
 				<div class="hero text-overlay">
-					<p class="is-size-4 has-text-centered mt-6 pt-6">
-						<span class="text-light">Bei Pflegekräften laut statistischem Bundesamt vermehrt<br>zu Krankschreibungen und Arbeitsunfähigkeit kommt,</span><br> 
-						<span class="text-colored">soll „AusGleich“ Betroffenen helfen, für mehr Balance<br> im beruflichen und privaten Leben zu sorgen</span>
-					</p>
-					<div class="columns has-text-centered mt-6 mb-0 pt-6">
+					<div class="is-size-4 has-text-centered pt-6">
+						<p class="text-light home_text-light">
+							Bei Pflegekräften laut statistischem Bundesamt vermehrt<br>zu Krankschreibungen und Arbeitsunfähigkeit kommt,<br> 
+						</p>
+						<p class="text-colored home_text-colored">
+							soll „AusGleich“ Betroffenen helfen, für mehr Balance<br> im beruflichen und privaten Leben zu sorgen
+						</p>
+					</div>
+					<div class="columns has-text-centered mb-0">
 						<div class="column is-one-quarter has-text-centered text-light pt-6 pb-4"></div>
 						<div class="column has-text-centered text-light pt-6 pb-4">
 							<span class="has-text-centered has-text-weight-bold is-italic">Scroll for more</span><br>
-							<span>&#8595;</span>
+							<div class="arrow_down">&#8595;</div>
 						</div>
 						<div class="column is-one-quarter has-text-centered has-text-weight-semibold home__button-bg pt-6 pb-4">
 							<div class="is-italic has-text-weight-bold">
@@ -107,7 +111,7 @@
 		</section>
 		
 		<!--Quote-->
-		<div class="is-flex ml-4 py-6 my-6">
+		<div id="quote" class="is-flex ml-4 py-6 my-6">
 			<div class="pt-6 mt-6 ml-6">
 				<img src="../img/logo__parts-horizontal-blue.svg">
 			</div>
