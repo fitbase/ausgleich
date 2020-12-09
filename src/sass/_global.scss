@@ -1,10 +1,5 @@
 //try custom
 
-//progress bar
-
-.progress_bar {
-    border-left: 4px solid yellowgreen;
-}
 
 //header
 
@@ -145,7 +140,7 @@ html {
     margin: 0 auto;
     overflow: hidden;
     -webkit-perspective: 700px;
-    border-bottom: 2px solid rgb(214, 218, 226);
+ /*   border-bottom: 2px solid rgb(214, 218, 226); */
 }
 .box {
     margin: 0 50px;
@@ -196,39 +191,43 @@ html {
  //   width: 470px;
     height: 400px;
     position: absolute;
+ //   position: relative;
  //   left: 50%;
     top: 100px;
  //   margin: 0 0 0 -235px;
- margin: 0 auto;
+    margin: 0 auto;
 }
 .navButton {
     position: absolute;
-    width: 30px;
+    width: 150px;
     height: 350px;
     background: rgb(175, 175, 175);
     opacity: 0.05;
  //   border-radius: 100%;
-    left: 50%;
- //   top: 50%;
-    text-decoration: none;
-    line-height: 27px;
+    left: 15%;
+ //   top: 100%;
+ //   text-decoration: none;
+ //    line-height: 27px;
     text-align: center;
     color: rgb(255, 255, 255);
-    font-size: 22px;
-    font-weight: bold;
+ //   font-size: 22px;
+ //   font-weight: bold;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     transition: all 300ms ease;
+    z-index: 3;
 }
 .navButton:hover {
     background: #5f5f5f;
 }
 
 .navButton#left {
-    margin: -15px 0 0 -215px;
+ //   margin: -15px 0 0 -215px;
+// margin-right: 30%;
 }
 .navButton#right {
-    margin: -15px 0 0 185px;
+ //   margin: -15px 0 0 185px;
+ margin-left: 53%;
 }
 
 //app section ends
@@ -262,8 +261,12 @@ html {
     max-width: 88px;
     width: 80px;
     height: 80px;
-    background-color: $brand-yellow;
+    background-color: transparent;
     border-radius: 100%;    
+}
+
+.logo__parts-red {
+    filter: opacity(0);
 }
 
 .circle

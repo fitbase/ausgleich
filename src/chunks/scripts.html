@@ -18,9 +18,9 @@
     gsap.registerPlugin(CSSRulePlugin);
 
  //   gsap.from(".sensor_pic", 5, {y: 20, ease: Elastic.easeOut.config(1, 0.3), y:-25, delay: 20});
-    gsap.from(".home_text-light", 2, {opacity: 0, y:-25, delay: 3});
-    gsap.from(".home_text-colored", 2, {opacity: 0, y:-25, delay: 6});
-    gsap.from(".arrow_down", 5, {ease: Elastic.easeOut.config(2, 0.2), y:-5, duration: 30, delay: 10});
+    gsap.from(".home_text-light", 2, {opacity: 0, y:-25, delay: 2});
+    gsap.from(".home_text-colored", 2, {opacity: 0, y:-25, delay: 4});
+    gsap.from(".arrow_down", 5, {ease: Elastic.easeOut.config(2, 0.2), y:-5, duration: 30, delay: 5});
     
     tl.fromTo(".sensor_pic", {scale: 1}, {scale: 0.25, x: 65, y: 955, rotationY: 10, skewY: 2,duration: 30, delay: 10})
     .to(".sensor_pic", {opacity: 0});
@@ -53,37 +53,67 @@
     animation: tl2,
     trigger: "#animated-section2",
     start: "top top",
-    markers: true,
+  //  markers: true,
     scrub: 1,
     pin: true
     });
 
     //animation of the progress bar
-    var rule = CSSRulePlugin.getRule(".progress_bar"); //get the rule
-    tl4.to(rule, {cssRule: {borderColor: "white"}}, 
-            ScrollTrigger.create({
+    var logoCircle = CSSRulePlugin.getRule(".logo__circle"); //get the rule
+    tl4.to(logoCircle, {cssRule: {backgroundColor: "#F8B130"}}, ScrollTrigger.create({
+        animation: tl4,
+        trigger: "#home",
+        start: "top top",
+//        markers: true,
+        scrub: 0.2
+    }));
+
+    var logoRed = CSSRulePlugin.getRule(".logo__parts-red"); //get the rule
+    tl4.to(logoRed, {cssRule: {filter: "opacity(1)"}}, ScrollTrigger.create({
+        animation: tl4,
+        trigger: ".logo__parts-red",
+        start: "top bottom",
+ //       markers: true,
+        scrub: 0.2
+    }));
+
+    var logoparts = gsap.fromTo(".logo__parts-horizBlue", {opacity: 0}, {opacity: 1});
+    ScrollTrigger.create({
+        animation: logoparts,
+        trigger: ".logo__parts-horizBlue",
+        start: "top bottom",
+ //       markers: true,
+        scrub: 0.2
+    });
+
+    logoparts = gsap.fromTo(".logo__parts-vertBlue", {opacity: 0}, {opacity: 1});
+    ScrollTrigger.create({
+            animation: logoparts,
+            trigger: ".logo__parts-vertBlue",
+            start: "top bottom",
+ //           markers: true,
+            scrub: 0.2
+        });
+
+    logoparts = gsap.fromTo(".logo__parts-vertYellow", {opacity: 0}, {opacity: 1});
+    ScrollTrigger.create({
+            animation: logoparts,
+            trigger: ".logo__parts-vertYellow",
+            start: "top bottom",
+  //          markers: true,
+            scrub: 0.2
+        });    
+
+    /*
+    ScrollTrigger.create({
             animation: tl4,
             trigger: "#home",
-            endTrigger: "#intro",
             start: "top top",
             markers: true,
             scrub: 0.2
-            }))
-       .to(rule, {cssRule: {borderColor: "orange"}},
-            ScrollTrigger.create({
-            animation: tl4,
-            trigger: "#intro",
-            start: "top top",
-            markers: true,
-            scrub: 0.2
-            }))
-       .to(rule, {duration: 80, cssRule: {borderColor: "orange"}})
-       .to(rule, {duration: 60, cssRule: {borderColor: "red"}})
-       .to(rule, {duration: 40, cssRule: {borderColor: "blue"}})
-       .to(rule, {duration: 40, cssRule: {borderColor: "blue"}})
-       .to(rule, {duration: 40, cssRule: {borderColor: "blue"}})
-       .to(rule, {duration: 40, cssRule: {borderColor: "orange"}});
+        });
 
+        */
        /*
     ScrollTrigger.create({
     animation: tl4,
@@ -95,4 +125,72 @@
     });
 */
 
+</script>
+
+<script>
+    window.addEventListener('load',function() {
+        figure = document.getElementById('multiSlide');
+        leftButton      = document.getElementById('left');
+        rightButton     = document.getElementById('right'); 
+        
+        new Box(-2,2, 'https://www.linkpicture.com/q/app-screens-1.png');  
+        new Box(-1,2,'https://www.linkpicture.com/q/app-screens-2.png'); 
+        new Box(0,2,'https://www.linkpicture.com/q/app-screens-3.png'); 
+        new Box(1,2,'https://www.linkpicture.com/q/app-screens-1.png');
+        new Box(2,2,'https://www.linkpicture.com/q/app-screens-2.png');
+        new Box(3,2,'https://www.linkpicture.com/q/app-screens-3.png');
+        new Box(4,2,'https://www.linkpicture.com/q/app-screens-1.png');
+        new Box(5,2,'https://www.linkpicture.com/q/app-screens-2.png');			
+
+        leftButton.addEventListener('click', function(){
+            if(slidePosX>-3)
+                slide('X',-1);
+        });
+        rightButton.addEventListener('click', function(){
+            if(slidePosX<4)
+                slide('X',1);
+        });
+    });
+
+    var unit            = 300;
+    var registeredBoxes = [];
+    var slidePosX       = 0;
+    var Box = function(posX,posY,img){
+        this.pos    = {};
+        this.pos.X  = posX;
+        this.pos.Y  = posY;
+        this.img    = img;
+        this.init();
+    }
+    Box.prototype = {
+        init : function(){
+            this.DOMElement             = document.createElement('div');
+            this.DOMElement.className   = 'box';
+              this.DOMElement.style.left  = (this.pos.X*unit)-unit+'px';
+             this.DOMElement.style.top   = (this.pos.Y*unit / 2)-unit+30+'px';
+            this.DOMElement.setAttribute('data-pos',this.pos.X.toString()+this.pos.Y.toString());
+            
+            var img = document.createElement('img');
+            img.src = this.img;
+            
+            this.DOMElement.appendChild(img);
+            figure.appendChild(this.DOMElement);
+            registeredBoxes.push(this);
+        },
+        setPosition : function(axis,val){
+            this.pos[axis] = val;						
+            this.DOMElement.style.left  = (this.pos[axis]*unit)-unit+'px';						
+            this.DOMElement.setAttribute('data-pos',this.pos.X.toString()+this.pos.Y.toString());
+        }
+    }
+
+    function slide(axis,dir){
+        var len = registeredBoxes.length;				
+        for(var i=0; i<len; i++){
+            if(registeredBoxes[i].pos['Y']=='2'){
+                registeredBoxes[i].setPosition(axis,registeredBoxes[i].pos['X']+(1*dir));
+            }
+        }
+        slidePosX = slidePosX+dir;				
+    }
 </script>
