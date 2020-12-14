@@ -1,4 +1,31 @@
-//try custom
+//try 
+
+// Media queries starts 
+
+//super wide desktop
+.text-overlay {
+    @media screen and (min-width: 1131px) {
+        height: 28vw;
+        z-index: 1;
+    }
+}
+
+
+//medium desktop 
+.text-overlay {
+    @media screen and (min-width: 1024px) and (max-width: 1130px) {
+        height: 25vw;
+        z-index: 1;
+    }
+}
+
+
+.text-intro {
+    @media screen and (min-width: 1024px) and (max-width: 1130px) {
+        margin: -2rem auto;
+    }
+}
+
 
 
 //header
@@ -30,13 +57,15 @@ html {
 
 #home-bg__video {
  width: 100%;
- height: 42vw;
+ height: auto;
+// max-height: 40vw;
 }
 
 .video-container {
     object-fit: cover;
     width: 100vw;
-    height: 45vw;
+    height: auto;
+//    max-height: 40vw;
     position: absolute;
     top: 0;
     left: 0;
@@ -62,7 +91,7 @@ html {
 }
 
 .text-overlay {
-    height: 28vw;
+//    height: 28vw;
     z-index: 1;
 }
 
@@ -233,6 +262,11 @@ html {
 //app section ends
 
 // Page dividers
+
+.has-border-bottom {
+    border-bottom: 4rem solid #F8B130;
+}
+
 .page__divider-home {
     background: $brand-yellow;
     padding-bottom: 5%;
