@@ -4,21 +4,25 @@
 
 //super wide desktop
 .text-overlay {
-    @media screen and (min-width: 1131px) {
+    @media screen and (min-width: 1130px) {
         height: 28vw;
         z-index: 1;
     }
 }
 
+.main_text-desktop {
+    @media screen and (min-width: 1130px) {
+        font-size: 1.25rem;
+    }    
+}
 
 //medium desktop 
 .text-overlay {
-    @media screen and (min-width: 1024px) and (max-width: 1130px) {
-        height: 25vw;
+    @media screen and (min-width: 767px) and (max-width: 1130px) {
+        height: 29vw;
         z-index: 1;
     }
 }
-
 
 .text-intro {
     @media screen and (min-width: 1024px) and (max-width: 1130px) {
@@ -26,7 +30,112 @@
     }
 }
 
+.navbar-item img {
+    @media screen and (min-width: 768px) and (max-width: 1130px) {
+        max-height: 5rem !important;
+    }       
+}
 
+.navbar-menu, .text-tablet-size {
+    @media screen and (min-width: 768px) and (max-width: 1130px) {
+        font-size: 1em;
+        font-weight: 600;
+    }    
+}
+
+.pt-tablet-0 {
+    @media screen and (min-width: 768px) and (max-width: 941px) {
+        padding-top: 0 !important;
+    }    
+}
+
+.is-size-5 {
+    @media screen and (min-width: 768px) and (max-width: 1130px) {
+        font-size: 1rem !important;
+    } 
+}
+
+.is-size-3 {
+    @media screen and (min-width: 768px) and (max-width: 1130px) {
+        font-size: 1.75rem !important;
+    } 
+}
+
+.is-size-1 {
+    @media screen and (min-width: 768px) and (max-width: 1130px) {
+        font-size: 2.75rem !important;
+    } 
+}
+
+.sensor_pic, .transp_man_pic, .colored_man_pic {
+    @media screen and (min-width: 1024px) and (max-width: 1130px) {
+        top: 0 !important;
+    } 
+}
+
+.page__divider-app {
+    @media screen and (min-width: 1024px) and (max-width: 1130px) {
+        padding-bottom: 12% !important;
+        margin-top: 10%;
+    } 
+}
+
+.primary--button {
+    @media screen and (min-width: 1024px) and (max-width: 1130px) {
+        padding: 10% 15% !important;
+    } 
+}
+
+// tablet 
+.pt-6 {
+    @media screen and (min-width: 767px) and (max-width: 1024px) {
+        padding-top: 2rem !important;
+    } 
+}
+
+.text-intro {
+    @media screen and (min-width: 767px) and (max-width: 1130px) {
+        margin: -2rem auto;
+    }
+}
+
+.pl-0-tablet {
+    @media screen and (min-width: 767px) and (max-width: 1200px) {
+        padding-left: 0;
+    }
+}
+
+.img-tablet {
+    @media screen and (min-width: 767px) and (max-width: 1024px) {
+        width: 65% !important;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+.colored_man_pic, .transp_man_pic {
+    @media screen and (min-width: 767px) and (max-width: 1024px) {
+        bottom: 0 !important;
+        top: auto !important;
+    }
+}
+.sensor_pic {
+    @media screen and (min-width: 767px) and (max-width: 1024px) {
+        top: -20rem !important;
+    }
+}
+
+.image_container {
+    @media screen and (min-width: 767px) and (max-width: 1024px) {
+        opacity: 0.2;
+    }
+}
+
+.multiSlide {
+    @media screen and (min-width: 767px) and (max-width: 1024px) {
+        max-width: 800px !important;
+    }
+}
 
 //header
 
@@ -163,7 +272,7 @@ html {
 //app section strats
 
 .multiSlide {
-    width: 960px;
+    width: 100%;
     height: 550px;
     position: relative;
     margin: 0 auto;
@@ -172,7 +281,7 @@ html {
  /*   border-bottom: 2px solid rgb(214, 218, 226); */
 }
 .box {
-    margin: 0 50px;
+  //  margin: 0 auto;
     background: #fff;
     position: absolute;
     top: 0px;
@@ -269,17 +378,17 @@ html {
 
 .page__divider-home {
     background: $brand-yellow;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 
 .page__divider-app {
     background: $brand-red;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 
 .page__divider-footer {
     background: $brand-blue;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 
 // Buttons
