@@ -56,8 +56,9 @@
     ScrollTrigger.create({
         animation: tl,
         trigger: "#animated-section",
-        start: "top center",
+        start: "bottom 80%",
         scrub: 0.5,
+    //    markers: true,
         duration: 20
     // pin: true
     });
@@ -65,9 +66,9 @@
     ScrollTrigger.create({
     animation: tl2,
     trigger: "#animated-section2",
-    start: "top center",    
-    end: "center center",
-  //  markers: true,
+    start: "bottom 80%",
+ //   end: "center center",
+    markers: true,
     scrub: 0.5,
     pin: true
     });
