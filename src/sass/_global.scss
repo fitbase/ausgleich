@@ -104,12 +104,6 @@
     } 
 }
 
-.primary--button {
-    @media screen and (min-width: 1024px) and (max-width: 1130px) {
-        padding: 10% 15% !important;
-    } 
-}
-
 // tablet 
 .pt-6 {
     @media screen and (min-width: 767px) and (max-width: 1024px) {
@@ -344,15 +338,16 @@ video {
     @media screen and (max-width: 1023px) { 
         margin-right: 0 !important;
         padding: 0 0 10px 0 !important;
-    }
-    
+    }    
 }
 
 .navbar-burger {
     color: #ffffff;
 }
 
-
+.navbar-burger-dark {
+    color: $brand-blue;
+}
 
 //header
 
@@ -369,6 +364,10 @@ video {
     font-weight: 600;
     margin-right: 10%;
     padding: 0 5% 0 0;
+}
+
+.navbar-item-dark {
+    color: $brand-blue;
 }
 
 .navbar {    
@@ -495,8 +494,8 @@ html {
     margin: 0 auto;
     overflow: hidden;
     -webkit-perspective: 700px;
- /*   border-bottom: 2px solid rgb(214, 218, 226); */
 }
+
 .box {
   //  margin: 0 auto;
     background: #fff;
@@ -607,7 +606,7 @@ html {
     background: #F8B130;
     border-radius: 6px;
     color: $brand-blue;
-    padding: 6% 20%;
+    padding: 1rem 3rem;
 }
 
 // drawing objects
@@ -636,11 +635,6 @@ html {
 
 .has-custom-shadow {
     box-shadow: 0px 0px 5px 1px rgba(124, 129, 135, 0.25);
-}
-
-.has-border-primary {
-    border: 1px solid $secondary-clr;
-    border-radius: 6px;
 }
 
 .has-round-corners {
@@ -695,4 +689,35 @@ html {
   
   .navbar-end a:hover {
     color: $brand-yellow;
+}
+
+
+// form
+
+.input, .textarea {
+    background-color: transparent;
+    border-bottom: 2px solid $brand-blue;
+    border-radius: 0;
+}
+
+.input:focus, .input:active, .textarea:focus, .textarea:active   {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid $brand-blue;
+    border-radius: 0;
+}
+
+//buttons, hovers
+
+.button:focus, .button.is-focused {
+    border-color: $brand-yellow;
+}
+
+.button:hover {
+    background-color: $brand-yellow-hvr;
+}
+
+a:hover {
+    color: $brand-red;
 }

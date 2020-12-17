@@ -1,4 +1,4 @@
-// brand colors
+// brand colors #F8B130;
 
 $brand-yellow: #F8B130;
 $brand-yellow-hvr: #f0a925;
@@ -6,13 +6,16 @@ $brand-blue: #032C4C;
 $brand-red: #E74E18;
 $brand-light: #F2F5F8;
 
-
+/*
 // COLORS
 $purple: #1eda2e;
 $pink: #FA7C91;
 $brown: #757763;
-$beige-light: #D0D1CD;
+*/
+
+$beige-light: #E5E5E5;
 $beige-lighter: #EAEAED;
+
 
 //text-colors
 $title-color: #032C4C;
@@ -20,17 +23,12 @@ $text-main:   #032C4C;
 $text-links:  #032C4C;
 
 //buttons-colors
-$primary-clr: #ff3d71;
-$primary-hover: #fc1754;
-$secondary-clr: #677FFF;
-$secondary-hover: #e4bf07;
+//$primary-clr: #ff3d71;
 
 //bg-colors
-$primaryClr-bg: #A0AEFF;
-$secondaryClr-bg: #F6E486;
 $lightClr-bg: $brand-light;
 $primaryBg: #ffffff;
-$formBg: #E9E9EF;
+$lightBg: #EAEAEB;
 
 // FONTS
 $headlines: 'Source Sans Pro', sans-serif;
@@ -45,13 +43,13 @@ $breakpoint-tablet: 768px;
 $family-primary: $content-text;
 $family-secondary: $headlines;
 $link: $text-links;
-$primary: $primary-clr;
+//$primary: $primary-clr;
 
 //colors
 $light: $lightClr-bg;
 $body-background-color: $primaryBg;
-$grey-lighter: $formBg;
-$dark: $primaryClr-bg;
+$grey-lighter: $lightBg;
+$dark: black;
 
 $grey-dark: $text-main;
 $grey-light: $beige-light;
@@ -64,7 +62,7 @@ $fullhd-enabled: false;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
-$input-focus-border-color: $primary-clr;
+$input-focus-border-color: $brand-yellow;
 
 //gaps
 $column-gap: 3rem;

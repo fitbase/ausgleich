@@ -20,22 +20,26 @@
 				<div class="hero text-overlay mt-0">
 					<div class="main_text-desktop has-text-centered mx-6 text-intro text-tablet-size">
 						<p class="mx-tablet-3 mt-mobile-6">
-							<span class="text-light home_text-light">	Dauerhafter Stress kann krank machen und statistisch gesehen sind Pflegekräfte hiervon besonders stark betroffen. </span>
+							<span class="text-light home_text-light"> Dauerhafter Stress kann krank machen und statistisch gesehen sind Pflegekräfte hiervon besonders stark betroffen. </span>
 							<span class="text-colored home_text-colored">Das Projekt „AusGleich“ unterstützt Pflegepersonal dabei, zu mehr Balance in ihrem Arbeitsalltag zu finden – für die nachhaltige Gesundheit unserer Pflegekräfte.</span>
 						</p>						
 					</div>
 					<div class="columns has-text-centered mb-0 mx-0 has-border-bottom">
 						<div class="column is-one-quarter has-text-centered text-light pt-6 pb-4"></div>
 						<div class="column has-text-centered text-light pt-6 pb-4">
+							<!-- 
 							<span class="has-text-centered has-text-weight-bold is-italic text-tablet-size">Scroll for more</span><br>
 							<div class="arrow_down">&#8595;</div>
+							 -->
 						</div>
-						<div class="column is-one-quarter has-text-centered has-text-weight-semibold home__button-bg pt-6 pb-4">
-							<div class="is-italic has-text-weight-bold text-tablet-size">
-								Schreiben Sie uns
-								<span>&#8594;</span>
-							</div>						
-						</div>
+						<a href="#form">
+							<div class="column has-text-centered has-text-weight-semibold home__button-bg pt-6 ">
+								<div class="is-italic has-text-weight-bold text-tablet-size">
+									Schreiben Sie uns
+									<span>&#8594;</span>
+								</div>						
+							</div>
+						</a>
 					</div>
 				</div>		
 			</div>
@@ -551,76 +555,7 @@
 		<div class="page__divider-app"></div>
 
 		<section id="app-screens" class="section has-background-light is-bold pt-6">
-			<!-- App screens -->
-			<!-- 
-			<script>
-				window.addEventListener('load',function() {
-					figure = document.getElementById('multiSlide');
-					leftButton      = document.getElementById('left');
-					rightButton     = document.getElementById('right'); 
-					
-					new Box(-2,2, 'https://www.linkpicture.com/q/app-screens-1.png');  
-					new Box(-1,2,'https://www.linkpicture.com/q/app-screens-2.png'); 
-					new Box(0,2,'https://www.linkpicture.com/q/app-screens-3.png'); 
-					new Box(1,2,'https://www.linkpicture.com/q/app-screens-1.png');
-					new Box(2,2,'https://www.linkpicture.com/q/app-screens-2.png');
-					new Box(3,2,'https://www.linkpicture.com/q/app-screens-3.png');
-					new Box(4,2,'https://www.linkpicture.com/q/app-screens-1.png');
-					new Box(5,2,'https://www.linkpicture.com/q/app-screens-2.png');			
-					
-					leftButton.addEventListener('click', function(){
-						if(slidePosX>-3)
-							slide('X',-1);
-					});
-					rightButton.addEventListener('click', function(){
-						if(slidePosX<4)
-							slide('X',1);
-					});
-				});
-
-				var unit            = 300;
-				var registeredBoxes = [];
-				var slidePosX       = 0;
-				var Box = function(posX,posY,img){
-					this.pos    = {};
-					this.pos.X  = posX;
-					this.pos.Y  = posY;
-					this.img    = img;
-					this.init();
-				}
-				Box.prototype = {
-					init : function(){
-						this.DOMElement             = document.createElement('div');
-						this.DOMElement.className   = 'box';
-					  	this.DOMElement.style.left  = (this.pos.X*unit)-unit+'px';
-					 	this.DOMElement.style.top   = (this.pos.Y*unit / 2)-unit+30+'px';
-						this.DOMElement.setAttribute('data-pos',this.pos.X.toString()+this.pos.Y.toString());
-						
-						var img = document.createElement('img');
-						img.src = this.img;
-						
-						this.DOMElement.appendChild(img);
-						figure.appendChild(this.DOMElement);
-						registeredBoxes.push(this);
-					},
-					setPosition : function(axis,val){
-						this.pos[axis] = val;						
-						this.DOMElement.style.left  = (this.pos[axis]*unit)-unit+'px';						
-						this.DOMElement.setAttribute('data-pos',this.pos.X.toString()+this.pos.Y.toString());
-					}
-				}
-
-				function slide(axis,dir){
-					var len = registeredBoxes.length;				
-					for(var i=0; i<len; i++){
-						if(registeredBoxes[i].pos['Y']=='2'){
-							registeredBoxes[i].setPosition(axis,registeredBoxes[i].pos['X']+(1*dir));
-						}
-					}
-					slidePosX = slidePosX+dir;				
-				}
-			</script>
-			 -->
+			
 			<div class="container">
 				<figure id="multiSlide" class="multiSlide"></figure>				
 				<nav id="multiSlideNav" class="multiSlideNav">
@@ -651,49 +586,103 @@
 			</div>	
 		</section>
 
+		<!-- Form -->
+		<section id="form" class="section is-bold my-6 mt-mobile">
+			<div class=".container.is-max-desktop mx-6">
+				<div class="columns ">
+					<div class="column pl-0-tablet">						
+						<h1 class="is-size-1 is-italic has-text-weight-bold">Schreiben<br> Sie uns!</h1>
+					</div>
+					<div class="column is-half">						
+                        
+                        <div class="form">
+                            <label class="label" for="name">Ihr Name</label>
+                            <input class="input is-medium mb-6" type="text" id="name" name="name" placeholder=" ">                              
+                            
+                            <label class="label" for="email">Ihre E-Mail-Adresse</label>
+                            <input class="input is-medium mb-6" type="email" id="email" name="email" placeholder=" ">                              
+                            
+                            <label class="label" for="subject">Betreff</label>
+                            <input class="input is-medium mb-6" type="text" id="subject" name="subject" placeholder=" "> 
+
+                            <label class="label" for="message">Ihre Nachricht</label>
+                            <input class="textarea is-medium mb-6" type="text" id="message" name="message" placeholder=" "> 
+
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="has-text-weight-bold pl-2">Ich bestätige hiermit, dass ich mit der Verarbeitung meiner Daten einverstanden bin*</span> <br>
+                                <span class="has-text-weight-light"><br>
+                                    *Hinweis zum Datenschutz: Die von Ihnen im Kontaktformular eingegebenen Daten wie Name, E-Mail, Betreff und Nachrichtentext speichern und verwenden wir zum Zwecke der individuellen Kommunikation und zur Bearbeitung Ihres Anliegens. Die Übermittlung der Daten zwischen Ihrem Browser und unserem Server erfolgt über eine verschlüsselte SSL-Verbindung. Hier geht es zu unserer Datenschutzerklärung.
+                                </span>                       
+                            </label>
+
+                            <button class="button primary--button is-size-5 is-italic has-text-weight-bold mt-6" type="submit">Senden</button>
+						</div>
+						<div class="columns is-desktop mt-6">
+							<div class="column">
+								<span class="has-text-weight-bold">Additional contacts?</span><br>
+								Ruckteschellweg 8a
+								22089 Hamburg<br>
+								Telefon: 040 – 284 762 33<br>
+								E-Mail: info@fitbase.de
+							</div>
+							<div class="column">
+								<span class="has-text-weight-bold">Additional contacts?</span><br>
+								Ruckteschellweg 8a
+								22089 Hamburg<br>
+								Telefon: 040 – 284 762 33<br>
+								E-Mail: info@fitbase.de
+							</div>							
+						</div>
+                                              
+					</div>
+				</div>								
+			</div>
+		</section>
+
 		<!--Partners & Developers-->
 		<div class="page__divider-home mt-0"></div>
-		<section class="hero home__button-bg">
+		<section id="partners" class="hero home__button-bg">
 			<div class="container has-background-white p-6 mt-6">
 				<h3 class="is-size-3 is-italic has-text-centered has-text-weight-bold mb-6 pt-2">Our participants</h3>
 				<div class="columns partners-mobile px-6">
 					<div class="column">
 						<div class="row">
-							<img class="make-grey p-3" src="../img/Group 491.png">
+							<a href="https://www.salus-bkk.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 491.png"></a>
 						</div>
 						<div class="row">
-							<img class="make-grey p-3" src="../img/Group 492.png">
+							<a href="https://www.pronovabkk.de" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 492.png"></a>
 						</div>
 						<div class="row">
-							<img class="make-grey p-3" src="../img/Group 493.png">
+							<a href="https://www.bahn-bkk.de" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 493.png"></a>
 						</div>
 						<div class="row">
-							<img class="make-grey p-3" src="../img/Group 497.png">
-						</div>
-					</div>
-					<div class="column">
-						<div class="row">
-							<img class="make-grey p-3" src="../img/Group 498.png">
-						</div>
-						<div class="row">
-							<img class="make-grey p-3" src="../img/Group 499.png">
-						</div>
-						<div class="row">
-							<img class="make-grey p-3" src="../img/Group 500.png">
-						</div>
-						<div class="row">
-							<img class="make-grey p-3" src="../img/Group 501.png">
+							<a href="https://www.sbk.org/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 497.png"></a>
 						</div>
 					</div>
 					<div class="column">
 						<div class="row">
-							<img class="make-grey p-3" src="../img/Group 502.png">
+							<a href="https://www.viactiv.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 498.png"></a>
 						</div>
 						<div class="row">
-							<img class="make-grey p-3" src="../img/Group 503.png">
+							<a href="https://www.ruv-bkk.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 499.png"></a>
 						</div>
 						<div class="row">
-							<img class="make-grey p-3" src="../img/Group 504.png">
+							<a href="https://www.bmwbkk.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 500.png"></a>
+						</div>
+						<div class="row">
+							<a href="https://www.bkk-mobil-oil.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 501.png"></a>
+						</div>
+					</div>
+					<div class="column">
+						<div class="row">
+							<a href="https://www.novitas-bkk.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 502.png"></a>
+						</div>
+						<div class="row">
+							<a href="https://www.bosch-bkk.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 503.png"></a>
+						</div>
+						<div class="row">
+							<a href="https://www.die-schwenninger.de/de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 504.png"></a>
 						</div>
 					</div>
 				</div>
@@ -703,13 +692,13 @@
 					<h3 class="is-size-3 is-italic has-text-weight-bold mb-6 pt-2">Developers</h3>
 					<div class="columns partners-mobile px-6">
 						<div class="column">
-							<img class="make-grey p-3" src="../img/Group 494.png">
+							<a href="https://www.tu.berlin/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 494.png"></a>
 						</div>
 						<div class="column">
-							<img class="make-grey p-3" src="../img/Group 495.png">
+							<a href="https://corvolution.com/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 495.png"></a>
 						</div>
 						<div class="column">
-							<img class="make-grey p-3" src="../img/Group 496.png">
+							<a href="https://fitbase.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 496.png"></a>
 						</div>
 					</div>
 				</div>

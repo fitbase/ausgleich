@@ -19,10 +19,15 @@
 
         const target = el.dataset.target;
         const $target = document.getElementById(target);
+        var navItem = document.getElementsByClassName('toggle');
+
+        for(var i = 0; i < navItem.length; i++) {
+            navItem[i].classList.toggle('navbar-item-dark');
+        };
 
         el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
-
+        $target.classList.toggle('is-active');      
+        
         });
     });
     }
