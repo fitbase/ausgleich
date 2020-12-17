@@ -4,8 +4,32 @@
 
 //super wide desktop
 .text-overlay {
+    @media screen and (min-width: 1600px) {
+     //   height: 22vw !important;
+        z-index: 1;
+    }
+}
+
+.page-wrapper {
+    @media screen and (min-width: 1600px) {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
+
+.video-container {
+    @media screen and (min-width: 1600px) {
+        left: auto !important;
+        max-width: 1600px;
+    }
+}
+
+//wide desktop
+
+.text-overlay {
     @media screen and (min-width: 1130px) {
         height: 28vw;
+        max-height: 450px;
         z-index: 1;
     }
 }
@@ -94,13 +118,13 @@
 }
 
 .text-intro {
-    @media screen and (min-width: 767px) and (max-width: 1130px) {
+    @media screen and (min-width: 769px) and (max-width: 1130px) {
         margin: -2rem auto;
     }
 }
 
 .pl-0-tablet {
-    @media screen and (min-width: 767px) and (max-width: 1200px) {
+    @media screen and (min-width: 769px) and (max-width: 1200px) {
         padding-left: 0;
     }
 }
@@ -190,7 +214,7 @@ video {
 }
 
 .logo__circle, .logo__parts-1, .logo__parts-red, .logo__parts-horizBlue, .logo__parts-vertBlue, .logo__parts-vertYellow {
-    @media screen and (min-width: 319px) and (max-width: 530px) {
+    @media screen and (min-width: 319px) and (max-width: 768px) {
         display: none;
     } 
 }
@@ -201,8 +225,8 @@ video {
     } 
 }
 
-.ml-2, .ml-4, .mr-6, .mr-5, .pr-6 {
-    @media screen and (min-width: 319px) and (max-width: 530px) {
+.ml-2, .ml-4, .ml-6, .mr-6, .mr-5, .pr-6 {
+    @media screen and (min-width: 319px) and (max-width: 768px) {
         margin-left: 0 !important;
         margin-right: 0 !important;
         padding-right: 0 !important;
@@ -210,7 +234,7 @@ video {
 }
 
 .mb-mobile {
-    @media screen and (min-width: 319px) and (max-width: 530px) {
+    @media screen and (min-width: 319px) and (max-width: 768px) {
         margin-bottom: 400px !important;
     }
 }
@@ -228,7 +252,7 @@ video {
 }
 
 .box[data-pos='12']{    
-    @media screen and (min-width: 319px) and (max-width: 530px) {
+    @media screen and (min-width: 319px) and (max-width: 670px) {
         -webkit-transform: rotateY(0deg) !important;
         -webkit-transform-origin: center center !important;
          opacity: 1 !important;
@@ -290,6 +314,17 @@ video {
     }      
 }
 
+.multiSlideNav {
+    @media screen and (min-width: 529px) and (max-width: 670px) {
+        left: 40px !important;
+    } 
+}
+
+.multiSlide {
+    @media screen and (min-width: 530px) and (max-width: 670px) {
+        left: 150px !important;
+    }
+}
 // mobile 530 - 768 ENDS
 
 
@@ -492,8 +527,8 @@ html {
 .navButton {
     width: 50px;
     height: 350px;
-    background: $brand-yellow;
-    opacity: 0.07;
+    background: rgb(220, 220, 224);
+    opacity: 0.4;
     text-align: center;
     color: rgb(0, 0, 0);
     -webkit-transition: all 300ms ease;
