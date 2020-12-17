@@ -325,7 +325,33 @@ video {
         left: 150px !important;
     }
 }
-// mobile 530 - 768 ENDS
+
+// mobile menu
+
+.navbar-menu.is-active {
+    @media screen and (max-width: 1023px) { 
+    display: block;
+    position: absolute;
+    top: 5rem;
+    right: 0px;
+    padding: 15%;
+    background-color: $brand-blue;
+    text-align: center;
+    }
+}
+
+.navbar-item {
+    @media screen and (max-width: 1023px) { 
+        margin-right: 0 !important;
+        padding: 0 0 10px 0 !important;
+    }
+    
+}
+
+.navbar-burger {
+    color: #ffffff;
+}
+
 
 
 //header
