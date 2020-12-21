@@ -8,7 +8,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
 
 <script>
-        document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
 
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
@@ -35,6 +35,8 @@
     });
 </script>
 
+<!-- Animated section -->
+
 <script>    
     var tl = gsap.timeline();
     var tl2 = gsap.timeline();
@@ -45,16 +47,10 @@
     gsap.registerPlugin(MotionPathPlugin);
     gsap.registerPlugin(CSSRulePlugin);
 
- //   gsap.from(".sensor_pic", 5, {y: 20, ease: Elastic.easeOut.config(1, 0.3), y:-25, delay: 20});
     gsap.from(".home_text-light", 2, {opacity: 0, y:-25, delay: 2});
     gsap.from(".home_text-colored", 2, {opacity: 0, y:-25, delay: 4});
     gsap.from(".arrow_down", 5, {ease: Elastic.easeOut.config(2, 0.2), y:-5, duration: 30, delay: 5});
     
-    /*
-    tl.fromTo(".sensor_pic", {scale: 1}, {scale: 0.25, x: 65, y: 955, rotationY: 10, skewY: 2,duration: 30, delay: 10})
-    .to(".sensor_pic", {opacity: 0});
-    */
-
     let senSmall = document.getElementById('body_sensor');
     let rect = senSmall.getBoundingClientRect();
     let calcY = rect.y;
@@ -96,7 +92,7 @@
     trigger: "#animated-section2",
     start: "bottom 80%",
  //   end: "center center",
-    markers: true,
+ //   markers: true,
     scrub: 0.5,
     pin: true
     });
@@ -145,31 +141,11 @@
             start: "top bottom",
   //          markers: true,
             scrub: 0.2
-        });    
-
-    /*
-    ScrollTrigger.create({
-            animation: tl4,
-            trigger: "#home",
-            start: "top top",
-            markers: true,
-            scrub: 0.2
-        });
-
-        */
-       /*
-    ScrollTrigger.create({
-    animation: tl4,
-    trigger: "#home",
-    start: "top top",
-    markers: true,
-    scrub: 0.2,
-//    pin: true
-    });
-*/
+        });  
 
 </script>
 
+<!-- App screens -->
 <script>
     window.addEventListener('load',function() {
         figure = document.getElementById('multiSlide');
@@ -205,6 +181,7 @@
         this.img    = img;
         this.init();
     }
+    
     Box.prototype = {
         init : function(){
             this.DOMElement             = document.createElement('div');

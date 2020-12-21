@@ -1,11 +1,9 @@
-//try 
 
 // Media queries starts 
 
 //super wide desktop
 .text-overlay {
     @media screen and (min-width: 1600px) {
-     //   height: 22vw !important;
         z-index: 1;
     }
 }
@@ -45,12 +43,6 @@
     @media screen and (min-width: 767px) and (max-width: 1130px) {
         height: 29vw;
         z-index: 1;
-    }
-}
-
-.text-intro {
-    @media screen and (min-width: 1024px) and (max-width: 1130px) {
-        margin: -2rem auto;
     }
 }
 
@@ -111,7 +103,7 @@
     } 
 }
 
-.text-intro {
+.my-negative {
     @media screen and (min-width: 769px) and (max-width: 1130px) {
         margin: -2rem auto;
     }
@@ -154,6 +146,7 @@
         max-width: 800px !important;
     }
 }
+
 .multiSlideNav {
     @media screen and (min-width: 1003px) and (max-width: 1024px) {
         left: 271px !important;
@@ -169,15 +162,18 @@
 }
 
 #home-bg__video {
-    @media screen and (min-width: 319px) and (max-width: 530px) {
+    @media screen and (min-width: 319px) and (max-width: 345px) {
         width: auto !important;
         height: auto !important;
+        max-height: 155vw !important;
     }    
 }
 
 #home-bg__video {
-    @media screen and (min-width: 341px) and (max-width: 500px) {
-        max-height: 135vw !important;
+    @media screen and (min-width: 345px) and (max-width: 530px) {
+        width: auto !important;
+        height: auto !important;
+        max-height: 125vw !important;
     }    
 }
 
@@ -294,7 +290,6 @@ video {
     } 
 }
 
-
 #home-bg__video {
     @media screen and (min-width: 529px) and (max-width: 768px) {
         height: 100vw !important;
@@ -323,12 +318,12 @@ video {
 // mobile menu
 
 .navbar-menu.is-active {
-    @media screen and (max-width: 1023px) { 
+    @media screen and (max-width: 1600px) { 
     display: block;
-    position: absolute;
+    position: fixed;
     top: 5rem;
-    right: 0px;
-    padding: 15%;
+ /*   right: 0px; */
+    padding: 20%;
     background-color: $brand-blue;
     text-align: center;
     }
@@ -383,14 +378,12 @@ html {
 #home-bg__video {
  width: 100%;
  height: auto;
-// max-height: 40vw;
 }
 
 .video-container {
     object-fit: cover;
     width: 100vw;
     height: auto;
-//    max-height: 40vw;
     position: absolute;
     top: 0;
     left: 0;
@@ -409,14 +402,13 @@ html {
     opacity: 0.8;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 99%;
     top: 0px;
     left: 0px;
     z-index: 1;
 }
 
 .text-overlay {
-//    height: 28vw;
     z-index: 1;
 }
 
@@ -655,22 +647,6 @@ html {
     height: 100%;
   }
 
-  .has-bg {
-    @media (min-width: $breakpoint-tablet) {
-        margin-left: 5px;
-        background-image: url("../img/bg.svg");
-        background-size: cover;
-    }
-  }
-
-  .has-bgTablet {
-    @media (min-width: $breakpoint-tablet) {
-        margin-right: 5px;
-        background-image: url("../img/bg-tablet.svg");
-        background-size: cover;
-    }      
-  }
-
   .make-grey {
     filter: gray;
     -webkit-filter: grayscale(1);
@@ -690,7 +666,6 @@ html {
   .navbar-end a:hover {
     color: $brand-yellow;
 }
-
 
 // form
 
@@ -720,4 +695,26 @@ html {
 
 a:hover {
     color: $brand-red;
+}
+
+.navbar-menu-burger {
+    display: none;
+}
+
+.goTop-Btn {
+    text-align: center;
+    font-size: 36px;
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    background-color: #dadada63;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 40;
+}
+
+.goTop-Btn:hover {
+    background-color: $brand-yellow;
+    opacity: 0.9;
 }
