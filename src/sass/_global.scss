@@ -107,7 +107,7 @@
 // tablet 
 .pt-6 {
     @media screen and (min-width: 767px) and (max-width: 1024px) {
-        padding-top: 2rem !important;
+        padding-top: 3rem !important;
     } 
 }
 
@@ -183,7 +183,7 @@
 
 .video-container {
     @media screen and (min-width: 319px) and (max-width: 530px) {
-       left: -185% !important;
+       left: -160% !important;
        width: auto !important;
     } 
 }
@@ -266,6 +266,12 @@ video {
     }
 }
 
+.primary--button {
+    @media screen and (min-width: 319px) and (max-width: 530px) {
+        padding: 2rem 40% !important;
+    }
+}
+
 .partners-mobile {
     @media screen and (min-width: 319px) and (max-width: 768px) {
         display: flex !important;        
@@ -273,7 +279,7 @@ video {
 }
 
 .partners-mobile .column {
-    @media screen and (min-width: 319px) and (max-width: 768px) {
+    @media screen and (min-width: 319px) and (max-width: 769px) {
         padding: 48px 0 !important;        
     }
 }
@@ -281,13 +287,13 @@ video {
 // mobile 530 to 768
 
 .text-overlay {
-    @media screen and (min-width: 529px) and (max-width: 768px) {
-        height: 90vw;
+    @media screen and (min-width: 529px) and (max-width: 769px) {
+        height: 60vw;
     }
 }
 
 .video-container {
-    @media screen and (min-width: 529px) and (max-width: 768px) {
+    @media screen and (min-width: 529px) and (max-width: 769px) {
        left: -60% !important;
        width: auto !important;
        height: 100vw !important;
@@ -296,14 +302,14 @@ video {
 
 
 #home-bg__video {
-    @media screen and (min-width: 529px) and (max-width: 768px) {
+    @media screen and (min-width: 529px) and (max-width: 769px) {
         height: 100vw !important;
         width: auto !important;
     }    
 }
 
 .mt-mobile-6 {
-    @media screen and (min-width: 529px) and (max-width: 768px) {
+    @media screen and (min-width: 529px) and (max-width: 769px) {
         margin-top: 60px;
     }      
 }
@@ -467,20 +473,20 @@ html {
   
   .transp_man_pic {
     position: absolute;
-    top: 6rem;
+    top: -2rem;
     right: 2rem;
-    width: 60%;
-    max-width: 400px;
+    width: 50%;
+    max-width: 360px;
     z-index: -1;
   }
   
   .colored_man_pic {
     position: absolute;
     opacity: 0;
-    top: 6rem;
+    top: -2rem;
     right: 2rem;
-    width: 60%;
-    max-width: 400px;
+    width: 50%;
+    max-width: 360px;
     z-index: -1;
   }
 //animated scroll section ENDS
@@ -689,6 +695,7 @@ html {
   
   .navbar-end a:hover {
     color: $brand-yellow;
+    background-color: transparent;
 }
 
 
@@ -720,4 +727,57 @@ html {
 
 a:hover {
     color: $brand-red;
+}
+
+// fixes
+
+.vertically-centered {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-up {
+    top: 7rem !important;
+}
+
+.nav-up {
+    @media screen and (max-width: 1024px) {
+        top: 4rem !important;
+    }
+}
+
+.navbar {
+    max-width: 1600px;
+    margin: 0 auto;        
+}
+
+.navbar {
+    @media screen and (min-width: 529px) and (max-width: 768px) {
+        max-width: 55% !important;
+        margin-left: 0 !important;  
+    }      
+}
+
+.navbar {
+    @media screen and (min-width: 319px) and (max-width: 330px) {
+        max-width: 32% !important;
+        margin-left: 0 !important;  
+    }      
+}
+
+.navbar {
+    @media screen and (min-width: 330px) and (max-width: 529px) {
+        max-width: 40% !important;
+        margin-left: 0 !important;  
+    }      
+}
+
+.navbar.is-fixed-top {
+    background-color: #1135519e;
+}
+
+.navbar.is-fixed-top {
+    @media screen and (max-width: 1024px) {
+        height: 5rem !important;
+    }
 }

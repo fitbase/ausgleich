@@ -94,7 +94,7 @@
     ScrollTrigger.create({
     animation: tl2,
     trigger: "#animated-section2",
-    start: "bottom 80%",
+    start: "bottom 100%",
  //   end: "center center",
     markers: true,
     scrub: 0.5,
@@ -236,4 +236,45 @@
         }
         slidePosX = slidePosX+dir;				
     }
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 600;
+    var navbarHeight = $('nav').outerHeight();
+
+    $(window).scroll(function(event){
+        didScroll = true;
+    });
+
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+        
+        // Make sure they scroll more than delta
+        if(Math.abs(lastScrollTop - st) <= delta)
+            return;
+        
+        // If they scrolled down and are past the navbar, add class .nav-up.
+        // This is necessary so you never see what is "behind" the navbar.
+        if (st > lastScrollTop && st > navbarHeight){
+            // Scroll Down
+            $('nav').removeClass('is-fixed-top').addClass('nav-up');
+        } else {
+            // Scroll Up
+            if(st + $(window).height() < $(document).height()) {
+                $('nav').removeClass('nav-up').addClass('is-fixed-top');
+            }
+        }
+        
+        lastScrollTop = st;
+}
 </script>
