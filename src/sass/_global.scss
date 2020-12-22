@@ -39,6 +39,7 @@
 }
 
 //medium desktop 
+
 .text-overlay {
     @media screen and (min-width: 767px) and (max-width: 1130px) {
         height: 29vw;
@@ -56,6 +57,13 @@
     @media screen and (min-width: 768px) and (max-width: 1130px) {
         font-size: 1em;
         font-weight: 600;
+    }    
+}
+
+.mx-desktop {
+    @media screen and (min-width: $desktop) {
+        margin-left: 10% !important;
+        margin-right: 10% !important;
     }    
 }
 
