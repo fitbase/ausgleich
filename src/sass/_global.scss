@@ -90,8 +90,19 @@ a.navbar-item:hover {
 .navbar-menu.is-active {
     background-color: $brand-blue;
     text-align: center;
-    padding: 25px 0;
+    padding: 25px 100px;
+    position: absolute;
+    width: 100%;    
+    transition: all 4s ease-in-out;
+
+    animation-name: menu-ease;
+    animation-duration: .3s;
 }
+
+@keyframes menu-ease {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 
 a.navbar-item:focus, a.navbar-item:focus-within, 
 a.navbar-item:hover, a.navbar-item.is-active, 
