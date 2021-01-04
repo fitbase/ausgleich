@@ -1,4 +1,3 @@
-
 <!--Include Scripts-->
 <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
@@ -8,7 +7,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
 
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', () => {
 
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
@@ -35,8 +34,6 @@
     });
 </script>
 
-<!-- Animated section -->
-
 <script>    
     var tl = gsap.timeline();
     var tl2 = gsap.timeline();
@@ -47,105 +44,101 @@
     gsap.registerPlugin(MotionPathPlugin);
     gsap.registerPlugin(CSSRulePlugin);
 
-    gsap.from(".home_text-light", 2, {opacity: 0, y:-25, delay: 2});
-    gsap.from(".home_text-colored", 2, {opacity: 0, y:-25, delay: 4});
+  //  gsap.from(".img-sensor", 4, {y: 20, y: -20});        
+    gsap.from(".text-light", 2, {opacity: 0, y:-25, delay: 2});
+    gsap.from(".text-colored", 2, {opacity: 0, y:-25, delay: 4});
     gsap.from(".arrow_down", 5, {ease: Elastic.easeOut.config(2, 0.2), y:-5, duration: 30, delay: 5});
-    
+
     let senSmall = document.getElementById('body_sensor');
     let rect = senSmall.getBoundingClientRect();
     let calcY = rect.y;
     
     console.log(calcY);
 
-    tl.fromTo(".sensor_pic", {scale: 1, y: 0}, {scale: 0.25, x: 65, y: function() {
-        let senSmall = document.getElementById('body_sensor');
-        let rect = senSmall.getBoundingClientRect();
-        return rect.y;
-    }, rotationY: 10, skewY: 2,duration: 120, delay: 10, opacity: 0})
-    .to(".sensor_pic", {opacity: 0});        
+    tl.fromTo(".img-sensor", {scale: 1, y: 0}, {scale: 0.25, x: 65, y: 700, rotationY: 10, skewY: 2, duration: 30})
+    .to(".img-sensor", {opacity: 0})
+    .to(".transp_man", 25, {opacity: 0, ease: Circ.easeOut, y: -10, duration: 15}, "+=5") ;
     
-    tl2.to(".transp_man_pic", 25, {opacity: 0, ease: Circ.easeOut, y: -10, duration: 60, delay: 10}, "+=25")
-    .set("#logo_screen", {opacity: 0})   
-    .fromTo(".colored_man_pic", {opacity: 0}, {opacity: 1, ease: Circ.easeOut, y: 10, duration: 30, delay: 5}, "+=5")
+    
+    tl2
+    .set("#logo_screen", {opacity: 0}, "+=5")
+    .fromTo(".colored_man", {opacity: 0}, {opacity: 1, ease: Circ.easeOut, y: 10, duration: 30, delay: 5}, "+=5")
     .fromTo("#transparent_Sensor_belt", {opacity: 0.7}, {opacity: 0.6, duration: 60})
     .fromTo("#transparent_Sensor_belt", {opacity: 0.7}, {opacity: 0, duration: 60})
     .fromTo("#transparent_Sensor_belt", {opacity: 0.2}, {opacity: 0.6, duration: 60})
     .fromTo("#transparent_Sensor_belt", {opacity: 0.7}, {opacity: 0.6, duration: 60})
     .from("#device_light_window", {opacity:0, delay: 1, scale: .2, transformOrigin:'bottom', duration: 30}, "=.5")
     .from("#heartrate_line", {opacity:0, ease: Elastic.easeOut.config(1 , 0.3), y: -20, duration: 30}, "=1")
-    .from("#icon_1", {opacity:0, delay: 1, scale: .2, transformOrigin:'bottom', duration: 30}, "=1")
-    .from("#icon_2", {opacity:0, delay: 1, scale: .2, transformOrigin:'bottom', duration: 30}, "=1")
-    .from("#icon_3", {opacity:0, delay: 1, scale: .2, transformOrigin:'bottom', duration: 30}, "=1");
+    .from("#icon_1", {opacity:0, delay: 1, scale: .2, transformOrigin:'bottom', duration: 60}, "=1")
+    .from("#icon_2", {opacity:0, delay: 1, scale: .2, transformOrigin:'bottom', duration: 60}, "=1")
+    .from("#icon_3", {opacity:0, delay: 1, scale: .2, transformOrigin:'bottom', duration: 60}, "=1");
     
     ScrollTrigger.create({
         animation: tl,
         trigger: "#animated-section",
-        start: "bottom 80%",
+        start: "top 15%",
+        end: "center 20%",
         scrub: 0.5,
-    //    markers: true,
-        duration: 20
-    // pin: true
+    //    markers: true
+    //    duration: 20
+    //    pin: true
     });
 
     ScrollTrigger.create({
     animation: tl2,
-    trigger: "#animated-section2",
-    start: "bottom 80%",
- //   end: "center center",
+    trigger: "#animated-section",
+    start: "center 20%",
  //   markers: true,
     scrub: 0.5,
     pin: true
     });
 
     //animation of the progress bar
-    var logoCircle = CSSRulePlugin.getRule(".logo__circle"); //get the rule
-    tl4.to(logoCircle, {cssRule: {backgroundColor: "#F8B130"}}, ScrollTrigger.create({
+    var logo1 = CSSRulePlugin.getRule(".logo-part1"); //get the rule
+    tl4.to(logo1, {cssRule: {filter: "opacity(1)"}}, ScrollTrigger.create({
+        animation: tl4,
+        trigger: "#home",
+        start: "bottom top",
+    //    markers: true
+    }));
+
+    ScrollTrigger.create({
         animation: tl4,
         trigger: "#home",
         start: "top top",
-//        markers: true,
+    //       markers: true,
         scrub: 0.2
-    }));
+    });
 
-    var logoRed = CSSRulePlugin.getRule(".logo__parts-red"); //get the rule
-    tl4.to(logoRed, {cssRule: {filter: "opacity(1)"}}, ScrollTrigger.create({
-        animation: tl4,
-        trigger: ".logo__parts-red",
+    var logo2 = gsap.fromTo(".logo-part2", {opacity: 0}, {opacity: 1}); //get the rule
+    ScrollTrigger.create({
+        animation: logo2,
+        trigger: "#about_tech",
         start: "top bottom",
  //       markers: true,
-        scrub: 0.2
-    }));
+        scrub: 0.3
+    });
 
-    var logoparts = gsap.fromTo(".logo__parts-horizBlue", {opacity: 0}, {opacity: 1});
+    var logo3 = gsap.fromTo(".logo-part2", {opacity: 0}, {opacity: 1});
     ScrollTrigger.create({
-        animation: logoparts,
-        trigger: ".logo__parts-horizBlue",
+        animation: logo3,
+        trigger: "#quote",
         start: "top bottom",
  //       markers: true,
         scrub: 0.2
     });
 
-    logoparts = gsap.fromTo(".logo__parts-vertBlue", {opacity: 0}, {opacity: 1});
+    var logo4 = gsap.fromTo(".logo-part3", {opacity: 0}, {opacity: 1});
     ScrollTrigger.create({
-            animation: logoparts,
-            trigger: ".logo__parts-vertBlue",
-            start: "top bottom",
- //           markers: true,
-            scrub: 0.2
-        });
-
-    logoparts = gsap.fromTo(".logo__parts-vertYellow", {opacity: 0}, {opacity: 1});
-    ScrollTrigger.create({
-            animation: logoparts,
-            trigger: ".logo__parts-vertYellow",
-            start: "top bottom",
-  //          markers: true,
-            scrub: 0.2
-        });  
+        animation: logo4,
+        trigger: "#animated-section",
+        start: "top bottom 30%",
+ //       markers: true,
+        scrub: 0.2
+    });
 
 </script>
 
-<!-- App screens -->
 <script>
     window.addEventListener('load',function() {
         figure = document.getElementById('multiSlide');
@@ -171,7 +164,7 @@
         });
     });
 
-    var unit            = 300;
+    var unit            = 270;
     var registeredBoxes = [];
     var slidePosX       = 0;
     var Box = function(posX,posY,img){
@@ -181,7 +174,6 @@
         this.img    = img;
         this.init();
     }
-    
     Box.prototype = {
         init : function(){
             this.DOMElement             = document.createElement('div');

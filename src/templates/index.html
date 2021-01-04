@@ -1,4 +1,5 @@
 @@include('../chunks/head.html')
+
 </head>
 
 <body>
@@ -6,152 +7,104 @@
 <div id="page-wrapper" class="page-wrapper">
 	@@include('../chunks/header.html')
 
-	<div id="page-body" class="page-body progress_bar">
-		<!--Home-->
-		<section id="home" class="section pb-0 px-0 pt-tablet-0">
-			<div class="hero mt-6 pt-3">
-				<div class="video-container">					
-					<div class="bg-overlay"></div>
-					<div class="filter"></div>					
-					<video autoplay muted loop id="home-bg__video">
-						<source src="../img/20201201_170438.mp4" type="video/mp4">
-					</video>
-				</div>
-				<div class="hero text-overlay mt-0">
-					<div class="main_text-desktop has-text-centered mx-6 mx-desktop my-negative text-tablet-size">
-						<p class="mx-tablet-3 mt-mobile-6">
-							<span class="text-light home_text-light"> Dauerhafter Stress kann krank machen und statistisch gesehen sind Pflegekräfte hiervon besonders stark betroffen. </span>
-							<span class="text-colored home_text-colored">Das Projekt „AusGleich“ unterstützt Pflegepersonal dabei, zu mehr Balance in ihrem Arbeitsalltag zu finden – für die nachhaltige Gesundheit unserer Pflegekräfte.</span>
-						</p>						
-					</div>
-					<div class="columns has-text-centered mb-0 mx-0 ">
-						<div class="column is-one-quarter has-text-centered text-light pt-6 pb-4"></div>
-						<div class="column has-text-centered text-light pt-6 pb-4">
-							<!-- 
-							<span class="has-text-centered has-text-weight-bold is-italic text-tablet-size">Scroll for more</span><br>
-							<div class="arrow_down">&#8595;</div>
-							 -->
-						</div>
-						<a href="#form">
-							<div class="column has-text-centered has-text-weight-semibold home__button-bg pt-6 ">
-								<div class="is-italic has-text-weight-bold text-tablet-size">
-									Schreiben Sie uns
-									<span>&#8594;</span>
-								</div>						
-							</div>
-						</a>
-					</div>
-				</div>		
-			</div>
-		</section>		
-
-		<!--About technology-->
-		<section id="intro" class="section is-bold mt-6 mt-mobile">
-
-			<!--Skroll up-->
-			<a href="#home" role="button" class="goTop-Btn">
-				&#710;
-			</a>
-
-			<div class=".container.is-max-desktop mx-6">
-				<div class="columns">
-					<div class="column is-flex pl-0-tablet">
-						<div class="logo__circle mr-6"></div>						
-						<h1 class="is-size-1 is-italic has-text-weight-bold">Das Projekt<br> <span class="has-text-weight-light">„AusGleich“</span></h1>
-					</div>
-
-					<!-- Social value -->
-					<div class="column is-half">						
-						<h3 class="is-size-3 is-italic has-text-weight-bold mb-6 pt-2">Das Präventionsprojekt <span class="has-text-weight-light">„AusGleich“</span> zielt darauf ab, 
-							stressbedingte Erkrankungen bei Pflegepersonal mit Hilfe einer Stressbewältigungs-App zu verringern.
-						</h3>			
-						<div class="columns is-flex-wrap-wrap">
-							<div class="column">
-								<p>
-									Ganz im Sinne des Pflegepersonal-Stärkungsgesetzes (PpSG), soll die Gesundheit unserer Pflegekräfte durch 
-									präventive Maßnahmen gestärkt und dem bestehenden Fachkräftemangel aktiv entgegengewirkt werden.  
-								</p>
-								<p>
-									<br>Um dies zu erreichen, haben sich im Oktober 2019 insgesamt elf Betriebskrankenkassen (BKKen) zusammengeschlossen. 									
-								</p>
-							</div>
-							<div class="column pt-tablet-0">							
-								<p>
-									Gemeinsam beauftragten sie die Start-Up Unternehmen fitbase und corvolution mit der Entwicklung und Pilotierung einer 
-									innovativen und komplett digitalen Technologie – speziell ausgerichtet auf die besonderen Alltagsanforderungen von 
-									Pflegekräften. <br>
-								</p>
-								<h3 class="is-size-3 is-italic has-text-weight-bold mt-6"> Need more info? </h3>
-								<a class="is-size-3 is-italic text-colored has-text-weight-bold mt-6" href="#">Contact us &#8594;</a>
-							</div>
-						</div>	
-					</div>
-				</div>	
-
-				<!--Phase analysis-->				
-				<div id="logo__parts-1" class="columns is-desktop is-vcentered mt-6">
-					<div class="column is-flex pl-0-tablet">
-						<div class="mr-6 hidden-mobile">
-							<img class="logo__parts-red" src="../img/logo__parts-red.svg">
-						</div>
-						<div>					
-							<h3 class="is-size-3 is-italic has-text-weight-bold mb-6 pt-2">Das Projekt <span class="has-text-weight-light">„AusGleich“</span> besteht aus mehreren Phasen. </h3>
-							<p>
-								Um die Bedürfnisse von Pflegepersonal zu verstehen, wurde im ersten Schritt eine Bedarfsanalyse durchgeführt. 
-								Gemeinsam mit Pflegekräften wurde so erforscht, wie eine digitale und app-gestützte Lösung aufgebaut sein sollte, 
-								um mehr Entlastung und Ausgleich im Pflegealltag zu ermöglichen.<br> 
-							</p>
-							<p>
-								<br>Auf Basis dieser Informationen wurden in der Entwicklungsphase das Konzept sowie die Technologie erarbeitet. 
-								In der abschließenden Pilotierungsphase soll „AusGleich“ schließlich erprobt und evaluiert werden. 
-							</p>
-						</div>
-					</div>
-					<div class="column is-half has-text-right img-tablet">
-						<img src="../img/abTechnology-nurse1.png">
-					</div>
-				</div>			
-			</div>
-		</section>
-		
-		<!--Quote-->
-		<div id="quote" class="is-flex ml-4 py-6 my-6">
-			<div class="pt-6 mt-6 ml-6 hidden-mobile">
-				<img class="logo__parts-horizBlue" src="../img/logo__parts-horizontal-blue.svg">
-			</div>
-			<div class="circle"></div>	
-			<!-- 	<h2 class="is-size-3 is-italic has-text-weight-bold mr-6 my-6 p-6">Herzstück bildet die von den Unternehmen fitbase und corvolution gemeinsam entwickelte Biofeedback-Technologie fitcor. Hierbei wird eine Biofeedback-Analyse mittels mesana-EKG-Sensor (corvolution) mit dem Know-How über die Entwicklung digitaler Gesundheitsinterventionen (fitbase) zielführend vereint.</h2>   -->
-			<div class="mr-6 ml-2 my-6 p-6">
-				<h2 class="is-size-3 is-italic has-text-weight-bold mb-6 pt-2">Fitcor. Zwei Teams – zwei Produkte – eine Lösung!</h2>	
-				<h2 class="is-size-5">Herzstück des Projekts „AusGleich“ bildet die gemeinsam von fitbase und corvolution entwickelte 
-					Biofeedback-Technologie fitcor. Sie vereint den mesana-EKG-Sensor von corvolution mit dem Know-How über die Entwicklung digitaler 
-					Gesundheitslösungen von fitbase. Die hieraus entstandene „AusGleich“-App gibt dem Pflegepersonal auf Basis gemessener Gesundheitsdaten,
-					individuelle und hilfreiche Übungen an die Hand und unterstützt so dabei, zu mehr Ausgeglichenheit im so oft stressigen Pflegealltag zu finden. 
-				</h2>
-			</div>
-			
+	<!-- section -->
+	<div id="hero" class="mb-6">
+		<div id="home" class="texture"></div>
+	<!-- 	<video loop muted autoplay preload="auto" src="../img/20201201_170438.mp4" type="video/mp4" ></video>  -->	
+		<video loop muted autoplay preload="auto" src="../img/video_2.mp4" type="video/mp4" ></video>	
+		<div class="caption mx-6 text-home">
+			<p class="text-light">Dauerhafter Stress kann krank machen und statistisch gesehen sind Pflegekräfte hiervon besonders stark betroffen.  </p>
+			<p class="text-colored">Das Projekt „AusGleich“ unterstützt Pflegepersonal dabei, zu mehr Balance in ihrem Arbeitsalltag zu finden – für die nachhaltige Gesundheit unserer Pflegekräfte. </p>
 		</div>
+	</div>
 
-		<!-- test animation -->
-		<section id="animated-section" class="section sec is-vcentered is-bold mt-6 mb-mobile"> <!-- .container.is-max-desktop mx-6    -->
-			<div class=".container.is-max-desktop cont is-vcentered mx-6">
-				<div class="columns is-vcentered is-desktop">
-					<div class="column is-flex">
-						<div class="mr-5 pr-6">
-							<img class="logo__parts-vertBlue" src="../img/logo__parts-vertical-blue.svg">
-						</div>
-						<div>
-							<h3 class="is-size-3 is-italic has-text-weight-bold mb-6 pt-2">Und so funktioniert <span class="has-text-weight-light">„AusGleich“</span></h3>
-							<p>Durch Anlegen eines mesana-Brustgurts werden die Vitalparameter der Pflegekraft aufgezeichnet und anschließend 
-								analysiert. Der integrierte Sensor misst zum Beispiel das Stress- oder Bewegungsniveau sowie die Atmung.
-							</p><br>
-							<p>Die Inhalte der Stressbewält igungsintervention können dank der intelligenten Technologie der „AusGleich“-App auf 
-								die persönlichen Bedürfnisse einer Pflegekraft angepasst werden. 
-							</p>
-						</div>		
-					</div>
-					<div class="column has-text-right image_container">
-					   <svg class="sensor_pic" viewBox="0 0 328 339" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+	<section id="about_tech" class="section my-6 mx-3">
+		<div class="container">
+			<div class="columns is-desktop">
+				<div class="column is-flex">
+					<div class="logo-part1"></div>
+					<h1 class="headline ml-6-desktop">Das Projekt<span class="has-text-weight-light"><br>"AusGleich"</span></h1>
+				</div>
+				<div class="column">
+					<h3 class="subheadline">Das Präventionsprojekt <span class="has-text-weight-light">„AusGleich“</span> zielt darauf ab, stressbedingte Erkrankungen bei Pflegepersonal 
+						mit Hilfe einer Stressbewältigungs-App zu verringern.
+					</h3>
+					<p class="main-text mt-6">
+						Ganz im Sinne des Pflegepersonal-Stärkungsgesetzes (PpSG), soll die Gesundheit unserer Pflegekräfte durch präventive Maßnahmen gestärkt und dem bestehenden Fachkräftemangel aktiv entgegengewirkt werden. 
+					</p>
+					<p class="main-text mt-6">
+						Um dies zu erreichen, haben sich im Oktober 2019 insgesamt elf Betriebskrankenkassen (BKKen) zusammengeschlossen. Gemeinsam beauftragten sie die Start-Up Unternehmen fitbase und corvolution mit der Entwicklung und Pilotierung einer innovativen und komplett digitalen Technologie – speziell ausgerichtet auf die besonderen Alltagsanforderungen von Pflegekräften. 
+					</p>
+					<h3 class="subheadline mt-6">Need more info?<br><a href="#contacts"><span class="text-link">Contact us ➜</span></a></h3>
+				</div>
+			</div>
+		</div>
+		<a class="button--up" href="#home"><div class="arrow--up"></div></a>
+		<div id="logo-part1" class="container mt-6">
+			<div class="columns is-desktop is-vcentered">
+				<div class="column is-flex">
+					<img class="logo-part2" src="../img/logo__parts-red.svg">
+					<div class="ml-6-desktop">
+						<h3 class="subheadline">Das Projekt <span class="has-text-weight-light">"AusGleich"</span> besteht aus mehreren Phasen</h3>
+						<p class="main-text mt-6">
+							Um die Bedürfnisse von Pflegepersonal zu verstehen, wurde im ersten Schritt eine Bedarfsanalyse durchgeführt. 
+							Gemeinsam mit Pflegekräften wurde so erforscht, wie eine digitale und app-gestützte Lösung aufgebaut sein sollte, 
+							um mehr Entlastung und Ausgleich im Pflegealltag zu ermöglichen.  
+						</p>
+						<p class="main-text mt-6">
+							Auf Basis dieser Informationen wurden in der Entwicklungsphase das Konzept sowie die Technologie erarbeitet. 
+							In der abschließenden Pilotierungsphase soll „AusGleich“ schließlich erprobt und evaluiert werden. 
+						</p>
+					</div>	
+				</div>
+				<div class="column">
+					<img class="" src="../img/abTechnology-nurse1.png">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- quote section -->
+	<section id="quote" class="section mx-5 my-6">
+		<div class="bg-circle"></div>
+		<div class="container is-flex my-6">
+			<img class="logo-part2" src="../img/logo__parts-horizontal-blue.svg">
+			<div class="ml-6-desktop">
+				<h3 class="subheadline">Zwei Teams – zwei Produkte – eine Lösung!</h3>
+				<p class="main-text mt-6">
+					Herzstück des Projekts „AusGleich“ bildet die gemeinsam von fitbase und corvolution entwickelte Biofeedback-Technologie fitcor. 
+					Sie vereint den mesana-EKG-Sensor von corvolution mit dem Know-How über die Entwicklung digitaler Gesundheitslösungen von fitbase. 
+					Die hieraus entstandene „AusGleich“-App gibt dem Pflegepersonal auf Basis gemessener Gesundheitsdaten, individuelle und hilfreiche 
+					Übungen an die Hand und unterstützt so dabei, zu mehr Ausgeglichenheit im so oft stressigen Pflegealltag zu finden. 
+				</p>
+			</div>	
+		</div>
+	</section>
+
+	<!-- animated section -->
+	<section id="animated-section" class="section my-6 mx-3">
+		<div class="container">
+			<div class="columns is-desktop">
+				<div class="column is-flex">
+					<img class="logo-part3" src="../img/logo__parts-vertical-blue.svg">
+					<div class="ml-6-desktop">
+						<h3 class="subheadline">Und so funktioniert <span class="has-text-weight-light"><br>"AusGleich"</span></h3>
+						<p class="main-text mt-6 mb-6">
+							Durch Anlegen eines mesana-Brustgurts werden die Vitalparameter der Pflegekraft aufgezeichnet und anschließend analysiert. 
+							Der integrierte Sensor misst zum Beispiel das Stress- oder Bewegungsniveau sowie die Atmung.   
+						</p><br><br>
+						<p class="main-text mt-6 mb-6">
+							Die Inhalte der Stressbewältigungsintervention können dank der intelligenten Technologie der „AusGleich“-App auf 
+							die persönlichen Bedürfnisse einer Pflegekraft angepasst werden.  
+						</p><br><br>
+						<p class="main-text mt-6">
+							Die App empfiehlt individuell abgestimmte Inhalte und Übungen zur flexiblen Umsetzung im Alltag. Auch die eigenen Vitalwerte 
+							können jederzeit über die App eingesehen werden.  
+						</p>
+					</div>	
+				</div>
+				<div class="column">
+					<svg class="img-sensor" viewBox="0 0 328 339" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
 						<g transform="matrix(1,0,0,1,-480.22,-240.516)">
 							<g id="sensor" transform="matrix(0.625115,0,0,0.601878,-1568.11,737.223)">
 								<g transform="matrix(1.51385,0,0,2.10939,-1472.11,275.331)">
@@ -237,87 +190,69 @@
 							<linearGradient id="_Linear3" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-5.43428e-15,-31.9586,29.5828,-5.8707e-15,3834,2806.78)"><stop offset="0" style="stop-color:rgb(189,189,189);stop-opacity:0"/><stop offset="0.53" style="stop-color:rgb(143,143,143);stop-opacity:0.73"/><stop offset="1" style="stop-color:rgb(126,126,126);stop-opacity:1"/></linearGradient>
 							<image id="_Image4" width="288px" height="130px" xlink:href="data:image/png;base64,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"/>
 						</defs>
-					</svg>                 
-					</div>
-				</div>
-			</div>               
-		</section>
-		<section id="animated-section2" class="section sec is-vcentered is-bold mb-0 mb-mobile"> 
-			<div class=".container.is-max-desktop cont is-vcentered mx-6">
-				<div class="columns is-vcentered is-desktop">
-					<div class="column is-flex">
-						<div class="mr-5 pr-6">
-							<img class="logo__parts-vertYellow" src="../img/logo__parts-vertical-yellow.svg">
-						</div>
-						<div>
-							<p>Die App empfiehlt individuell abgestimmte Inhalte und Übungen zur flexiblen Umsetzung im Alltag. 
-								Auch die eigenen Vitalwerte können jederzeit über die App eingesehen werden. 
-							</p>
-						</div>
-					</div>
-					<div id="transp_man_pic" class="column has-text-right image_container">
-							
-						<svg class="transp_man_pic" viewBox="0 0 386 550" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-							<g transform="matrix(1,0,0,1,-841.798,-127.829)">
-								<g>
-									<g id="transp_man">
-										<g id="body_filling">
-											<path id="body" d="M912.788,676.853C915.079,662.673 916.726,650.965 916.726,650.965C928.281,584.682 925.655,601.946 928.806,583.039C931.957,564.132 943.842,552.805 944.936,539.893C946.03,526.982 944.498,519.761 944.498,493.282C944.498,466.803 951.72,451.485 951.72,442.732C951.72,433.978 949.75,432.884 949.75,423.256C949.75,413.627 949.02,391.22 963.2,367.937C975.157,348.304 1006.53,332.903 1016.08,328.556C1027,321.084 1031.88,325.596 1031.88,304.512C1031.88,304.512 1048.62,310.634 1083.69,278.325C1097.44,265.662 1096.36,244.05 1096.36,244.05L1109.35,244.05C1109.35,244.05 1104.22,278.927 1114.48,288.159C1124.74,297.391 1154.49,316.538 1167.14,324.061C1168.02,324.583 1168.83,325.074 1169.6,325.536L1169.61,325.476C1169.61,325.476 1170.26,325.889 1171.41,326.641C1178.66,331.089 1179.83,332.278 1180.02,332.525C1190.42,339.939 1205.52,351.829 1210.3,361.378C1217.82,376.423 1222.61,383.603 1222.61,402.751C1222.61,421.899 1219.35,432.277 1219.35,440.568C1219.35,448.859 1219.35,448.187 1219.35,448.187C1219.35,448.187 1226.97,466.45 1226.97,475.413C1226.97,484.376 1227.36,487.359 1222.71,520.731C1221.95,526.172 1222.64,531.898 1222.43,569.421C1222.24,604.734 1214.41,653.535 1212.21,676.853L1172.45,676.853C1172.7,670.872 1171.26,659.315 1163.61,637.541C1149.78,598.151 1159.76,573.641 1160.64,562.087C1161.51,550.533 1163.09,551.408 1156.26,530.225C1153.36,521.241 1151.72,517.53 1150.62,515.416C1147.99,520.816 1140.17,538.262 1140.53,553.922C1140.96,572.728 1144.38,596.663 1150.79,610.34L1152.93,622.735C1152.93,622.735 1109.76,621.025 1038.38,621.025C977.795,621.025 970.482,622.873 969.656,623.432C969.559,646.356 962.831,667.196 959.19,676.853L912.788,676.853Z" style="fill:rgb(247,247,247);"/>
-											<g id="face" transform="matrix(1,0,0,1,-1984.77,7.83448)">
-												<path d="M2987.45,160.135C2987.45,160.135 2978.58,168.538 2978.58,204.017C2978.58,239.497 2986.52,251.167 2986.52,251.167C2986.52,251.167 2994.45,289.214 3009.16,292.949C3023.86,296.684 3036.47,291.315 3046.27,285.246C3056.07,279.177 3066.78,272.064 3071.27,266.423C3075.76,260.782 3080.06,247.73 3081.37,241.635C3082.68,235.54 3083.72,243.774 3092.23,227.342C3100.75,210.909 3102.69,202.544 3096.87,197.913C3091.04,193.282 3084.32,197.763 3080.58,205.83C3076.85,213.897 3079.15,219.454 3074.97,207.264C3070.78,195.074 3071.62,200.93 3071.62,192.206C3071.62,183.482 3075.92,167.109 3063.01,162.329C3050.11,157.548 3011.79,154.236 2987.45,160.135Z" style="fill:rgb(247,247,247);"/>
-											</g>
-										</g>
-										<g id="body_outline">
-											<g transform="matrix(1,0,0,1,-1984.77,7.83448)">
-												<path d="M3082.08,216.673C3082.08,216.67 3082.08,216.667 3082.08,216.663C3082.05,216.512 3080.74,210.196 3085.04,205.142C3088.78,200.742 3091.16,200.451 3092.48,201.471C3093.81,202.491 3092.89,205.142 3090.34,204.734C3087.79,204.327 3086.54,205.945 3086.99,208.251C3087.21,209.401 3088.99,210.12 3089.92,210.707C3090.77,211.246 3091.18,212.019 3090.55,212.995C3089.55,214.52 3088.19,214.274 3086.62,213.369C3085.71,212.846 3085.62,213.433 3085.1,213.433C3083.21,213.433 3083.75,217.887 3082.39,217.248C3082.28,217.192 3082.22,217.117 3082.13,216.856C3082.11,216.802 3082.1,216.745 3082.08,216.673Z" style="fill:rgb(129,150,166);"/>
-											</g>
-											<g transform="matrix(1,0,0,1,-1984.77,7.83448)">
-												<path d="M3080.05,225.721C3080.05,225.721 3080.36,228.78 3083.82,228.78C3087.29,228.78 3090.14,227.047 3090.66,224.395C3091.16,221.744 3087.8,223.273 3086.07,225.211C3084.33,227.149 3082.7,226.129 3082.9,224.497C3083.11,222.865 3079.64,223.375 3080.05,225.721Z" style="fill:rgb(129,150,166);"/>
-											</g>
-											<g transform="matrix(1.17773,-0.309011,0.249531,0.951038,-3416.35,1167.87)">
-												<path d="M3746.1,161.131C3746.1,161.131 3734.75,153.749 3726.11,157.364C3712.17,163.192 3714.05,157.79 3715.81,149.885C3719.97,131.148 3729.69,128.364 3729.69,128.364C3734.06,125.909 3754.93,122.411 3743.43,129.958C3738.92,132.917 3740.11,140.364 3745.46,142.743C3750.81,145.122 3748.18,150.425 3749.97,153.994C3751.75,157.563 3746.1,161.131 3746.1,161.131Z" style="fill:rgb(129,150,166);"/>
-											</g>
-											<g transform="matrix(1.23378,-0.323717,0.261406,0.996299,-3605.21,1215.13)">
-												<path d="M3746.1,161.131C3746.1,161.131 3735.46,156.935 3726.11,157.364C3696.46,158.721 3693.12,151.606 3715.81,149.885C3734.95,148.433 3721.99,134.8 3721.99,134.8C3726.53,124.43 3754.97,121.709 3743.43,129.958C3739.18,132.997 3740.11,140.364 3745.46,142.743C3750.81,145.122 3748.18,150.425 3749.97,153.994C3751.75,157.563 3746.1,161.131 3746.1,161.131Z" style="fill:rgb(129,150,166);"/>
-											</g>
-											<path id="trusi" d="M958.357,676.853L959.813,621.107L968.84,620.834C968.84,620.834 1128.59,617.551 1152.39,620.287C1152.39,620.287 1157.02,649.52 1158.94,676.853L958.357,676.853Z" style="fill:rgb(129,150,166);"/>
-											<path d="M1171.28,676.853C1171.29,676.536 1171.3,676.208 1171.3,675.869C1171.3,669.903 1168.61,652.454 1165.29,642.595C1161.98,632.735 1156.86,618.444 1156.49,604.287C1156.1,589.289 1157.44,579.834 1158.88,572.753C1160.31,565.672 1161.3,557.994 1161.3,550.913C1161.3,544.204 1153.54,522.385 1148.71,512.191C1148.45,511.626 1148.12,510.806 1147.98,510.052C1146.17,499.829 1157.7,503.203 1157.7,503.203C1157.7,503.203 1159.54,507.706 1160.68,513.029C1161.83,518.353 1164.93,529.908 1166,535.017C1167.08,540.127 1167.44,547.208 1173.17,547.208C1178.91,547.208 1181.06,539.499 1184.29,538.692C1187.52,537.886 1187.25,539.437 1187.25,539.437C1187.25,539.437 1184.94,540.134 1183.65,542.859C1182.36,545.584 1178.56,548.38 1173.32,556.842C1168.09,565.303 1165.21,568.413 1165.21,577.377C1165.21,586.34 1163.87,599.001 1166.34,612.894C1168.8,626.787 1172.61,644.153 1175.19,652.781C1177.28,659.788 1178.49,669.973 1178.86,676.853L1171.28,676.853Z" style="fill:rgb(129,150,166);"/>
-											<path d="M911.844,676.853C913.936,664.613 916.753,647.799 918.182,635.197C920.59,613.97 928.979,572.143 938.211,556.636C947.444,541.13 943.654,528.213 943.654,497.358C943.654,466.503 952.892,446.172 951.01,439.091C949.128,432.009 948.948,423.046 948.948,423.046C948.948,423.046 949.128,421.522 949.217,408.436C949.307,395.35 958.569,370.345 964.311,364.603C970.053,358.861 989.94,338.731 1008.18,331.675C1023.56,325.725 1029.24,316.962 1030.64,314.359C1031.11,310.112 1031.35,306.311 1031.45,303.848C1028.78,303.548 1026.04,303.033 1023.22,302.388C1022.3,302.179 1021.45,301.812 1020.68,301.332C1019.13,300.632 1017.41,299.313 1015.66,296.954C1010.14,289.497 1004.73,272.735 1002.27,265.335C999.801,257.935 994.925,244.454 994.409,238.717C993.892,232.981 993.262,226.656 993.262,226.656C993.262,226.656 991.771,224.533 991.771,220.919C991.771,217.305 992.058,215.47 992.459,210.307C992.858,205.18 993.574,170.078 1002.98,162.746C1009.18,151.217 1020.24,140.607 1039.88,137.131C1081.67,129.733 1098.99,151.692 1100.2,153.314C1100.67,153.412 1101.17,153.587 1101.68,153.866C1104.76,155.547 1117.36,162.69 1120.59,175.435C1123.81,188.179 1122.82,212.774 1113.16,241.96C1105.44,265.302 1109.17,275.608 1109.64,278.617C1110.2,278.666 1110.02,284.183 1115.77,289.266C1121.79,294.579 1174.49,328.754 1174.49,328.754C1174.49,328.754 1181.08,333.156 1182.12,334.058C1188.38,338.391 1195.88,344.08 1202.2,350.761C1215.11,364.399 1221.13,387.117 1221.13,387.117C1223.35,397.586 1222.35,412.429 1220.49,428.85C1218.62,445.271 1217.19,442.92 1222.57,456.688C1227.94,470.456 1226.94,479.491 1226.94,484.51C1226.94,489.53 1224.86,506.524 1223.35,516.922C1221.49,523.591 1222.57,529.112 1222.57,540.778C1222.57,552.444 1221.99,587.244 1221.27,593.841C1220.56,600.438 1217.9,630.268 1217.9,630.268C1217.9,630.268 1213.96,663.325 1213.1,668.703C1212.84,670.297 1212.51,673.307 1212.15,676.853L1209.11,676.853C1210.8,658.78 1212.13,640.326 1212.71,631.431C1213.76,615.325 1215.16,584.513 1217.61,561.754C1220.07,538.996 1216.91,534.444 1216.91,529.017C1216.91,523.59 1216.91,529.017 1219.54,512.736C1222.17,496.455 1220.39,486.238 1218.15,465.398C1215.91,444.558 1211.89,449.865 1211.24,445.634C1210.6,441.404 1212.1,438.23 1212.1,438.23C1220.64,410.438 1218.27,404.041 1209.53,375.919C1201.36,349.61 1176.1,335.721 1172.88,334.039C1167.87,332.077 1160.19,330.31 1149.54,331.095C1128.25,332.663 1061.92,344.54 1061.92,344.54C1061.92,344.54 1089.48,332.327 1127.8,327.061C1147.07,324.708 1147.19,324.484 1147.19,324.484C1147.19,324.484 1138.89,315.409 1124.89,304.429C1110.88,293.449 1111,293.224 1111,293.224C1111,293.224 1105.95,285.381 1099.34,293.673L1090.38,305.773C1090.38,305.773 1095.65,292.104 1096.88,283.029C1097.14,281.094 1098.8,280.025 1098.64,278.641C1098.49,277.339 1098.36,276.261 1098.24,275.371C1097.58,272.164 1096.35,266.058 1094.91,258.636C1094.57,260.871 1094.06,262.908 1093.51,264.682C1092.19,268.872 1089.81,272.645 1086.59,275.626C1068.58,292.345 1061.38,294.932 1049.58,301.083C1044.51,303.727 1039.17,304.429 1033.51,304.036C1033.75,304.754 1033.9,305.286 1033.9,305.286L1032.64,339.739C1032.64,339.739 1033.04,346.881 1026.33,346.881L1003.15,346.881C1003.15,346.881 1016.16,346.29 1023.19,339.263C1025.71,336.739 1027.5,331.722 1028.75,326.128C1024.74,330.235 1015.46,334.968 1006.84,337.57C995.439,341.012 985.707,348.259 969.788,365.54C953.869,382.821 956.14,399.929 956.14,420.096C956.14,434.599 958.782,439.785 960.267,442.621C960.314,442.221 960.362,441.818 960.412,441.411C960.018,435.25 960.015,425.596 962.723,417.405C967.092,404.184 975.495,384.977 984.123,376.205C984.123,376.205 965.74,404.272 964.665,432.002C964.904,431.95 965.165,431.923 965.45,431.923C969.851,431.923 971.955,435.003 971.955,437.713C971.955,440.217 970.897,444.035 966.647,444.678C966.394,453.341 975.306,454.485 986.673,454.476L987.041,454.475C991.102,454.464 995.464,454.315 999.825,454.315C1016.74,454.315 1016.63,444.343 1016.63,437.172C1016.63,430.002 1023.24,405.689 1023.24,405.689L1023.18,406.526C1022.88,410.34 1021.63,426.528 1020.55,441.43C1019.65,453.937 1026.66,455.567 1039.23,455.55L1039.64,455.549C1044.09,455.532 1049.23,455.323 1054.95,455.323C1077.13,455.323 1097.15,452.18 1121.35,444.001C1142.7,436.786 1141.99,414.489 1141.53,409.333C1138.44,404.873 1132.97,399.009 1133.71,398.576C1135.17,398.062 1149.34,412.126 1155.67,419.73C1162.31,427.706 1174.09,436.667 1174.09,436.667C1172.53,437.046 1150.8,423.219 1147.4,425.499C1147.53,432.582 1148.16,447.799 1149.06,465.06C1150.07,484.443 1158.66,505.778 1158.66,505.778L1151.88,516.026C1151.88,516.026 1140.94,537.472 1140.94,551.696C1140.94,565.92 1142.9,587.674 1149.91,607.15C1156.53,625.558 1158.45,652.685 1160.31,676.853L1138.86,676.853C1138.32,667.934 1138.42,653.765 1138.42,642.441C1138.42,628.504 1123.88,625.467 1109.56,623.105C1086.14,622.69 1009.36,626.442 986.439,628.406C979.516,629 974.44,629.851 970.726,630.752C970.688,634.392 970.481,638.718 970.016,643.835C968.834,656.834 964.977,667.985 961.155,676.853L945.331,676.853C949.038,668.986 952.571,660.537 952.571,660.537C952.571,660.537 959.451,638.622 959.451,626.384C959.451,623.463 959.723,621.18 960.139,619.397C960.869,613.602 963.167,611.938 963.167,611.938C963.167,611.938 962.271,593.339 964.848,582.695C967.425,572.051 966.977,564.657 964.064,551.1C961.151,537.543 961.447,518.896 961.447,507.355C961.447,495.815 964.697,474.079 965.481,471.166C966.265,468.253 967.274,466.124 965.929,461.082C964.738,456.617 959.417,452.503 958.215,451.621C957.816,452.143 957.542,452.462 957.542,452.462C957.542,452.462 956.197,456.764 953.239,467.969C950.281,479.173 949.13,495.762 949.13,495.762L949.13,521.866C949.13,545.273 960.776,559.956 960.776,559.956C960.776,559.956 960.833,560.243 957.735,558.579C954.637,556.916 951.196,549.229 950.335,549.229C949.475,549.229 948.213,554.219 944.369,560.243C940.526,566.266 935.305,575.903 934.445,581.009C933.584,586.114 930.601,593.457 929.282,597.415C927.963,601.374 926.299,615.657 925.094,622.771C923.89,629.884 921.194,650.65 921.194,650.65C921.194,650.65 919.125,666.97 918.033,676.853L911.844,676.853ZM1102.47,599.511C1101.96,599.512 1101.54,599.365 1101.24,599.062C1099.81,597.628 1104.01,593.012 1104.01,593.012C1118.02,573.965 1120.54,563.461 1130.06,536.291C1139.59,509.121 1141.54,497.021 1141.54,488.273C1141.54,479.525 1140.07,476.549 1136.2,468.159C1130.03,454.786 1113.33,454.678 1111.82,456.184C1108.69,459.31 1095.2,459.645 1094.37,459.663L1094.33,459.664L1026.91,459.664C1026.91,459.664 1006.18,459.857 989.427,459.863L988.237,459.863C985.779,459.863 983.421,459.858 981.246,459.848L981.079,459.847C975.957,461.34 974.682,464.185 970.217,476.18C965.413,489.087 966.417,499.556 966.417,511.961C966.417,524.367 967.205,526.589 967.922,540.859C968.64,555.129 972.01,566.315 973.731,574.991C975.452,583.668 977.603,592.057 979.109,595.284C980.614,598.511 980.041,599.443 979.18,599.802C978.32,600.16 976.957,599.73 976.025,597.005C975.093,594.28 972.798,594.065 972.798,594.065C972.798,594.065 970.432,593.563 968.926,599.156C968.124,602.135 968.545,608.745 969.114,614.273C969.394,615.141 969.803,616.704 970.139,619.195C975.608,620.253 985.141,620.951 1001.73,620.321C1037.07,618.979 1101.29,618.852 1118.86,618.842C1119.43,618.842 1120,618.858 1120.57,618.888C1133.2,617.656 1131.79,614.305 1131.79,614.305C1131.79,599.46 1129.27,599.6 1127.31,592.177C1126.56,589.336 1124.87,588.221 1122.79,588.188L1122.72,588.187C1119.37,588.17 1115.01,590.915 1111.82,593.774C1107.74,597.434 1104.43,599.491 1102.5,599.511L1102.47,599.511ZM1009.4,585.773C1009.4,585.773 1010.78,582.377 1014.81,582.377C1018.85,582.377 1021.43,584.586 1021.51,586.277C1021.59,587.901 1018.55,586.432 1015.73,586.186C1014.96,586.118 1014.44,586.139 1014.26,586.186C1014.26,586.186 1008.43,587.746 1009.4,585.773ZM1011.29,477.101C1011.29,477.101 1008.49,483.354 1008.49,495.118C1008.49,506.882 1011.71,509.123 1011.71,518.787C1011.71,528.45 1010.73,530.131 1010.73,540.075C1010.73,550.018 1011.57,565.424 1012.55,570.186C1012.55,570.186 1014.24,552.96 1014.94,544.977C1015.63,536.994 1016.62,526.49 1016.62,521.168C1016.62,515.846 1012.55,508.843 1012.55,493.578C1012.55,478.312 1011.29,477.101 1011.29,477.101ZM1078.88,436.23C1078.88,436.23 1078.54,442.617 1086.05,442.617C1093.56,442.617 1095.35,439.031 1095.35,436.566C1095.35,434.101 1092.1,430.292 1085.94,431.3C1079.78,432.309 1078.88,436.23 1078.88,436.23ZM1060.66,317.763C1060.66,317.763 1061.78,320.676 1060.1,327.398C1058.42,334.121 1048.22,347.118 1048.22,347.118C1048.22,347.118 1060.21,320.452 1060.66,317.763ZM1038.59,316.306C1038.59,316.306 1038.65,326.614 1043.29,326.614C1046.83,326.614 1049.64,325.47 1050.8,322.132C1051.73,319.45 1043.03,326.018 1038.59,316.306ZM1080.2,171.04C1079.6,170.716 1078.95,170.422 1078.25,170.163C1066.51,165.814 1033.74,162.681 1009.59,166.59C1005.84,167.558 1003.74,168.91 1002.18,171.607C1002.18,171.607 997.975,175.669 996.995,195.696C996.014,215.723 995.034,231.689 998.815,244.434C1002.6,257.178 1007.92,278.046 1015.06,290.651C1015.06,290.651 1015.95,294.659 1020.11,297.312L1020.19,297.364C1023.03,298.87 1026.92,299.194 1032.62,299.194C1042.83,299.194 1043.46,301.251 1069.55,286.73C1091.89,274.29 1094.3,257.441 1094.54,252.87C1094.52,252.486 1094.52,252.125 1094.56,251.784L1094.56,251.753L1094.56,251.78C1094.82,249.026 1096.65,247.665 1097.43,247.206C1098.64,245.696 1100.67,248.284 1107.47,235.176C1115.98,218.744 1117.92,210.378 1112.1,205.747C1106.27,201.116 1099.55,205.598 1095.82,213.664C1092.08,221.731 1092.28,225.857 1088.25,225.857C1082.62,225.857 1086.85,208.765 1086.85,200.04C1086.85,192.556 1090.02,179.444 1082.77,172.85L1082.77,172.85C1082.27,172.398 1081.73,171.976 1081.13,171.59L1080.94,171.47C1080.7,171.32 1080.45,171.177 1080.2,171.04L1080.2,171.04Z" style="fill:rgb(129,150,166);"/>
-										</g>
-										<g id="sensor_belt">
-											<g id="belt" transform="matrix(1.00673,0,0,0.917422,-1786.73,-5.58417)">
-												<path d="M2735.54,515.363C2735.72,516.258 2792.32,520.658 2909.33,516.047C2912.62,523.324 2912.97,530.4 2911.23,538.376C2911.32,538.376 2796.87,544.65 2732.49,535.133C2733.1,526.704 2733.43,523.656 2735.54,515.363Z" style="fill:rgb(129,150,166);"/>
-											</g>
-											<g id="body_sensor">
-												<g transform="matrix(0.160411,0,0,0.160411,677.774,13.7687)">
-													<path d="M2446.04,2908.21C2446.04,2907.54 2446.04,2904.9 2446.04,2904.24C2446.04,2874.31 2449.17,2853.49 2450.62,2838.66C2451.35,2831.18 2452.82,2824.36 2455.78,2818.17C2456.12,2817.16 2456.32,2816.68 2456.32,2816.68L2456.53,2816.68C2460.87,2808.36 2467.47,2801.51 2475.48,2797.03L2475.48,2797.02C2475.48,2797.02 2488.04,2786.55 2523.06,2791.31C2556.6,2795.86 2592.59,2795.71 2615.97,2795.69C2616.02,2795.68 2616.08,2795.68 2616.13,2795.68L2617.56,2795.68L2619,2795.68C2619.05,2795.68 2619.11,2795.68 2619.16,2795.69C2642.54,2795.71 2678.52,2795.86 2712.06,2791.31C2747.09,2786.55 2759.65,2797.02 2759.65,2797.02L2759.65,2797.03C2767.65,2801.51 2774.26,2808.36 2778.6,2816.68C2778.6,2816.68 2779.01,2817.16 2779.34,2818.17C2782.31,2824.36 2783.38,2831.06 2784.42,2838.66C2786.43,2853.29 2789.09,2874.31 2789.09,2904.24C2789.09,2904.9 2789.09,2907.54 2789.09,2908.21C2789.09,2938.14 2786.98,2958.53 2785.37,2973.79C2784.41,2982.94 2782.31,2988.08 2779.34,2994.27C2779.01,2995.28 2778.6,2995.77 2778.6,2995.77C2774.26,3004.08 2767.65,3010.93 2759.65,3015.41L2759.65,3015.43C2759.65,3015.43 2747.09,3025.9 2712.06,3021.14C2678.52,3016.58 2617.56,3016.76 2617.56,3016.76C2617.56,3016.76 2556.6,3016.58 2523.06,3021.14C2488.04,3025.9 2475.48,3015.43 2475.48,3015.43L2475.48,3015.41C2467.47,3010.93 2460.87,3004.08 2456.53,2995.77C2456.53,2995.77 2450.59,2981.14 2450.43,2973.79C2447.94,2959.6 2446.04,2938.14 2446.04,2908.21Z" style="fill:rgb(228,228,228);"/>
-												</g>
-												<g transform="matrix(0.14681,0,0,0.14681,713.547,53.0982)">
-													<path d="M2446.04,2908.21C2446.04,2907.54 2446.04,2904.9 2446.04,2904.24C2446.04,2874.31 2449.17,2853.49 2450.62,2838.66C2451.35,2831.18 2452.82,2824.36 2455.78,2818.17C2456.12,2817.16 2456.32,2816.68 2456.32,2816.68L2456.53,2816.68C2460.87,2808.36 2467.47,2801.51 2475.48,2797.03L2475.48,2797.02C2475.48,2797.02 2488.04,2786.55 2523.06,2791.31C2556.6,2795.86 2592.59,2795.71 2615.97,2795.69C2616.02,2795.68 2616.08,2795.68 2616.13,2795.68L2617.56,2795.68L2619,2795.68C2619.05,2795.68 2619.11,2795.68 2619.16,2795.69C2642.54,2795.71 2678.52,2795.86 2712.06,2791.31C2747.09,2786.55 2759.65,2797.02 2759.65,2797.02L2759.65,2797.03C2767.65,2801.51 2774.26,2808.36 2778.6,2816.68C2778.6,2816.68 2779.01,2817.16 2779.34,2818.17C2782.31,2824.36 2783.38,2831.06 2784.42,2838.66C2786.43,2853.29 2789.09,2874.31 2789.09,2904.24C2789.09,2904.9 2789.09,2907.54 2789.09,2908.21C2789.09,2938.14 2786.98,2958.53 2785.37,2973.79C2784.41,2982.94 2782.31,2988.08 2779.34,2994.27C2779.01,2995.28 2778.6,2995.77 2778.6,2995.77C2774.26,3004.08 2767.65,3010.93 2759.65,3015.41L2759.65,3015.43C2759.65,3015.43 2747.09,3025.9 2712.06,3021.14C2678.52,3016.58 2617.56,3016.76 2617.56,3016.76C2617.56,3016.76 2556.6,3016.58 2523.06,3021.14C2488.04,3025.9 2475.48,3015.43 2475.48,3015.43L2475.48,3015.41C2467.47,3010.93 2460.87,3004.08 2456.53,2995.77C2456.53,2995.77 2450.59,2981.14 2450.43,2973.79C2447.94,2959.6 2446.04,2938.14 2446.04,2908.21Z" style="fill:rgb(241,241,241);fill-opacity:0.7;"/>
-												</g>
-												<g transform="matrix(0.160411,0,0,0.160411,482.95,16.676)">
-													<path d="M3697.11,2791.01C3698.99,2789.48 3701,2788.11 3703.12,2786.93L3703.12,2786.92C3703.12,2786.92 3714.62,2777.33 3746.67,2781.69C3777.37,2785.86 3810.3,2785.72 3831.7,2785.7C3831.75,2785.7 3831.8,2785.7 3831.85,2785.7L3833.16,2785.7L3834.47,2785.7C3834.52,2785.7 3834.57,2785.7 3834.62,2785.7C3856.02,2785.72 3888.95,2785.86 3919.65,2781.69C3951.7,2777.33 3963.2,2786.92 3963.2,2786.92L3963.2,2786.93C3966.33,2788.68 3969.22,2790.82 3971.82,2793.3C3938.44,2796.56 3881.36,2799.08 3829.92,2800.7C3773.47,2802.47 3719.46,2794.75 3697.11,2791.01Z" style="fill:white;fill-opacity:0.6;"/>
-												</g>
-												<g transform="matrix(0.160411,0,0,0.160411,482.95,16.676)">
-													<path d="M3964.45,2774.51C3971.3,2776.49 3974.18,2778.89 3974.18,2778.89L3974.18,2778.91C3982.18,2783.39 3988.79,2790.24 3993.13,2798.55C3993.13,2798.55 3993.54,2799.04 3993.87,2800.05C3996.84,2806.24 3997.91,2812.93 3998.95,2820.53C4000.96,2835.16 4003.62,2856.18 4003.62,2886.11C4003.62,2886.78 4003.62,2889.42 4003.62,2890.09C4003.62,2920.01 4001.51,2940.41 3999.9,2955.66C3998.93,2964.81 3996.84,2969.96 3993.87,2976.15C3993.54,2977.16 3993.13,2977.64 3993.13,2977.64C3988.79,2985.96 3982.18,2992.81 3974.18,2997.29L3974.18,2997.3C3974.18,2997.3 3971.46,2999.57 3965.03,3001.51L3966.16,2996.86C3973.9,2964.78 3977.82,2931.9 3977.82,2898.91L3977.82,2879.49C3977.82,2846.31 3973.86,2813.25 3966.03,2781.01L3964.45,2774.51Z" style="fill:url(#_Linear1);"/>
-												</g>
-												<g transform="matrix(-0.173294,-2.12223e-17,1.96447e-17,-0.160411,1761.92,944.699)">
-													<path d="M3680.31,2816.56C3684.37,2801.18 3695.8,2790.43 3703.12,2786.93L3703.12,2786.92C3703.12,2786.92 3714.62,2777.33 3746.67,2781.69C3777.37,2785.86 3810.3,2785.72 3831.7,2785.7C3831.75,2785.7 3831.8,2785.7 3831.85,2785.7L3833.16,2785.7L3834.47,2785.7C3834.52,2785.7 3834.57,2785.7 3834.62,2785.7C3856.02,2785.72 3888.95,2785.86 3919.65,2781.69C3951.7,2777.33 3963.2,2786.92 3963.2,2786.92L3963.2,2786.93C3979.77,2796.93 3983.17,2810.75 3984.23,2812.11C3927.76,2807.18 3886.65,2807.88 3829.92,2807.36C3773.45,2806.84 3714.39,2809.78 3680.31,2816.56Z" style="fill:url(#_Linear2);"/>
-												</g>
-											</g>
+					</svg>
+					<svg class="transp_man" viewBox="0 0 386 550" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+						<g transform="matrix(1,0,0,1,-841.798,-127.829)">
+							<g>
+								<g id="transp_man">
+									<g id="body_filling">
+										<path id="body" d="M912.788,676.853C915.079,662.673 916.726,650.965 916.726,650.965C928.281,584.682 925.655,601.946 928.806,583.039C931.957,564.132 943.842,552.805 944.936,539.893C946.03,526.982 944.498,519.761 944.498,493.282C944.498,466.803 951.72,451.485 951.72,442.732C951.72,433.978 949.75,432.884 949.75,423.256C949.75,413.627 949.02,391.22 963.2,367.937C975.157,348.304 1006.53,332.903 1016.08,328.556C1027,321.084 1031.88,325.596 1031.88,304.512C1031.88,304.512 1048.62,310.634 1083.69,278.325C1097.44,265.662 1096.36,244.05 1096.36,244.05L1109.35,244.05C1109.35,244.05 1104.22,278.927 1114.48,288.159C1124.74,297.391 1154.49,316.538 1167.14,324.061C1168.02,324.583 1168.83,325.074 1169.6,325.536L1169.61,325.476C1169.61,325.476 1170.26,325.889 1171.41,326.641C1178.66,331.089 1179.83,332.278 1180.02,332.525C1190.42,339.939 1205.52,351.829 1210.3,361.378C1217.82,376.423 1222.61,383.603 1222.61,402.751C1222.61,421.899 1219.35,432.277 1219.35,440.568C1219.35,448.859 1219.35,448.187 1219.35,448.187C1219.35,448.187 1226.97,466.45 1226.97,475.413C1226.97,484.376 1227.36,487.359 1222.71,520.731C1221.95,526.172 1222.64,531.898 1222.43,569.421C1222.24,604.734 1214.41,653.535 1212.21,676.853L1172.45,676.853C1172.7,670.872 1171.26,659.315 1163.61,637.541C1149.78,598.151 1159.76,573.641 1160.64,562.087C1161.51,550.533 1163.09,551.408 1156.26,530.225C1153.36,521.241 1151.72,517.53 1150.62,515.416C1147.99,520.816 1140.17,538.262 1140.53,553.922C1140.96,572.728 1144.38,596.663 1150.79,610.34L1152.93,622.735C1152.93,622.735 1109.76,621.025 1038.38,621.025C977.795,621.025 970.482,622.873 969.656,623.432C969.559,646.356 962.831,667.196 959.19,676.853L912.788,676.853Z" style="fill:rgb(247,247,247);"/>
+										<g id="face" transform="matrix(1,0,0,1,-1984.77,7.83448)">
+											<path d="M2987.45,160.135C2987.45,160.135 2978.58,168.538 2978.58,204.017C2978.58,239.497 2986.52,251.167 2986.52,251.167C2986.52,251.167 2994.45,289.214 3009.16,292.949C3023.86,296.684 3036.47,291.315 3046.27,285.246C3056.07,279.177 3066.78,272.064 3071.27,266.423C3075.76,260.782 3080.06,247.73 3081.37,241.635C3082.68,235.54 3083.72,243.774 3092.23,227.342C3100.75,210.909 3102.69,202.544 3096.87,197.913C3091.04,193.282 3084.32,197.763 3080.58,205.83C3076.85,213.897 3079.15,219.454 3074.97,207.264C3070.78,195.074 3071.62,200.93 3071.62,192.206C3071.62,183.482 3075.92,167.109 3063.01,162.329C3050.11,157.548 3011.79,154.236 2987.45,160.135Z" style="fill:rgb(247,247,247);"/>
 										</g>
 									</g>
-									<g transform="matrix(0.151113,0,0,0.0600157,714.591,391.59)">
-										<rect x="841.798" y="392.361" width="13.455" height="27.702" style="fill:white;"/>
+									<g id="body_outline">
+										<g transform="matrix(1,0,0,1,-1984.77,7.83448)">
+											<path d="M3082.08,216.673C3082.08,216.67 3082.08,216.667 3082.08,216.663C3082.05,216.512 3080.74,210.196 3085.04,205.142C3088.78,200.742 3091.16,200.451 3092.48,201.471C3093.81,202.491 3092.89,205.142 3090.34,204.734C3087.79,204.327 3086.54,205.945 3086.99,208.251C3087.21,209.401 3088.99,210.12 3089.92,210.707C3090.77,211.246 3091.18,212.019 3090.55,212.995C3089.55,214.52 3088.19,214.274 3086.62,213.369C3085.71,212.846 3085.62,213.433 3085.1,213.433C3083.21,213.433 3083.75,217.887 3082.39,217.248C3082.28,217.192 3082.22,217.117 3082.13,216.856C3082.11,216.802 3082.1,216.745 3082.08,216.673Z" style="fill:rgb(129,150,166);"/>
+										</g>
+										<g transform="matrix(1,0,0,1,-1984.77,7.83448)">
+											<path d="M3080.05,225.721C3080.05,225.721 3080.36,228.78 3083.82,228.78C3087.29,228.78 3090.14,227.047 3090.66,224.395C3091.16,221.744 3087.8,223.273 3086.07,225.211C3084.33,227.149 3082.7,226.129 3082.9,224.497C3083.11,222.865 3079.64,223.375 3080.05,225.721Z" style="fill:rgb(129,150,166);"/>
+										</g>
+										<g transform="matrix(1.17773,-0.309011,0.249531,0.951038,-3416.35,1167.87)">
+											<path d="M3746.1,161.131C3746.1,161.131 3734.75,153.749 3726.11,157.364C3712.17,163.192 3714.05,157.79 3715.81,149.885C3719.97,131.148 3729.69,128.364 3729.69,128.364C3734.06,125.909 3754.93,122.411 3743.43,129.958C3738.92,132.917 3740.11,140.364 3745.46,142.743C3750.81,145.122 3748.18,150.425 3749.97,153.994C3751.75,157.563 3746.1,161.131 3746.1,161.131Z" style="fill:rgb(129,150,166);"/>
+										</g>
+										<g transform="matrix(1.23378,-0.323717,0.261406,0.996299,-3605.21,1215.13)">
+											<path d="M3746.1,161.131C3746.1,161.131 3735.46,156.935 3726.11,157.364C3696.46,158.721 3693.12,151.606 3715.81,149.885C3734.95,148.433 3721.99,134.8 3721.99,134.8C3726.53,124.43 3754.97,121.709 3743.43,129.958C3739.18,132.997 3740.11,140.364 3745.46,142.743C3750.81,145.122 3748.18,150.425 3749.97,153.994C3751.75,157.563 3746.1,161.131 3746.1,161.131Z" style="fill:rgb(129,150,166);"/>
+										</g>
+										<path id="trusi" d="M958.357,676.853L959.813,621.107L968.84,620.834C968.84,620.834 1128.59,617.551 1152.39,620.287C1152.39,620.287 1157.02,649.52 1158.94,676.853L958.357,676.853Z" style="fill:rgb(129,150,166);"/>
+										<path d="M1171.28,676.853C1171.29,676.536 1171.3,676.208 1171.3,675.869C1171.3,669.903 1168.61,652.454 1165.29,642.595C1161.98,632.735 1156.86,618.444 1156.49,604.287C1156.1,589.289 1157.44,579.834 1158.88,572.753C1160.31,565.672 1161.3,557.994 1161.3,550.913C1161.3,544.204 1153.54,522.385 1148.71,512.191C1148.45,511.626 1148.12,510.806 1147.98,510.052C1146.17,499.829 1157.7,503.203 1157.7,503.203C1157.7,503.203 1159.54,507.706 1160.68,513.029C1161.83,518.353 1164.93,529.908 1166,535.017C1167.08,540.127 1167.44,547.208 1173.17,547.208C1178.91,547.208 1181.06,539.499 1184.29,538.692C1187.52,537.886 1187.25,539.437 1187.25,539.437C1187.25,539.437 1184.94,540.134 1183.65,542.859C1182.36,545.584 1178.56,548.38 1173.32,556.842C1168.09,565.303 1165.21,568.413 1165.21,577.377C1165.21,586.34 1163.87,599.001 1166.34,612.894C1168.8,626.787 1172.61,644.153 1175.19,652.781C1177.28,659.788 1178.49,669.973 1178.86,676.853L1171.28,676.853Z" style="fill:rgb(129,150,166);"/>
+										<path d="M911.844,676.853C913.936,664.613 916.753,647.799 918.182,635.197C920.59,613.97 928.979,572.143 938.211,556.636C947.444,541.13 943.654,528.213 943.654,497.358C943.654,466.503 952.892,446.172 951.01,439.091C949.128,432.009 948.948,423.046 948.948,423.046C948.948,423.046 949.128,421.522 949.217,408.436C949.307,395.35 958.569,370.345 964.311,364.603C970.053,358.861 989.94,338.731 1008.18,331.675C1023.56,325.725 1029.24,316.962 1030.64,314.359C1031.11,310.112 1031.35,306.311 1031.45,303.848C1028.78,303.548 1026.04,303.033 1023.22,302.388C1022.3,302.179 1021.45,301.812 1020.68,301.332C1019.13,300.632 1017.41,299.313 1015.66,296.954C1010.14,289.497 1004.73,272.735 1002.27,265.335C999.801,257.935 994.925,244.454 994.409,238.717C993.892,232.981 993.262,226.656 993.262,226.656C993.262,226.656 991.771,224.533 991.771,220.919C991.771,217.305 992.058,215.47 992.459,210.307C992.858,205.18 993.574,170.078 1002.98,162.746C1009.18,151.217 1020.24,140.607 1039.88,137.131C1081.67,129.733 1098.99,151.692 1100.2,153.314C1100.67,153.412 1101.17,153.587 1101.68,153.866C1104.76,155.547 1117.36,162.69 1120.59,175.435C1123.81,188.179 1122.82,212.774 1113.16,241.96C1105.44,265.302 1109.17,275.608 1109.64,278.617C1110.2,278.666 1110.02,284.183 1115.77,289.266C1121.79,294.579 1174.49,328.754 1174.49,328.754C1174.49,328.754 1181.08,333.156 1182.12,334.058C1188.38,338.391 1195.88,344.08 1202.2,350.761C1215.11,364.399 1221.13,387.117 1221.13,387.117C1223.35,397.586 1222.35,412.429 1220.49,428.85C1218.62,445.271 1217.19,442.92 1222.57,456.688C1227.94,470.456 1226.94,479.491 1226.94,484.51C1226.94,489.53 1224.86,506.524 1223.35,516.922C1221.49,523.591 1222.57,529.112 1222.57,540.778C1222.57,552.444 1221.99,587.244 1221.27,593.841C1220.56,600.438 1217.9,630.268 1217.9,630.268C1217.9,630.268 1213.96,663.325 1213.1,668.703C1212.84,670.297 1212.51,673.307 1212.15,676.853L1209.11,676.853C1210.8,658.78 1212.13,640.326 1212.71,631.431C1213.76,615.325 1215.16,584.513 1217.61,561.754C1220.07,538.996 1216.91,534.444 1216.91,529.017C1216.91,523.59 1216.91,529.017 1219.54,512.736C1222.17,496.455 1220.39,486.238 1218.15,465.398C1215.91,444.558 1211.89,449.865 1211.24,445.634C1210.6,441.404 1212.1,438.23 1212.1,438.23C1220.64,410.438 1218.27,404.041 1209.53,375.919C1201.36,349.61 1176.1,335.721 1172.88,334.039C1167.87,332.077 1160.19,330.31 1149.54,331.095C1128.25,332.663 1061.92,344.54 1061.92,344.54C1061.92,344.54 1089.48,332.327 1127.8,327.061C1147.07,324.708 1147.19,324.484 1147.19,324.484C1147.19,324.484 1138.89,315.409 1124.89,304.429C1110.88,293.449 1111,293.224 1111,293.224C1111,293.224 1105.95,285.381 1099.34,293.673L1090.38,305.773C1090.38,305.773 1095.65,292.104 1096.88,283.029C1097.14,281.094 1098.8,280.025 1098.64,278.641C1098.49,277.339 1098.36,276.261 1098.24,275.371C1097.58,272.164 1096.35,266.058 1094.91,258.636C1094.57,260.871 1094.06,262.908 1093.51,264.682C1092.19,268.872 1089.81,272.645 1086.59,275.626C1068.58,292.345 1061.38,294.932 1049.58,301.083C1044.51,303.727 1039.17,304.429 1033.51,304.036C1033.75,304.754 1033.9,305.286 1033.9,305.286L1032.64,339.739C1032.64,339.739 1033.04,346.881 1026.33,346.881L1003.15,346.881C1003.15,346.881 1016.16,346.29 1023.19,339.263C1025.71,336.739 1027.5,331.722 1028.75,326.128C1024.74,330.235 1015.46,334.968 1006.84,337.57C995.439,341.012 985.707,348.259 969.788,365.54C953.869,382.821 956.14,399.929 956.14,420.096C956.14,434.599 958.782,439.785 960.267,442.621C960.314,442.221 960.362,441.818 960.412,441.411C960.018,435.25 960.015,425.596 962.723,417.405C967.092,404.184 975.495,384.977 984.123,376.205C984.123,376.205 965.74,404.272 964.665,432.002C964.904,431.95 965.165,431.923 965.45,431.923C969.851,431.923 971.955,435.003 971.955,437.713C971.955,440.217 970.897,444.035 966.647,444.678C966.394,453.341 975.306,454.485 986.673,454.476L987.041,454.475C991.102,454.464 995.464,454.315 999.825,454.315C1016.74,454.315 1016.63,444.343 1016.63,437.172C1016.63,430.002 1023.24,405.689 1023.24,405.689L1023.18,406.526C1022.88,410.34 1021.63,426.528 1020.55,441.43C1019.65,453.937 1026.66,455.567 1039.23,455.55L1039.64,455.549C1044.09,455.532 1049.23,455.323 1054.95,455.323C1077.13,455.323 1097.15,452.18 1121.35,444.001C1142.7,436.786 1141.99,414.489 1141.53,409.333C1138.44,404.873 1132.97,399.009 1133.71,398.576C1135.17,398.062 1149.34,412.126 1155.67,419.73C1162.31,427.706 1174.09,436.667 1174.09,436.667C1172.53,437.046 1150.8,423.219 1147.4,425.499C1147.53,432.582 1148.16,447.799 1149.06,465.06C1150.07,484.443 1158.66,505.778 1158.66,505.778L1151.88,516.026C1151.88,516.026 1140.94,537.472 1140.94,551.696C1140.94,565.92 1142.9,587.674 1149.91,607.15C1156.53,625.558 1158.45,652.685 1160.31,676.853L1138.86,676.853C1138.32,667.934 1138.42,653.765 1138.42,642.441C1138.42,628.504 1123.88,625.467 1109.56,623.105C1086.14,622.69 1009.36,626.442 986.439,628.406C979.516,629 974.44,629.851 970.726,630.752C970.688,634.392 970.481,638.718 970.016,643.835C968.834,656.834 964.977,667.985 961.155,676.853L945.331,676.853C949.038,668.986 952.571,660.537 952.571,660.537C952.571,660.537 959.451,638.622 959.451,626.384C959.451,623.463 959.723,621.18 960.139,619.397C960.869,613.602 963.167,611.938 963.167,611.938C963.167,611.938 962.271,593.339 964.848,582.695C967.425,572.051 966.977,564.657 964.064,551.1C961.151,537.543 961.447,518.896 961.447,507.355C961.447,495.815 964.697,474.079 965.481,471.166C966.265,468.253 967.274,466.124 965.929,461.082C964.738,456.617 959.417,452.503 958.215,451.621C957.816,452.143 957.542,452.462 957.542,452.462C957.542,452.462 956.197,456.764 953.239,467.969C950.281,479.173 949.13,495.762 949.13,495.762L949.13,521.866C949.13,545.273 960.776,559.956 960.776,559.956C960.776,559.956 960.833,560.243 957.735,558.579C954.637,556.916 951.196,549.229 950.335,549.229C949.475,549.229 948.213,554.219 944.369,560.243C940.526,566.266 935.305,575.903 934.445,581.009C933.584,586.114 930.601,593.457 929.282,597.415C927.963,601.374 926.299,615.657 925.094,622.771C923.89,629.884 921.194,650.65 921.194,650.65C921.194,650.65 919.125,666.97 918.033,676.853L911.844,676.853ZM1102.47,599.511C1101.96,599.512 1101.54,599.365 1101.24,599.062C1099.81,597.628 1104.01,593.012 1104.01,593.012C1118.02,573.965 1120.54,563.461 1130.06,536.291C1139.59,509.121 1141.54,497.021 1141.54,488.273C1141.54,479.525 1140.07,476.549 1136.2,468.159C1130.03,454.786 1113.33,454.678 1111.82,456.184C1108.69,459.31 1095.2,459.645 1094.37,459.663L1094.33,459.664L1026.91,459.664C1026.91,459.664 1006.18,459.857 989.427,459.863L988.237,459.863C985.779,459.863 983.421,459.858 981.246,459.848L981.079,459.847C975.957,461.34 974.682,464.185 970.217,476.18C965.413,489.087 966.417,499.556 966.417,511.961C966.417,524.367 967.205,526.589 967.922,540.859C968.64,555.129 972.01,566.315 973.731,574.991C975.452,583.668 977.603,592.057 979.109,595.284C980.614,598.511 980.041,599.443 979.18,599.802C978.32,600.16 976.957,599.73 976.025,597.005C975.093,594.28 972.798,594.065 972.798,594.065C972.798,594.065 970.432,593.563 968.926,599.156C968.124,602.135 968.545,608.745 969.114,614.273C969.394,615.141 969.803,616.704 970.139,619.195C975.608,620.253 985.141,620.951 1001.73,620.321C1037.07,618.979 1101.29,618.852 1118.86,618.842C1119.43,618.842 1120,618.858 1120.57,618.888C1133.2,617.656 1131.79,614.305 1131.79,614.305C1131.79,599.46 1129.27,599.6 1127.31,592.177C1126.56,589.336 1124.87,588.221 1122.79,588.188L1122.72,588.187C1119.37,588.17 1115.01,590.915 1111.82,593.774C1107.74,597.434 1104.43,599.491 1102.5,599.511L1102.47,599.511ZM1009.4,585.773C1009.4,585.773 1010.78,582.377 1014.81,582.377C1018.85,582.377 1021.43,584.586 1021.51,586.277C1021.59,587.901 1018.55,586.432 1015.73,586.186C1014.96,586.118 1014.44,586.139 1014.26,586.186C1014.26,586.186 1008.43,587.746 1009.4,585.773ZM1011.29,477.101C1011.29,477.101 1008.49,483.354 1008.49,495.118C1008.49,506.882 1011.71,509.123 1011.71,518.787C1011.71,528.45 1010.73,530.131 1010.73,540.075C1010.73,550.018 1011.57,565.424 1012.55,570.186C1012.55,570.186 1014.24,552.96 1014.94,544.977C1015.63,536.994 1016.62,526.49 1016.62,521.168C1016.62,515.846 1012.55,508.843 1012.55,493.578C1012.55,478.312 1011.29,477.101 1011.29,477.101ZM1078.88,436.23C1078.88,436.23 1078.54,442.617 1086.05,442.617C1093.56,442.617 1095.35,439.031 1095.35,436.566C1095.35,434.101 1092.1,430.292 1085.94,431.3C1079.78,432.309 1078.88,436.23 1078.88,436.23ZM1060.66,317.763C1060.66,317.763 1061.78,320.676 1060.1,327.398C1058.42,334.121 1048.22,347.118 1048.22,347.118C1048.22,347.118 1060.21,320.452 1060.66,317.763ZM1038.59,316.306C1038.59,316.306 1038.65,326.614 1043.29,326.614C1046.83,326.614 1049.64,325.47 1050.8,322.132C1051.73,319.45 1043.03,326.018 1038.59,316.306ZM1080.2,171.04C1079.6,170.716 1078.95,170.422 1078.25,170.163C1066.51,165.814 1033.74,162.681 1009.59,166.59C1005.84,167.558 1003.74,168.91 1002.18,171.607C1002.18,171.607 997.975,175.669 996.995,195.696C996.014,215.723 995.034,231.689 998.815,244.434C1002.6,257.178 1007.92,278.046 1015.06,290.651C1015.06,290.651 1015.95,294.659 1020.11,297.312L1020.19,297.364C1023.03,298.87 1026.92,299.194 1032.62,299.194C1042.83,299.194 1043.46,301.251 1069.55,286.73C1091.89,274.29 1094.3,257.441 1094.54,252.87C1094.52,252.486 1094.52,252.125 1094.56,251.784L1094.56,251.753L1094.56,251.78C1094.82,249.026 1096.65,247.665 1097.43,247.206C1098.64,245.696 1100.67,248.284 1107.47,235.176C1115.98,218.744 1117.92,210.378 1112.1,205.747C1106.27,201.116 1099.55,205.598 1095.82,213.664C1092.08,221.731 1092.28,225.857 1088.25,225.857C1082.62,225.857 1086.85,208.765 1086.85,200.04C1086.85,192.556 1090.02,179.444 1082.77,172.85L1082.77,172.85C1082.27,172.398 1081.73,171.976 1081.13,171.59L1080.94,171.47C1080.7,171.32 1080.45,171.177 1080.2,171.04L1080.2,171.04Z" style="fill:rgb(129,150,166);"/>
+									</g>
+									<g id="sensor_belt">
+										<g id="belt" transform="matrix(1.00673,0,0,0.917422,-1786.73,-5.58417)">
+											<path d="M2735.54,515.363C2735.72,516.258 2792.32,520.658 2909.33,516.047C2912.62,523.324 2912.97,530.4 2911.23,538.376C2911.32,538.376 2796.87,544.65 2732.49,535.133C2733.1,526.704 2733.43,523.656 2735.54,515.363Z" style="fill:rgb(129,150,166);"/>
+										</g>
+										<g id="body_sensor">
+											<g transform="matrix(0.160411,0,0,0.160411,677.774,13.7687)">
+												<path d="M2446.04,2908.21C2446.04,2907.54 2446.04,2904.9 2446.04,2904.24C2446.04,2874.31 2449.17,2853.49 2450.62,2838.66C2451.35,2831.18 2452.82,2824.36 2455.78,2818.17C2456.12,2817.16 2456.32,2816.68 2456.32,2816.68L2456.53,2816.68C2460.87,2808.36 2467.47,2801.51 2475.48,2797.03L2475.48,2797.02C2475.48,2797.02 2488.04,2786.55 2523.06,2791.31C2556.6,2795.86 2592.59,2795.71 2615.97,2795.69C2616.02,2795.68 2616.08,2795.68 2616.13,2795.68L2617.56,2795.68L2619,2795.68C2619.05,2795.68 2619.11,2795.68 2619.16,2795.69C2642.54,2795.71 2678.52,2795.86 2712.06,2791.31C2747.09,2786.55 2759.65,2797.02 2759.65,2797.02L2759.65,2797.03C2767.65,2801.51 2774.26,2808.36 2778.6,2816.68C2778.6,2816.68 2779.01,2817.16 2779.34,2818.17C2782.31,2824.36 2783.38,2831.06 2784.42,2838.66C2786.43,2853.29 2789.09,2874.31 2789.09,2904.24C2789.09,2904.9 2789.09,2907.54 2789.09,2908.21C2789.09,2938.14 2786.98,2958.53 2785.37,2973.79C2784.41,2982.94 2782.31,2988.08 2779.34,2994.27C2779.01,2995.28 2778.6,2995.77 2778.6,2995.77C2774.26,3004.08 2767.65,3010.93 2759.65,3015.41L2759.65,3015.43C2759.65,3015.43 2747.09,3025.9 2712.06,3021.14C2678.52,3016.58 2617.56,3016.76 2617.56,3016.76C2617.56,3016.76 2556.6,3016.58 2523.06,3021.14C2488.04,3025.9 2475.48,3015.43 2475.48,3015.43L2475.48,3015.41C2467.47,3010.93 2460.87,3004.08 2456.53,2995.77C2456.53,2995.77 2450.59,2981.14 2450.43,2973.79C2447.94,2959.6 2446.04,2938.14 2446.04,2908.21Z" style="fill:rgb(228,228,228);"/>
+											</g>
+											<g transform="matrix(0.14681,0,0,0.14681,713.547,53.0982)">
+												<path d="M2446.04,2908.21C2446.04,2907.54 2446.04,2904.9 2446.04,2904.24C2446.04,2874.31 2449.17,2853.49 2450.62,2838.66C2451.35,2831.18 2452.82,2824.36 2455.78,2818.17C2456.12,2817.16 2456.32,2816.68 2456.32,2816.68L2456.53,2816.68C2460.87,2808.36 2467.47,2801.51 2475.48,2797.03L2475.48,2797.02C2475.48,2797.02 2488.04,2786.55 2523.06,2791.31C2556.6,2795.86 2592.59,2795.71 2615.97,2795.69C2616.02,2795.68 2616.08,2795.68 2616.13,2795.68L2617.56,2795.68L2619,2795.68C2619.05,2795.68 2619.11,2795.68 2619.16,2795.69C2642.54,2795.71 2678.52,2795.86 2712.06,2791.31C2747.09,2786.55 2759.65,2797.02 2759.65,2797.02L2759.65,2797.03C2767.65,2801.51 2774.26,2808.36 2778.6,2816.68C2778.6,2816.68 2779.01,2817.16 2779.34,2818.17C2782.31,2824.36 2783.38,2831.06 2784.42,2838.66C2786.43,2853.29 2789.09,2874.31 2789.09,2904.24C2789.09,2904.9 2789.09,2907.54 2789.09,2908.21C2789.09,2938.14 2786.98,2958.53 2785.37,2973.79C2784.41,2982.94 2782.31,2988.08 2779.34,2994.27C2779.01,2995.28 2778.6,2995.77 2778.6,2995.77C2774.26,3004.08 2767.65,3010.93 2759.65,3015.41L2759.65,3015.43C2759.65,3015.43 2747.09,3025.9 2712.06,3021.14C2678.52,3016.58 2617.56,3016.76 2617.56,3016.76C2617.56,3016.76 2556.6,3016.58 2523.06,3021.14C2488.04,3025.9 2475.48,3015.43 2475.48,3015.43L2475.48,3015.41C2467.47,3010.93 2460.87,3004.08 2456.53,2995.77C2456.53,2995.77 2450.59,2981.14 2450.43,2973.79C2447.94,2959.6 2446.04,2938.14 2446.04,2908.21Z" style="fill:rgb(241,241,241);fill-opacity:0.7;"/>
+											</g>
+											<g transform="matrix(0.160411,0,0,0.160411,482.95,16.676)">
+												<path d="M3697.11,2791.01C3698.99,2789.48 3701,2788.11 3703.12,2786.93L3703.12,2786.92C3703.12,2786.92 3714.62,2777.33 3746.67,2781.69C3777.37,2785.86 3810.3,2785.72 3831.7,2785.7C3831.75,2785.7 3831.8,2785.7 3831.85,2785.7L3833.16,2785.7L3834.47,2785.7C3834.52,2785.7 3834.57,2785.7 3834.62,2785.7C3856.02,2785.72 3888.95,2785.86 3919.65,2781.69C3951.7,2777.33 3963.2,2786.92 3963.2,2786.92L3963.2,2786.93C3966.33,2788.68 3969.22,2790.82 3971.82,2793.3C3938.44,2796.56 3881.36,2799.08 3829.92,2800.7C3773.47,2802.47 3719.46,2794.75 3697.11,2791.01Z" style="fill:white;fill-opacity:0.6;"/>
+											</g>
+											<g transform="matrix(0.160411,0,0,0.160411,482.95,16.676)">
+												<path d="M3964.45,2774.51C3971.3,2776.49 3974.18,2778.89 3974.18,2778.89L3974.18,2778.91C3982.18,2783.39 3988.79,2790.24 3993.13,2798.55C3993.13,2798.55 3993.54,2799.04 3993.87,2800.05C3996.84,2806.24 3997.91,2812.93 3998.95,2820.53C4000.96,2835.16 4003.62,2856.18 4003.62,2886.11C4003.62,2886.78 4003.62,2889.42 4003.62,2890.09C4003.62,2920.01 4001.51,2940.41 3999.9,2955.66C3998.93,2964.81 3996.84,2969.96 3993.87,2976.15C3993.54,2977.16 3993.13,2977.64 3993.13,2977.64C3988.79,2985.96 3982.18,2992.81 3974.18,2997.29L3974.18,2997.3C3974.18,2997.3 3971.46,2999.57 3965.03,3001.51L3966.16,2996.86C3973.9,2964.78 3977.82,2931.9 3977.82,2898.91L3977.82,2879.49C3977.82,2846.31 3973.86,2813.25 3966.03,2781.01L3964.45,2774.51Z" style="fill:url(#_Linear1);"/>
+											</g>
+											<g transform="matrix(-0.173294,-2.12223e-17,1.96447e-17,-0.160411,1761.92,944.699)">
+												<path d="M3680.31,2816.56C3684.37,2801.18 3695.8,2790.43 3703.12,2786.93L3703.12,2786.92C3703.12,2786.92 3714.62,2777.33 3746.67,2781.69C3777.37,2785.86 3810.3,2785.72 3831.7,2785.7C3831.75,2785.7 3831.8,2785.7 3831.85,2785.7L3833.16,2785.7L3834.47,2785.7C3834.52,2785.7 3834.57,2785.7 3834.62,2785.7C3856.02,2785.72 3888.95,2785.86 3919.65,2781.69C3951.7,2777.33 3963.2,2786.92 3963.2,2786.92L3963.2,2786.93C3979.77,2796.93 3983.17,2810.75 3984.23,2812.11C3927.76,2807.18 3886.65,2807.88 3829.92,2807.36C3773.45,2806.84 3714.39,2809.78 3680.31,2816.56Z" style="fill:url(#_Linear2);"/>
+											</g>
+										</g>
 									</g>
 								</g>
+								<g transform="matrix(0.151113,0,0,0.0600157,714.591,391.59)">
+									<rect x="841.798" y="392.361" width="13.455" height="27.702" style="fill:white;"/>
+								</g>
 							</g>
-							<defs>
-								<linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(25.8175,0,0,25.8175,3979.15,2880.02)"><stop offset="0" style="stop-color:rgb(211,211,211);stop-opacity:0"/><stop offset="0.5" style="stop-color:rgb(160,160,160);stop-opacity:0.75"/><stop offset="1" style="stop-color:rgb(143,143,143);stop-opacity:1"/></linearGradient>
-								<linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-5.43428e-15,-31.9586,29.5828,-5.8707e-15,3834,2806.78)"><stop offset="0" style="stop-color:rgb(189,189,189);stop-opacity:0"/><stop offset="0.53" style="stop-color:rgb(143,143,143);stop-opacity:0.73"/><stop offset="1" style="stop-color:rgb(126,126,126);stop-opacity:1"/></linearGradient>
-							</defs>
-						</svg>
-						<svg class="colored_man_pic" viewBox="0 0 386 546" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+						</g>
+						<defs>
+							<linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(25.8175,0,0,25.8175,3979.15,2880.02)"><stop offset="0" style="stop-color:rgb(211,211,211);stop-opacity:0"/><stop offset="0.5" style="stop-color:rgb(160,160,160);stop-opacity:0.75"/><stop offset="1" style="stop-color:rgb(143,143,143);stop-opacity:1"/></linearGradient>
+							<linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-5.43428e-15,-31.9586,29.5828,-5.8707e-15,3834,2806.78)"><stop offset="0" style="stop-color:rgb(189,189,189);stop-opacity:0"/><stop offset="0.53" style="stop-color:rgb(143,143,143);stop-opacity:0.73"/><stop offset="1" style="stop-color:rgb(126,126,126);stop-opacity:1"/></linearGradient>
+						</defs>
+					</svg>
+					<div class="is-transparent-3">
+						<svg class="colored_man" viewBox="0 0 386 546" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
 							<g transform="matrix(1,0,0,1,-838.08,-131.161)">
 								<g id="colored_man_phone">
 									<g id="device_light_window">
@@ -550,80 +485,78 @@
 								<image id="_Image2" width="23px" height="23px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAx0lEQVRIie3VwUrDQBSF4S/pFKIY113oo4sP4HMVu86IFNo0LuaGuhDETHfmwIVhFj93zmL+5uX1rUOPR9whofH3TBjxiQE5BfgJuzjXwM/IOGCfYuMdnvGAzQLwnBEfsdyQlCr6AN+jrYBfAtyjS0oNKTZuLatkThusLTYzrAb4Uxo0NRX8mhW+wlf4v4ZP3+ZWmSjf46gY5BJT85rZRieck+K87GqQVAGfNTfgmOJwcDXI1nKHnoL3LjSXsY/L7gabH4OVvwB1ATDVUuZ57QAAAABJRU5ErkJggg=="/>
 							</defs>
 						</svg>
-							
 					</div>
 				</div>
-			</div>               
-		</section>              
-		<!--  Process explained animation ends -->
-		
-		<div class="page__divider-app"></div>
+			</div>
+		</div>	
+	</section>
 
-		<section id="app-screens" class="section has-background-light is-bold pt-6">
-			
+	<!-- app section -->
+	<section id="app_screens" class="section is-bold mx-3 my-6 mt-6-mobile">					
 			<div class="container">
 				<figure id="multiSlide" class="multiSlide"></figure>				
 				<nav id="multiSlideNav" class="multiSlideNav">
 					<a href="#app-screens" id="left" class="navButton">&#12296;</a>
 					<a href="#app-screens" id="right" class="navButton"> &#12297;</a>
 				</nav>				
+			</div>			
+	</section>
+	<div class="page__divider-home mt-0"></div>
+
+	<!-- Explaining advantages -->
+	<section id="advantages" class="section mt-6 mx-3">
+		<div class="container mt-6">
+			<div class="columns is-desktop is-vcentered">
+				<div class="column">
+					<img class="" src="../img/nurses-male-female.png">
+				</div>
+				<div class="column">
+					<h3 class="is-size-3 is-italic has-text-weight-bold mb-6 pt-2"><span class="has-text-weight-light">„AusGleich“ – </span><br>für die nachhaltige Gesundheit unserer Pflegekräfte</h3>
+					<p class="main-text mt-6">
+						Durch das Projekt AusGleich wird es Pflegekräften erstmals möglich sein, den Effekt unterschiedlicher Situationen 
+						wie z.B. Belastungen im Pflegealltag, Sport, Entspannungsübungen, Schlaf oder Zeitdruck auf den eigenen Körper zu 
+						sehen und zu verstehen.
+					</p>
+					<p class="main-text mt-6">
+						So entwickeln diese ein besseres Bewusstsein dafür, wie wichtig und wirkungsvoll Methoden zur Entspannung und 
+						Regeneration sind und werden nachhaltig motiviert, diese regelmäßig in ihren Alltag einzubauen. 
+					</p>
+				</div>				
 			</div>
-		
-			<!-- Explaining advantages -->
-			<div class=".container.is-max-desktop py-6 m-6">
-				<div class="columns is-desktop is-vcentered">
-					<div class="img-tablet column is-half has-text-right">
-						<img src="../img/nurses-male-female.png">
-					</div>
-					<div class="column">
-						<h3 class="is-size-3 is-italic has-text-weight-bold mb-6 pt-2"><span class="has-text-weight-light">„AusGleich“ – </span><br>für die nachhaltige Gesundheit unserer Pflegekräfte</h3>					
-						<p>
-							Durch das Projekt AusGleich wird es Pflegekräften erstmals möglich sein, den Effekt unterschiedlicher Situationen 
-							wie z.B. Belastungen im Pflegealltag, Sport, Entspannungsübungen, Schlaf oder Zeitdruck auf den eigenen Körper zu 
-							sehen und zu verstehen.
-						</p><br>
-						<p>
-							So entwickeln diese ein besseres Bewusstsein dafür, wie wichtig und wirkungsvoll Methoden zur Entspannung und 
-							Regeneration sind und werden nachhaltig motiviert, diese regelmäßig in ihren Alltag einzubauen. 
-						</p>	
-					</div>					
-				</div>	
-			</div>	
-		</section>
+		</div>
+	</section>
 
-		<!-- Form -->
-		<section id="form" class="section is-bold my-6 mt-mobile">
-			<div class=".container.is-max-desktop mx-6">
-				<div class="columns ">
-					<div class="column pl-0-tablet">						
-						<h1 class="is-size-1 is-italic has-text-weight-bold">Schreiben<br> Sie uns!</h1>
-					</div>
-					<div class="column is-half">						
-                        
-                        <div class="form">
-                            <label class="label" for="name">Ihr Name</label>
-                            <input class="input is-medium mb-6" type="text" id="name" name="name" placeholder=" ">                              
-                            
-                            <label class="label" for="email">Ihre E-Mail-Adresse</label>
-                            <input class="input is-medium mb-6" type="email" id="email" name="email" placeholder=" ">                              
-                            
-                            <label class="label" for="subject">Betreff</label>
-                            <input class="input is-medium mb-6" type="text" id="subject" name="subject" placeholder=" "> 
+	<!-- Form -->
+	<section id="form" class="section has-background-light py-6 mt-6 px-6-mobile ">
+		<div class="container">
+			<div class="columns is-desktop">
+				<div class="column">
+					<h1 class="is-size-1 is-italic has-text-weight-bold">Schreiben<br> Sie uns!</h1>
+				</div>
+				<div class="column">
+					<div class="form">
+						<label class="label" for="name">Ihr Name</label>
+						<input class="input is-medium mb-6" type="text" id="name" name="name" placeholder=" ">                              
+						
+						<label class="label" for="email">Ihre E-Mail-Adresse</label>
+						<input class="input is-medium mb-6" type="email" id="email" name="email" placeholder=" ">                              
+						
+						<label class="label" for="subject">Betreff</label>
+						<input class="input is-medium mb-6" type="text" id="subject" name="subject" placeholder=" "> 
 
-                            <label class="label" for="message">Ihre Nachricht</label>
-                            <input class="textarea is-medium mb-6" type="text" id="message" name="message" placeholder=" "> 
+						<label class="label" for="message">Ihre Nachricht</label>
+						<input class="input is-medium mb-6" type="text" id="message" name="message" placeholder=" "> 
 
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <span class="has-text-weight-bold pl-2">Ich bestätige hiermit, dass ich mit der Verarbeitung meiner Daten einverstanden bin*</span> <br>
-                                <span class="has-text-weight-light"><br>
-                                    *Hinweis zum Datenschutz: Die von Ihnen im Kontaktformular eingegebenen Daten wie Name, E-Mail, Betreff und Nachrichtentext speichern und verwenden wir zum Zwecke der individuellen Kommunikation und zur Bearbeitung Ihres Anliegens. Die Übermittlung der Daten zwischen Ihrem Browser und unserem Server erfolgt über eine verschlüsselte SSL-Verbindung. Hier geht es zu unserer Datenschutzerklärung.
-                                </span>                       
-                            </label>
+						<label class="checkbox">
+							<input type="checkbox">
+							<span class="has-text-weight-bold pl-2">Ich bestätige hiermit, dass ich mit der Verarbeitung meiner Daten einverstanden bin*</span> <br>
+							<span class="has-text-weight-light"><br>
+								*Hinweis zum Datenschutz: Die von Ihnen im Kontaktformular eingegebenen Daten wie Name, E-Mail, Betreff und Nachrichtentext speichern und verwenden wir zum Zwecke der individuellen Kommunikation und zur Bearbeitung Ihres Anliegens. Die Übermittlung der Daten zwischen Ihrem Browser und unserem Server erfolgt über eine verschlüsselte SSL-Verbindung. Hier geht es zu unserer Datenschutzerklärung.
+							</span>                       
+						</label>
+						<button class="button primary--button is-size-5 is-italic has-text-weight-bold mt-6" type="submit">Senden</button>
 
-                            <button class="button primary--button is-size-5 is-italic has-text-weight-bold mt-6" type="submit">Senden</button>
-						</div>
-						<div class="columns is-desktop mt-6">
+						<div class="columns is-flex is-flex-wrap-wrap mt-6">
 							<div class="column">
 								<span class="has-text-weight-bold">Additional contacts?</span><br>
 								Ruckteschellweg 8a
@@ -639,79 +572,80 @@
 								E-Mail: info@fitbase.de
 							</div>							
 						</div>
-                                              
-					</div>
-				</div>								
-			</div>
-		</section>
 
-		<!--Partners & Developers-->
-		<div class="page__divider-home mt-0"></div>
-		<section id="partners" class="hero home__button-bg">
-			<div class="container has-background-white p-6 mt-6">
-				<h3 class="is-size-3 is-italic has-text-centered has-text-weight-bold mb-6 pt-2">Our participants</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Partners & Developers-->
+	<div class="page__divider-home mt-0"></div>
+	<section id="partners" class="hero brand_yellow-bg">
+		<div class="container has-background-white p-6 mt-6">
+			<h3 class="is-size-3 is-italic has-text-centered has-text-weight-bold mb-6 pt-2">Our participants</h3>
+			<div class="columns partners-mobile px-6">
+				<div class="column">
+					<div class="row">
+						<a href="https://www.salus-bkk.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 491.png"></a>
+					</div>
+					<div class="row">
+						<a href="https://www.pronovabkk.de" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 492.png"></a>
+					</div>
+					<div class="row">
+						<a href="https://www.bahn-bkk.de" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 493.png"></a>
+					</div>
+					<div class="row">
+						<a href="https://www.sbk.org/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 497.png"></a>
+					</div>
+				</div>
+				<div class="column">
+					<div class="row">
+						<a href="https://www.viactiv.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 498.png"></a>
+					</div>
+					<div class="row">
+						<a href="https://www.ruv-bkk.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 499.png"></a>
+					</div>
+					<div class="row">
+						<a href="https://www.bmwbkk.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 500.png"></a>
+					</div>
+					<div class="row">
+						<a href="https://www.bkk-mobil-oil.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 501.png"></a>
+					</div>
+				</div>
+				<div class="column">
+					<div class="row">
+						<a href="https://www.novitas-bkk.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 502.png"></a>
+					</div>
+					<div class="row">
+						<a href="https://www.bosch-bkk.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 503.png"></a>
+					</div>
+					<div class="row">
+						<a href="https://www.die-schwenninger.de/de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 504.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hero page__divider-footer">
+			<div class="container has-background-white has-text-centered p-6 mb-6">
+				<h3 class="is-size-3 is-italic has-text-weight-bold mb-6 pt-2">Developers</h3>
 				<div class="columns partners-mobile px-6">
 					<div class="column">
-						<div class="row">
-							<a href="https://www.salus-bkk.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 491.png"></a>
-						</div>
-						<div class="row">
-							<a href="https://www.pronovabkk.de" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 492.png"></a>
-						</div>
-						<div class="row">
-							<a href="https://www.bahn-bkk.de" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 493.png"></a>
-						</div>
-						<div class="row">
-							<a href="https://www.sbk.org/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 497.png"></a>
-						</div>
+						<a href="https://www.tu.berlin/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 494.png"></a>
 					</div>
 					<div class="column">
-						<div class="row">
-							<a href="https://www.viactiv.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 498.png"></a>
-						</div>
-						<div class="row">
-							<a href="https://www.ruv-bkk.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 499.png"></a>
-						</div>
-						<div class="row">
-							<a href="https://www.bmwbkk.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 500.png"></a>
-						</div>
-						<div class="row">
-							<a href="https://www.bkk-mobil-oil.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 501.png"></a>
-						</div>
+						<a href="https://corvolution.com/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 495.png"></a>
 					</div>
 					<div class="column">
-						<div class="row">
-							<a href="https://www.novitas-bkk.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 502.png"></a>
-						</div>
-						<div class="row">
-							<a href="https://www.bosch-bkk.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 503.png"></a>
-						</div>
-						<div class="row">
-							<a href="https://www.die-schwenninger.de/de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 504.png"></a>
-						</div>
+						<a href="https://fitbase.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 496.png"></a>
 					</div>
 				</div>
 			</div>
-			<div class="hero page__divider-footer">
-				<div class="container has-background-white has-text-centered p-6 mb-6">
-					<h3 class="is-size-3 is-italic has-text-weight-bold mb-6 pt-2">Developers</h3>
-					<div class="columns partners-mobile px-6">
-						<div class="column">
-							<a href="https://www.tu.berlin/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 494.png"></a>
-						</div>
-						<div class="column">
-							<a href="https://corvolution.com/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 495.png"></a>
-						</div>
-						<div class="column">
-							<a href="https://fitbase.de/" target="_blank" rel="noopener noreferrer"><img class="make-grey p-3" src="../img/Group 496.png"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>		
-	</div>
+		</div>
+	</section>
+	
 
-	@@include('../chunks/footer.html')
+ 	@@include('../chunks/footer.html')  
 </div>
 
 @@include('../chunks/scripts.html')
