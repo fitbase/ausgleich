@@ -7,7 +7,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
 
 <script>
-        document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
 
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
@@ -23,15 +23,17 @@
         for(var i = 0; i < navItem.length; i++) {
             navItem[i].classList.toggle('navbar-item-dark');
         };
-
+        
         el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');      
+        $target.classList.toggle('is-active'); 
         
         });
     });
-    }
+
+    } 
 
     });
+
 </script>
 
 <script>    
@@ -154,11 +156,11 @@
         new Box(4,2,'https://www.linkpicture.com/q/app-screens-1.png');
         new Box(5,2,'https://www.linkpicture.com/q/app-screens-2.png');			
 
-        leftButton.addEventListener('click', function(){
+        rightButton.addEventListener('click', function(){
             if(slidePosX>-3)
                 slide('X',-1);
         });
-        rightButton.addEventListener('click', function(){
+        leftButton.addEventListener('click', function(){
             if(slidePosX<4)
                 slide('X',1);
         });

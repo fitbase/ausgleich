@@ -67,19 +67,19 @@ a.navbar-item:hover {
 
 .navbar img {
     background-color: $brand-light;
-    padding: 15px;
+    padding: 10px;
     border-radius: 4px;
 }
 
 .navbar-item img {
     @media (min-width: $tablet) { 
-        max-height: 6rem;
+        max-height: 6.3rem;
     }   
 }
 
 .navbar-item img {
     @media (max-width: $tablet) { 
-        max-height: 5rem;
+        max-height: 5.5rem;
     }   
 }
 
@@ -166,6 +166,10 @@ a.navbar-item:hover, a.navbar-item.is-active,
     @media (min-width: 320px) and (max-width: $tablet) { 
         font-weight: 600;
     }    
+}
+
+.text_highlight {
+    font-weight: 700;
 }
 
 /* Margins & Paddings START */
@@ -279,6 +283,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
 }
 
 .transp_man {
+    /*
     @media (min-width: 450px) and (max-width:  $tablet) { 
         position: absolute;
         left: -50px;
@@ -287,9 +292,14 @@ a.navbar-item:hover, a.navbar-item.is-active,
         opacity: 0.3;
         z-index: -1;
     } 
+    */
+    @media (min-width: 450px) and (max-width:  $tablet) { 
+       display: none;
+    } 
 }
 
 .transp_man {
+    /*
     @media (max-width: 450px) { 
         position: absolute;
         left: 0;
@@ -298,6 +308,10 @@ a.navbar-item:hover, a.navbar-item.is-active,
         opacity: 0.3;
         z-index: -1;
     } 
+    */
+    @media  (max-width: 450px) { 
+        display: none;
+     }
 }
 
 .colored_man {
@@ -317,6 +331,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
 }
 
 .colored_man {
+    /*
     @media (min-width: 600px) and (max-width:  $tablet) { 
         position: absolute;
         left: 0;
@@ -324,10 +339,15 @@ a.navbar-item:hover, a.navbar-item.is-active,
         width: 70%;
         z-index: -1;
     } 
+    */
+    @media (min-width: 600px) and (max-width:  $tablet) { 
+        display: none;
+    } 
+
 }
 
-
 .colored_man {
+    /*
     @media (max-width: 600px) { 
         position: absolute;
         left: 0;
@@ -336,9 +356,15 @@ a.navbar-item:hover, a.navbar-item.is-active,
         opacity: 0.3;
         z-index: -1;
     } 
+    */
+    @media (max-width: 600px) { 
+        display: none;
+    } 
+    
 }
 
 .colored_man {
+    /*
     @media (min-width: 450px) and (max-width: 600px) { 
         position: absolute;
         left: 0;
@@ -347,9 +373,14 @@ a.navbar-item:hover, a.navbar-item.is-active,
         opacity: 0.3;
         z-index: -1;
     } 
+    */
+    @media (min-width: 450px) and (max-width: 600px)  { 
+        display: none;
+    } 
 }
 
 .colored_man {
+    /*
     @media (max-width: 450px) { 
         position: absolute;
         left: 0;
@@ -358,6 +389,11 @@ a.navbar-item:hover, a.navbar-item.is-active,
         opacity: 0.3;
         z-index: -1;
     } 
+    */
+    @media (max-width: 450px) { 
+        display: none;
+    } 
+    
 }
 
 .is-transparent-3 {
