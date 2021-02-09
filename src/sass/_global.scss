@@ -257,17 +257,36 @@ a.navbar-item:hover, a.navbar-item.is-active,
 .img-sensor {
     @media (max-width:  $desktop) { 
       position: absolute;
-      top: -120px;
+      top: -100px;
       left: -60px;
       opacity: 0.3;
       z-index: -1;
    } 
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+    .img-sensor {
+        position: absolute;
+        top: -260px;
+    }
+
+    .transp_man {
+        top: 300px !important;
+    }
+
+    .colored_man {
+        top: 300px !important;
+    }
+
+}
+
 .transp_man {
     width: 350px;
     position: absolute;
-    top: 640px;
+/*    top: 640px; */
+
+    top: 480px;
     left: 60%;
     z-index: -10;
 }
@@ -317,7 +336,9 @@ a.navbar-item:hover, a.navbar-item.is-active,
 .colored_man {
     width: 350px;
     position: absolute;
-    top: 640px;
+  /*  top: 640px; */
+
+    top: 480px;
     left: 60%;
 }
 
